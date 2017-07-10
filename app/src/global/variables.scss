@@ -1,12 +1,14 @@
 
 $light-gray: #e0e2e2;
 $red: #da262e;
+$dark-red: #c81820;
 $gray: #78787b;
 $dark-gray: #2d2925;
+$ultra-dark: #22201e;
 
 
 
-$point-xs: 480px;
+$point-xs: 575px;
 $point-sm: 768px;
 $point-md: 992px;
 $point-lg: 1200px;
@@ -17,7 +19,7 @@ $font-title: 'Roboto Condensed', sans-serif;
 
 $duration: .3s;
 
-$path: '../';
+$path: ' ';
 
 %clear {
 	content: '';

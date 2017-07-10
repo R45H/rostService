@@ -1,0 +1,170 @@
+.top-menu {
+	background: $dark-gray;
+	@include screen-md(){
+		display: none;
+	}
+}
+
+.side-menu{
+	display: none;
+	position: fixed;
+	height:100%;
+	width:270px;
+	padding: 15px;
+	right: 0;
+	top:0;
+	transform: translateX(290px);
+	transition: transform .3s ease;
+	background: $dark-gray;
+
+	&.open{
+		transform: translateX(0px);
+	}
+
+	@include screen-md(){
+		display: block;
+	}
+
+	.menu{
+
+		margin-top: 30px;
+		flex-direction: column;
+		&__item{
+			border-left: none;
+			border-right: none;
+		}
+	}
+
+	&__toggle{
+		position: absolute;
+		top:15px;
+		left: 15px;
+	}
+	&__toggle.active{
+		&:hover {
+			.menu-toggle__bar {
+				&:before, &:after {
+					background: $dark-gray;
+				}
+			}
+		}
+	}
+	&__enter{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	&__search{
+		margin-top: 55px;
+	}
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	padding: 0;
+
+	&__item {
+
+		@include screen-lg(min) {
+			width: 12.5%;
+		}
+		@include screen-lg() {
+			flex: 1 1 auto;
+		}
+		text-align: center;
+		border-left: 1px solid $ultra-dark;
+		border-right: 1px solid $ultra-dark;
+		border-bottom: 2px solid transparent;
+		color: #fff;
+		transition: border .2s ease;
+
+		&.active {
+			border-bottom: 2px solid $red;
+			background: $ultra-dark;
+		}
+		&:hover {
+			border-bottom: 2px solid $red;
+			background: $ultra-dark;
+		}
+		@include screen-xl(min) {
+			&:nth-child(5) {
+				.menu__link {
+					font-size: 14px;
+					padding: 11px 0;
+				}
+			}
+		}
+	}
+	&__link {
+		font-size: 1.5rem;
+		width: 100%;
+		padding: 10px 0;
+		display: block;
+		color: inherit;
+	}
+}
+
+.menu-toggle {
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	display: none;
+	margin-right: 15px;
+	align-items: center;
+
+	@include screen-md(){
+		display: inline-flex;
+	}
+	@include screen-xs(){
+		margin-right: 10px;
+	}
+
+	&__bar {
+		height: 3px;
+		width: 100%;
+		background: #fff;
+		position: relative;
+		transition: background linear .1s;
+		transition-delay: .3s;
+
+		&:before, &:after {
+			position: absolute;
+			display: block;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background: #fff;
+			content: "";
+			transition-duration: .3s, .3s;
+			transition-delay: .2s, .0s;
+		}
+		&:before {
+			top: -8px;
+			transition-property: top, transform;
+		}
+		&:after {
+			bottom: -8px;
+			transition-property: bottom, transform;
+		}
+	}
+
+	&.active{
+		.menu-toggle__bar{
+			background: transparent;
+			transition-delay: .3s;
+
+			&:before, &:after {
+				transition-delay: .0s, .2s;
+			}
+			&:before {
+				top: 0;
+				transform: rotate(45deg);
+			}
+			&:after {
+				bottom: 0;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

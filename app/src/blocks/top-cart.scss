@@ -1,0 +1,38 @@
+.top-cart{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__icon{
+		width:35px;
+	}
+	&__price{
+		color: $red;
+		padding-bottom: 3px;
+		border-bottom: dotted $red 1px;
+		position: relative;
+		&:hover{
+			border-bottom: 1px dotted transparent;
+			cursor: pointer;
+		}
+	}
+
+	&__arrow{
+		color: $dark-gray;
+		font-size: 1.8rem;
+		@include screen-lg(){
+			padding: 0 5px;
+		}
+	}
+	&__count{
+		border-radius: 50%;
+		background: $red;
+		color: #fff;
+		font-size: 1.2rem;
+		position: absolute;
+		padding: 0px 5px;
+		left: 6px;
+		top: 0px;
+	}
+}

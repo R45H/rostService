@@ -1,0 +1,13 @@
+
+include ../mixins/menu
+
+div.side-menu
+	div.btn.btn_white.menu-toggle.side-menu__toggle
+		span.menu-toggle__bar
+	a.btn.btn_white.side-menu__enter(href="") Вход / Регистрация
+
+	form.search.search_black.side-menu__search(action="search" name="search-form")
+		input.search__input(type="text" placeholder="Найти")
+		button.search__btn(type="submit")
+			i.fa.fa-search(aria-hidden="true")
+	+menu(menu)

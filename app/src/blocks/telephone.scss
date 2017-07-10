@@ -1,0 +1,15 @@
+.telephone{
+	color: $gray;
+	text-align:center;
+	@include screen-md(){
+		font-size: 1.3rem;
+	}
+	&__number{
+		font-weight: bold;
+		color: $dark-gray;
+		font-size: 1.6rem;
+		@include screen-md(){
+			font-size: 1.5rem;
+		}
+	}
+}
