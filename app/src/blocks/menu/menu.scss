@@ -13,6 +13,7 @@
 	padding: 15px;
 	right: 0;
 	top:0;
+	z-index: 50;
 	transform: translateX(290px);
 	transition: transform .3s ease;
 	background: $dark-gray;
@@ -54,7 +55,7 @@
 		top: 15px;
 		right: 15px;
 	}
-	&__search{
+	&__search-top{
 		margin-top: 55px;
 	}
 }

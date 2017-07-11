@@ -1,0 +1,51 @@
+.profit {
+	padding: 20px;
+	border: $light-gray solid 1px;
+	border-bottom: $red 2px solid;
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	@include screen-md(){
+		margin-bottom: 25px;
+	}
+
+	&__title {
+		font-family: $font-title;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		color: $dark-gray;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__img {
+		flex: 0 1 30%;
+		max-width: 25%;
+
+	}
+	&__descr {
+		flex: 1 0 70%;
+		padding-left: 15px;
+	}
+
+	&:before{
+		content: '';
+		position: absolute;
+		width:15px;
+		height: 15px;
+		transform: rotate(45deg);
+		border-right: $light-gray solid 1px;
+		top: -8px;
+		left: -8px;
+		background: #fff;
+
+	}
+}

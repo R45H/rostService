@@ -52,8 +52,25 @@ hr {
 	color: $red;
 }
 
-.hidden-md {
-	@include screen-md() {
+.justify-content-between{
+	justify-content: space-between;
+}
+.hidden-lg-down{
+	@include screen-lg(){
 		display: none;
 	}
+}
+.hidden-md-down{
+	@include screen-md(){
+		display: none;
+	}
+}
+.hidden-sm-down{
+	@include screen-sm(){
+		display: none;
+	}
+}
+
+.main .profits{
+	margin-top: 40px;
 }

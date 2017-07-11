@@ -1,5 +1,6 @@
-section.slider
+include ../mixins/profit
 
+section.slider
 	.container
 		.search
 		.row
@@ -20,3 +21,7 @@ section.slider
 
 				- }
 	.main-slider__nav
+section.profits
+	.container
+		.row
+			+profit(profit_index)
