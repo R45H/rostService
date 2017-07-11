@@ -32,4 +32,22 @@
 			color: $dark-gray;
 		}
 	}
+	&_upper {
+		text-transform: uppercase;
+	}
+	&_arrow {
+		position: relative;
+		padding-left: 55px;
+		padding-right: 55px;
+
+		&:after{
+			content:'\f178';
+			font-family: FontAwesome;
+			color: inherit;
+			position: absolute;
+			top: 26%;
+			right: 20px;
+			transition: color .3s ease;
+		}
+	}
 }

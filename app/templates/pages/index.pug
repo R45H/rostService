@@ -1,0 +1,22 @@
+section.slider
+
+	.container
+		.search
+		.row
+			.main-slider.col-8.offset-4
+				- for (var i = 0; i < 4; ++i) {
+				.main-slider__item
+					.main-slider__wrap
+						.main-slider__text
+							img.main-slider__logo(src="img/slider-logo.png")
+							.main-slider__title Cummins -
+							|	Лучшие дизельные двигатели
+							.btn.btn_upper.btn_arrow.main-slider__btn(href="") подробней
+						.main-slider__img-wrap
+							.main-slider__discount скидки до
+								.main-slider__discount-count -35%
+							.main-slider__img-bg
+							img.main-slider__img(src="img/motor.png", alt="")
+
+				- }
+	.main-slider__nav

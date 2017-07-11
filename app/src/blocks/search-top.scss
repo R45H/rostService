@@ -1,8 +1,5 @@
-.search {
+.search-top {
 	position: relative;
-
-
-
 	&__input {
 		padding: 1rem 1.5rem;
 		padding-right: 45px;
@@ -42,13 +39,12 @@
 		font-size: 1rem;
 		padding: 2px 5px;
 	}
-
 	&_black{
-		.search__input{
+		.search-top__input{
 			color:#fff;
 			background: $dark-gray;
 		}
-		.search__btn{
+		.search-top__btn{
 			background: $dark-gray;
 			color: #fff;
 			transition: color .2s ease;
