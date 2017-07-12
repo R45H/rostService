@@ -1,0 +1,8 @@
+include ../mixins/card
+div(style="margin-top: 50px;")
+
+.container
+	.row
+		each val in card_index
+			.col-3.main__space_bot
+				+card(val)(class="main__card")
