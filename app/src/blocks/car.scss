@@ -1,0 +1,21 @@
+.car {
+	text-align: center;
+
+	&__img {
+		display: block;
+		padding-bottom: 60%;
+		background: no-repeat 50% 100%;
+		background-size: contain;
+		margin-bottom: 15px;
+	}
+
+	&__title {
+		color: $gray;
+		text-decoration: none;
+		margin: 0;
+
+		&:hover {
+			color: $red;
+		}
+	}
+}

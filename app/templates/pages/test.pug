@@ -1,19 +1,24 @@
+include ../mixins/car
 include ../mixins/mark
 include ../mixins/list
 include ../mixins/card
 
-//- MARK
 .container
-	div(style="margin-top: 50px;")
-	.row
+
+	//- CAR
+	.row(style="margin-top: 50px;")
+		each val in car
+			.col-3.main__space_bot
+				+car(val)
+
+	//- MARK
+	.row(style="margin-top: 50px;")
 		each val in mark
 			.col-2.main__space_bot
 				+mark(val)
 
-//- LIST
-.container
-	div(style="margin-top: 50px;")
-	.row
+	//- LIST
+	.row(style="margin-top: 50px;")
 		each val in list
 			.col-3.main__space_bot
 				+list(val)
@@ -24,10 +29,8 @@ include ../mixins/card
 			.col-3.main__space_bot
 				+list(val)(titleBot)
 
-//- CARD
-.container
-	div(style="margin-top: 50px;")
-	.row
+	//- CARD
+	.row(style="margin-top: 50px;")
 		each val in card
 			.col-3.main__space_bot
 				+card(val)(class="main__card")
