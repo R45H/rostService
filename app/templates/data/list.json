@@ -3,27 +3,21 @@
 		{
 			"title": "Двигатели",
 			"img": "img/motor.png",
-			"link": "#",
 			"items": [
 				{
-					"text": "Cummins",
-					"link": "#"
+					"text": "Cummins"
 				},
 				{
-					"text": "Mercedes",
-					"link": "#"
+					"text": "Mercedes"
 				},
 				{
-					"text": "ЯМЗ",
-					"link": "#"
+					"text": "ЯМЗ"
 				},
 				{
-					"text": "ЗМЗ",
-					"link": "#"
+					"text": "ЗМЗ"
 				},
 				{
-					"text": "ММЗ",
-					"link": "#"
+					"text": "ММЗ"
 				}
 			],
 			"more": 25

@@ -158,22 +158,6 @@
 		align-items: center;
 	}
 
-	&__title {
-		display: block;
-		text-decoration: none;
-		margin: 0 0 10px;
-		font-family: $font-title;
-		font-size: 1.6rem;
-		color: $dark-gray;
-		text-transform: uppercase;
-		font-weight: 700;
-		width: 100%;
-
-		&:hover {
-			color: $red;
-		}
-	}
-
 	&__subtitle {
 		margin: 0 0 10px;
 		color: $gray;

@@ -1,5 +1,14 @@
+include ../mixins/mark
 include ../mixins/list
 include ../mixins/card
+
+//- MARK
+.container
+	div(style="margin-top: 50px;")
+	.row
+		each val in mark
+			.col-2.main__space_bot
+				+mark(val)
 
 //- LIST
 .container
