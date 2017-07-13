@@ -2,8 +2,8 @@
 	link - Ссылка на страницу товара
 	img - Путь к картинке
 	discount - Скидка
-	logo - Ссылка на логотип компании-производителя вверху справа
-	logo_group - Группа логотипов под основным фото
+	mark - Путь на картинку логотипа компании-производителя вверху справа
+	logos - Массив ссылок логотипов под основным фото
 	title - Заголовок
 	subtitle - Подзаголовок
 	vendor - Артикул
@@ -11,44 +11,45 @@
 
 mixin card(data)
 	.card(attributes.class ? class= attributes.class)
-		.card__img-wrap
-			a.card__img(
-				style="background-image: url(" + data.img + ");"
-				href= data.link ? data.link : "#"
-				class= data.logo_group ? "card__img_lower" : ""
-			)
+		.card__wrap
+			.card__img-wrap
+				a.card__img(
+					style="background-image: url('" + data.img + "');"
+					href= data.link ? data.link : "#"
+					class= data.logos ? "card__img_lower" : ""
+				)
 
-			if data.discount
-				.card__discount
-					span.card__discount-text Скидка
-					span.card__discount-value= data.discount
+				if data.discount
+					.card__discount
+						span.card__discount-text Скидка
+						span.card__discount-value= data.discount
 
-			if data.logo
-				img.card__logo(src= data.logo)
+				if data.mark
+					img.card__mark(src= data.mark)
 
-			if data.logo_group
-				.card__logo-group
-					.card__logo-group-i
-						each val in data.logo_group
-							.card__logo-group-item
-								.card__logo-group-item-i(style="background-image: url(" + val + ");")
+				if data.logos
+					.card__logos-wrap
+						.card__logos-i
+							each val in data.logos
+								.card__logos-item
+									.card__logos-item-i(style="background-image: url('" + val + "');")
 
-		.card__text-wrap
-			a.card__title(href= data.link ? data.link : "#")= data.title
+			.card__text-wrap
+				a.card__title(href= data.link ? data.link : "#")= data.title
 
-			if data.subtitle
-				p.card__subtitle= data.subtitle
+				if data.subtitle
+					p.card__subtitle= data.subtitle
 
-			if data.vendor
-				p.card__vendor= data.vendor
+				if data.vendor
+					p.card__vendor= data.vendor
 
-			.card__i
+				.card__text-i
 
-				if data.price
-					.card__price-wrap
-						span.card__price= data.price
-						= ' '
-						span.card__currency
-							i.fa.fa-rub
+					if data.price
+						.card__price-wrap
+							span.card__price= data.price
+							= ' '
+							span.card__currency
+								i.fa.fa-rub
 
-				a.btn.card__btn(href= data.link ? data.link : "#") Подробнее
+					a.btn.card__btn(href= data.link ? data.link : "#") Подробнее

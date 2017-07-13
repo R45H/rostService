@@ -1,16 +1,46 @@
 .card {
-	padding: 15px;
-	border: 1px solid $light-gray;
-	text-align: center;
 	height: 100%;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
+	text-align: center;
+	position: relative;
+	padding-top: 15px;
+	overflow: hidden;
+	border-right: 1px solid $light-gray;
+	transition: $duration ease;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 7px;
+		width: 100%;
+		height: 15px;
+		border: 1px solid $light-gray;
+		border-bottom: none;
+		border-right: none;
+		transform: skewX(-45deg);
+		background: white;
+	}
+
+	//&:hover {
+	//	box-shadow: 0 0 7px 0 rgba(black, .1);
+	//}
+
+	&__wrap {
+		height: 100%;
+		width: 100%;
+		padding: 0 15px 15px 15px;
+		border-left: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
+		display: flex;
+		flex-direction: column;
+		background: white;
+	}
 
 	&__img-wrap {
 		border-bottom: 1px solid $light-gray;
-		padding-bottom: 15px;
-		margin: 5px 5px 15px;
+		padding: 5px 5px 15px;
+		margin-bottom: 15px;
 		position: relative;
 	}
 
@@ -18,7 +48,7 @@
 		display: block;
 		padding-bottom: 100%;
 		background: no-repeat 50% 50%;
-		background-size: cover;
+		background-size: contain;
 
 		&_lower {
 			padding-bottom: 80%;
@@ -35,8 +65,8 @@
 		padding: 5px 10px;
 		text-align: left;
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 5px;
+		left: 5px;
 		pointer-events: none;
 
 		&::before {
@@ -74,44 +104,45 @@
 		line-height: 1;
 	}
 
-	&__logo {
+	&__mark {
 		max-width: 50px;
 		max-height: 50px;
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 5px;
+		right: 5px;
 		pointer-events: none;
 	}
 
-	&__logo-group {
+	&__logos-wrap {
 		width: 100%;
 		padding-bottom: 20%;
 		position: relative;
 	}
 
-	&__logo-group-i {
+	&__logos-i {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -5px;
 		bottom: 0;
-		right: 0;
+		right: -5px;
 		display: flex;
+		justify-content: space-around;
 	}
 
-	&__logo-group-item {
+	&__logos-item {
 		width: 33.33333%;
 		padding: 0 5px;
 
 		&:first-child {
-			padding-left: 0;
+			padding: 0 10px 0 0;
 		}
 
 		&:last-child {
-			padding-right: 0;
+			padding: 0 0 0 10px;
 		}
 	}
 
-	&__logo-group-item-i {
+	&__logos-item-i {
 		width: 100%;
 		height: 100%;
 		background: no-repeat 50% 50%;
@@ -137,6 +168,10 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		width: 100%;
+
+		&:hover {
+			color: $red;
+		}
 	}
 
 	&__subtitle {
@@ -150,7 +185,7 @@
 		@extend .card__subtitle
 	}
 
-	&__i {
+	&__text-i {
 		font-weight: bold;
 		margin: auto 0 0;
 		width: 100%;

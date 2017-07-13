@@ -1,8 +1,18 @@
+include ../mixins/list
 include ../mixins/card
-div(style="margin-top: 50px;")
 
+//- LIST
 .container
+	div(style="margin-top: 50px;")
 	.row
-		each val in card_index
+		each val in list
+			.col-3.main__space_bot
+				+list(val)
+
+//- CARD
+.container
+	div(style="margin-top: 50px;")
+	.row
+		each val in card
 			.col-3.main__space_bot
 				+card(val)(class="main__card")
