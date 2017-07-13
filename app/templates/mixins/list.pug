@@ -1,0 +1,38 @@
+//-
+	data
+		title - Заголовок
+		img - Картинка
+		link - Ссылка категории
+		items - Список подкатегорий
+			text - Текст подкатегории
+			link - Ссылка подкатегории
+		more - Цифра к надписи "Ещё моделей"
+
+	plus - Знак плюса внизу
+	titleBot - Заголовок под картинкой
+
+mixin list(data)
+	.list
+
+		if attributes.titleBot
+			.list__img(style="background-image: url('" + data.img + "');")
+			a.list__title(href= data.link)= data.title
+		else
+			if data.title
+				a.list__title(href= data.link)= data.title
+			if data.img
+				.list__img(style="background-image: url('" + data.img + "');")
+
+		.list__items
+			each val in data.items
+				a.list__item(href= val.link)= val.text
+
+		if attributes.plus
+			.list__plus-wrap
+				.list__plus
+
+		if data.more
+			.list__more-wrap
+				.list__more Ещё моделей:
+					= ' '
+					= data.more
