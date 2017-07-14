@@ -1,5 +1,5 @@
 /* Слайдер на главной */
-$('.main-slider').slick({
+$('.main-slider__wrap').slick({
     // autoplay: true,
     // autoplaySpeed: 10000,
     appendArrows: '.main-slider__nav',

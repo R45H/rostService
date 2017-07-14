@@ -119,7 +119,7 @@
 		display: inline-flex;
 	}
 	@include screen-xs(){
-		margin-right: 10px;
+		margin-right: 0;
 	}
 
 	&__bar {

@@ -1,0 +1,28 @@
+.logos-slider{
+	padding: 10px 0;
+
+	&__item{
+		height:45px;
+		outline: none;
+	}
+	&__img{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 100px;
+		height: 100%;
+		padding: 5px 15px;
+		filter: grayscale(100%);
+		opacity: 0.6;
+		transition: filter .3s ease, opacity .3s ease;
+
+		&:hover{
+			filter: grayscale(0);
+			opacity: 1;
+		}
+		img{
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+}

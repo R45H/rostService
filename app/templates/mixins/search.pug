@@ -1,0 +1,56 @@
+mixin search()
+	.search&attributes(attributes)
+		.search__list
+			.search__list-title Популярные марки
+			ul.list
+				li.list__item ГАЗ
+				li.list__item МАЗ
+				li.list__item ЛИАЗ
+				li.list__item ПАЗ
+				li.list__item КРАЗ
+			.search__list-title Другие марки
+			ul.list
+				li.list__item Acura
+				li.list__item Alfa Romeo
+				li.list__item Bentley
+				li.list__item Brilliance
+				li.list__item Buick
+				li.list__item Acura
+				li.list__item Alfa Romeo
+				li.list__item Bentley
+				li.list__item Brilliance
+				li.list__item Buick
+				li.list__item Acura
+				li.list__item Alfa Romeo
+				li.list__item Bentley
+				li.list__item Brilliance
+				li.list__item Buick
+
+		.search__header
+			.search__logo
+				img(src="../img/search-auto.png")
+			.search__title ПОИСК АВТОЗАПЧАСТЕЙ
+		form.search__selectors
+			.search__selector-vis
+				.search__selector-num
+					span 1
+				input.search__selector(type="text", placeholder='Выберите марку авто')
+				.search__selector-arrow
+
+			.search__selector-vis
+				.search__selector-num
+					span 2
+				input.search__selector(type="text", placeholder='Выберите модель авто')
+				.search__selector-arrow
+
+			.search__selector-vis
+				.search__selector-num
+					span 3
+				input.search__selector(type="text", placeholder='Тип автозапчастей')
+				.search__selector-arrow
+
+			.search__subtitle подбор запчастей по номеру TC (VIN)
+			.search__advice  Как определить номет ТС (VIN)
+			input(type="text", placeholder="Введите сюда VIN и нажмите найти")
+			button.btn.btn_fill.btn_arrow.search__btn(type="submit") найти
+

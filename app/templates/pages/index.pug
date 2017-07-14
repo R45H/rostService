@@ -1,27 +1,42 @@
 include ../mixins/profit
+include ../mixins/search
 
 section.slider
 	.container
-		.search
 		.row
-			.main-slider.col-8.offset-4
-				- for (var i = 0; i < 4; ++i) {
-				.main-slider__item
-					.main-slider__wrap
-						.main-slider__text
-							img.main-slider__logo(src="img/slider-logo.png")
-							.main-slider__title Cummins -
-							|	Лучшие дизельные двигатели
-							.btn.btn_upper.btn_arrow.main-slider__btn(href="") подробней
-						.main-slider__img-wrap
-							.main-slider__discount скидки до
-								.main-slider__discount-count -35%
-							.main-slider__img-bg
-							img.main-slider__img(src="img/motor.png", alt="")
+			.main-slider.col-12.col-lg-8.offset-lg-4
+				.main-slider__wrap
+					- for (var i = 0; i < 4; ++i) {
+					.main-slider__item
+						.main-slider__item-wrap
+							.main-slider__text
+								img.main-slider__logo(src="img/slider-logo.png")
+								.main-slider__title Cummins -
+								|	Лучшие дизельные двигатели
+								div
+									.btn.btn_upper.btn_arrow.main-slider__btn(href="") подробней
+							.main-slider__img-wrap
+								.main-slider__discount скидки до
+									.main-slider__discount-count -35%
+								.main-slider__img-bg
+								img.main-slider__img(src="img/motor.png", alt="")
 
-				- }
+					- }
+
 	.main-slider__nav
-section.profits
+section.logos
 	.container
-		.row
-			+profit(profit_index)
+		.row.align-items-center
+			.col-12.col-lg-4.col-md-7
+				+search(class="search_index")
+			.col-12.col-lg-8.offset-lg-4.flex-last.flex-lg-unordered
+				.logos-slider
+					each val in logos
+						.logos-slider__item
+							.logos-slider__img
+								img(src="img/"+val.img)
+			.col-12.col-lg-12.col-md-5
+				.profits
+					+profit(profit_index)(class="profits__item")
+
+

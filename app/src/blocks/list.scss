@@ -1,0 +1,13 @@
+.list{
+	margin-bottom: 20px;
+	&__item{
+		display: block;
+		padding: 5px 0;
+		transition: color .2s ease;
+
+		&:hover{
+			color: $red;
+			cursor: pointer;
+		}
+	}
+}

@@ -17,18 +17,32 @@ body {
 a {
 	color: inherit;
 	outline: none;
-	&:hover,&focus,&active{
-		text-decoration: none;
+	text-decoration: none;
+	&:hover, &focus, &active {
 		color: inherit;
 		outline: none;
 	}
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
 input,
 textarea {
 	//-webkit-appearance: none;
-	//border-radius: 0;
+	border: solid $light-gray 1px;
+	padding: 1.5rem 2rem;
+	width: 100%;
 
+	@include input-placeholder() {
+		font-style: italic;
+		font-size: 1.6rem;
+		color: $light-gray;
+		font-family: $font-main;
+	}
 	&:hover,
 	&:focus,
 	&:active {
@@ -52,25 +66,62 @@ hr {
 	color: $red;
 }
 
-.justify-content-between{
+.justify-content-between {
 	justify-content: space-between;
 }
-.hidden-lg-down{
-	@include screen-lg(){
-		display: none;
-	}
-}
-.hidden-md-down{
-	@include screen-md(){
-		display: none;
-	}
-}
-.hidden-sm-down{
-	@include screen-sm(){
+
+.hidden-lg-down {
+	@include screen-lg() {
 		display: none;
 	}
 }
 
-.main .profits{
-	margin-top: 40px;
+.hidden-md-down {
+	@include screen-md() {
+		display: none;
+	}
+}
+
+.hidden-sm-down {
+	@include screen-sm() {
+		display: none;
+	}
+}
+
+.align-items-start {
+	align-items: flex-start;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.align-content-start {
+	align-content: flex-start;
+}
+
+
+.flex-last{
+	order: 1;
+}
+
+@media (min-width: 992px) {
+	.flex-lg-first {
+		-webkit-box-ordinal-group: 0;
+		-webkit-order: -1;
+		-ms-flex-order: -1;
+		order: -1;
+	}
+	.flex-lg-last {
+		-webkit-box-ordinal-group: 2;
+		-webkit-order: 1;
+		-ms-flex-order: 1;
+		order: 1;
+	}
+	.flex-lg-unordered {
+		-webkit-box-ordinal-group: 1;
+		-webkit-order: 0;
+		-ms-flex-order: 0;
+		order: 0;
+	}
 }

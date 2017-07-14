@@ -3,13 +3,14 @@ $light-gray: #e0e2e2;
 $red: #da262e;
 $dark-red: #c81820;
 $gray: #78787b;
+$font-gray: #999999;
 $dark-gray: #2d2925;
 $ultra-dark: #22201e;
 $orange: #f39c12;
 
 
 
-$point-xs: 575px;
+$point-xs: 576px;
 $point-sm: 768px;
 $point-md: 992px;
 $point-lg: 1200px;
@@ -29,6 +30,7 @@ $path: ' ';
 	width: 100%;
 	clear: both;
 }
+
 
 @mixin screen-xs($direct: 'max') {
 	@media (if($direct == 'min', 'min-width: #{$point-xs}', 'max-width: #{$point-xs} - 1')) {
