@@ -1,0 +1,26 @@
+{
+	"list": [
+		{
+			"title": "Двигатели",
+			"img": "img/motor.png",
+			"items": [
+				{
+					"text": "Cummins"
+				},
+				{
+					"text": "Mercedes"
+				},
+				{
+					"text": "ЯМЗ"
+				},
+				{
+					"text": "ЗМЗ"
+				},
+				{
+					"text": "ММЗ"
+				}
+			],
+			"more": 25
+		}
+	]
+}

@@ -1,0 +1,17 @@
+.text-title {
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 0 10px;
+	font-family: $font-title;
+	font-size: 1.6rem;
+	color: $dark-gray;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+a.text-title {
+
+	&:hover {
+		color: $red;
+	}
+}

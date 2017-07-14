@@ -1,3 +1,8 @@
+.main {
+
+	&__space_bot {
+		margin-bottom: 30px;
+	}
 .logos {
 	@include screen-md() {
 		padding: 30px 0;
