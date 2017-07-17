@@ -1,12 +1,12 @@
 $('.logos-slider').slick({
-    dots: true,
+    // dots: true,
     arrows: false,
     infinite: true,
     // variableWidth: true,
     slidesToShow: 8,
     slidesToScroll: 2,
-    // // autoplay: true,
-    // // autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     responsive: [
         {
             breakpoint:992,

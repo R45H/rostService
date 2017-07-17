@@ -4,12 +4,14 @@ $red: #da262e;
 $dark-red: #c81820;
 $gray: #78787b;
 $font-gray: #999999;
+$ultra-light-gray: #f5f5f5;
 $dark-gray: #2d2925;
 $ultra-dark: #22201e;
 $orange: #f39c12;
 
 
 
+$point-xxs: 450px;
 $point-xs: 576px;
 $point-sm: 768px;
 $point-md: 992px;
@@ -32,6 +34,12 @@ $path: ' ';
 	clear: both;
 }
 
+
+@mixin screen-xxs($direct: 'max') {
+	@media (if($direct == 'min', 'min-width: #{$point-xxs}', 'max-width: #{$point-xxs} - 1')) {
+		@content;
+	}
+}
 
 @mixin screen-xs($direct: 'max') {
 	@media (if($direct == 'min', 'min-width: #{$point-xs}', 'max-width: #{$point-xs} - 1')) {

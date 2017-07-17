@@ -1,0 +1,29 @@
+.partners{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	@include screen-xs(){
+		flex-wrap: wrap;
+	}
+
+	&__item{
+		@include screen-lg(){
+			width:30%;
+		}
+		@include screen-xs(){
+			width:45%;
+			margin:15px 0;
+		}
+		@include screen-xxs(){
+			width:60%;
+			margin:15px 0;
+		}
+		img{
+			max-width: 100%;
+		}
+	}
+	@include screen-md(){
+
+	}
+}

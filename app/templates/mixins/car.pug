@@ -5,9 +5,8 @@
 		title - Заголовок
 
 mixin car(data)
-	.car
-		a.car__img(
-			href= data.link ? data.link : "#"
+	a.car(href= data.link ? data.link : "#")
+		.car__img(
 			style="background-image: url('" + data.img + "');"
 		)
-		a.car__title(href= data.link ? data.link : "#")= data.title
+		.car__title= data.title

@@ -1,5 +1,10 @@
 include ../mixins/profit
 include ../mixins/search
+include ../mixins/list
+include ../mixins/producer
+include ../mixins/card
+
+
 
 section.slider
 	.container
@@ -24,7 +29,7 @@ section.slider
 					- }
 
 	.main-slider__nav
-section.logos
+section.main__logos
 	.container
 		.row.align-items-center
 			.col-12.col-lg-4.col-md-7
@@ -38,5 +43,69 @@ section.logos
 			.col-12.col-lg-12.col-md-5
 				.profits
 					+profit(profit_index)(class="profits__item")
+section.main__tabs
+	.container
+		.tab
+			.tab__head.tab_first
+				a.tab__link.tab__link_active(href="#spares")
+					span.red-line
+					| Топ Запчасти
+				a.tab__link(href="#trademark")
+					span.red-line
+					| топ марки
+				a.tab__link(href="#manufacturer")
+					span.red-line
+					|	топ производители
 
+			.tab__body
+				.tab__content.visible#spares
+					.row
+						each val in spares
+							.col-12.col-sm-6.col-lg-3
+								+list(val)
+					.btn.btn_more.tab__btn Все категории
+						.btn__plus.plus
 
+				.tab__content#trademark
+					.tab__text Выберете вашу марку авто
+					.row
+						each val in top_marks
+							.col-12.col-sm-6.col-lg-3
+								+producer(val)
+
+				.tab__content#manufacturer
+					.row.align-items-center.logos-big
+						each val in logos_big
+							.col-6.col-sm-4.col-md-2
+								img.logo__img(src="img/logos/"+val.img)
+					.row.align-items-center
+						each val in logos_small
+							.col-4.col-sm-2.col-md-1
+								img.logo__img(src="img/logos/" + val.img)
+					.btn.btn_more.tab__btn Все производители
+						.btn__plus.plus
+section.main-hits
+	.container
+		.title.main-hits__title
+			.title__text  Самые продаваемые товары
+		.hits-slider
+			each val in hits
+				.hits-slider__item
+					+card(val)(class="hits-slider__card")
+section.main-partners
+	.container
+		.title
+			.title__text  Наши партнеры
+		.partners
+			.partners__item
+				img(src="img/parnters1.png")
+			.partners__item
+				img(src="img/parnters2.png")
+			.partners__item
+				img(src="img/parnters3.png")
+section.main-text
+	.container
+		p Лорем ипсум долор сит амет, фабеллас демоцритум не яуо. Ад вих перпетуа цонсеяуат вулпутате, цу харум утамур алияуид сеа, те цум темпор елеифенд дефинитионес. Ут меа антиопам постулант, мел виде фацилис еу. Меа но иудицо граеци, но яуи плацерат модератиус омиттантур. Те ребум нихил пертинах вис.Не ест стет цонституто, ест еа ессент мелиоре елигенди. Мел цонсул алияуам фабеллас еу, проприае детрацто хас ид, сонет саепе путант иус не. Цум ид инани примис бонорум, ид цонсететур ассуеверит сед, сит ет мнесарчум омиттантур сигниферумяуе. Вих мунере яуаестио еррорибус ад, ад алии инимицус еррорибус еам, иус десерунт улламцорпер еу. Ессе адмодум меа ех.
+
+		p Вел бонорум фабеллас инструцтиор ат. Про аперири веритус опортере но, хинц яуот адиписцинг те вих. Усу иисяуе дигниссим урбанитас ех, цум магна нуллам ан. Вих солеат денияуе посидониум те, еа перпетуа адиписцинг сит. Нец дигниссим сусципиантур еи. Неморе нумяуам вих ат, яуо минимум ехпетендис еу.Ноструд маиорум еффициенди ид при, дуо мовет хомеро еи. Инани витае фабулас еи мел, ат сумо молестиае меа. Яуод нумяуам вим ех, нам амет перицулис ан. Ат вис алияуип нонумес цоммуне, дицо иисяуе не цум. Про ипсум интеллегам ин. Ан вел ребум волуптатум инструцтиор, импетус ноструд луптатум ад хас, моллис волуптатум ин сит. Хас но магна тритани инцидеринт.
+		p  Яуот цетеро абхорреант ех сеа. Меа ин адхуц еррем фабеллас, дефинитионес цонцлудатуряуе еу дуо, хис велит сингулис ад. Но яуи ностро виртуте алтерум. Мутат нихил тантас хис но, тритани еррорибус усу не. Цум еу хомеро форенсибус ассуеверит. Хас ад симул цлита цонсулату, цетерос тациматес репудиандае яуи ат.

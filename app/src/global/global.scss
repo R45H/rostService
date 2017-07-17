@@ -100,8 +100,7 @@ hr {
 	align-content: flex-start;
 }
 
-
-.flex-last{
+.flex-last {
 	order: 1;
 }
 
@@ -125,3 +124,25 @@ hr {
 		order: 0;
 	}
 }
+
+
+.plus {
+	cursor: pointer;
+	display: inline-block;
+
+	&::after {
+		content: '\f055';
+		display: block;
+		font-family: $font-fa;
+		color: $red;
+		transition: $duration ease;
+		line-height: 1;
+	}
+
+	&:hover {
+		&::after {
+			transform: scale(1.3);
+		}
+	}
+}
+

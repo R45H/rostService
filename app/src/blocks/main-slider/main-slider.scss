@@ -8,6 +8,10 @@
 	&__item {
 		position: relative;
 		padding: 30px 15px;
+
+		@include screen-sm(){
+			margin-bottom: 40px;
+		}
 		height: 100%;
 		outline: none;
 	}

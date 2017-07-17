@@ -1,0 +1,155 @@
+.tab {
+	&__head {
+		border-bottom: 2px solid $light-gray;
+		text-align: center;
+	}
+	&__body {
+		padding: 25px 0;
+	}
+	&__link {
+		display: inline-block;
+		position: relative;
+		margin-bottom: -2px;
+		font-size: 1.6rem;
+		background: $gray;
+		color: #fff;
+		padding: 8px 25px;
+		text-transform: uppercase;
+		font-family: $font-title;
+		font-weight: bold;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid $light-gray;
+		min-width: 190px;
+
+		@include screen-sm(){
+			min-width: 110px;
+			font-size: 1.3rem;
+			padding: 8px 10px;
+		}
+		@include screen-xs(){
+			min-width: 70px;
+			font-size: 1rem;
+			padding: 8px 10px;
+		}
+		&:hover{
+			background: $dark-gray;
+			color: #fff;
+		}
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			width: 15px;
+			height:100%;
+			top: 0px;
+			background: inherit;
+			position: absolute;
+			z-index: 2;
+			@include screen-xs(){
+				width: 10px;
+			}
+		}
+		&:before {
+			transform: skewX(-20deg);
+			left: -6px;
+			@include screen-xs(){
+				left: -5px;
+			}
+		}
+		&:after {
+			transform: skewX(-20deg);
+			right: -6px;
+			border-left: $dark-gray solid 3px;
+			@include screen-xs(){
+				right: -5px;
+			}
+		}
+
+		&_active {
+			background: #fff;
+			color: $ultra-dark;
+			border-bottom: 2px solid #fff;
+			border-top: 2px solid $light-gray;
+			z-index: 3;
+			.red-line{
+				display: inline-block;
+				position: absolute;
+				background: $red;
+				width:5px;
+				height: calc(100% + 2px );
+				transform: skewX(-20deg);
+				left: -5px;
+				top:0;
+				z-index: 5;
+			}
+
+			&:hover{
+				background: #fff;
+				color: $ultra-dark;
+			}
+			&:before, &:after {
+				z-index: 4;
+				border-bottom: 2px solid #fff;
+				border-top: 2px solid $light-gray;
+				height: calc(100% + 4px);
+				top: -2px;
+			}
+			&:before{
+				border-left: 2px solid $light-gray;
+			}
+			&:after {
+				transform: skewX(20deg);
+				border-left: none;
+				border-right: 2px solid $light-gray;
+			}
+
+			~ .tab__link {
+
+				&:before, &after {
+					border-right: none;
+				}
+				&:before {
+					transform: skewX(20deg);
+					border-left: $dark-gray solid 3px;
+				}
+				&:after {
+					transform: skewX(20deg);
+					border-left: none;
+				}
+			}
+			+ .tab__link {
+				&:before {
+					border-right: $dark-gray solid 3px;
+				}
+			}
+		}
+
+		//&:first-child{
+		//	&:before{
+		//		left:-7px;
+		//	}
+		//}
+		//
+		//&:last-child{
+		//	&:after{
+		//		right:-7px;
+		//	}
+		//}
+
+	}
+
+	&__content {
+		display: none;
+		text-align: center;
+
+		&.visible {
+			display: block;
+		}
+	}
+	&__text{
+		margin: 0 0 25px 0;
+	}
+	&__btn{
+		margin: 25px auto;
+	}
+}

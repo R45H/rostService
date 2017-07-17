@@ -6,4 +6,7 @@
 	&__img{
 		max-width: 100%;
 	}
+	&_gray{
+		filter: grayscale(100%);
+	}
 }

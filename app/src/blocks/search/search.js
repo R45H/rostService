@@ -31,7 +31,7 @@ $('.search__selector').click(function () {
     return false;
 });
 
-$('.search__list .list__item').click(function () {
+$('.search__list .search-values__item').click(function () {
     var value = $(this).text();
     $('.search__selector-vis_active').find('.search__selector').attr("value", value);
     $('.search__list').removeClass('search__list_open');

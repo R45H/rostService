@@ -1,6 +1,17 @@
 .list {
 	text-align: center;
 
+	@include screen-md(){
+		margin: 20px 0;
+	}
+
+	&__head{
+		&:hover{
+			.text-title{
+				color: $red;
+			}
+		}
+	}
 	&__img {
 		display: inline-block;
 		width: 100%;
@@ -58,30 +69,13 @@
 	}
 
 	&__plus {
-		cursor: pointer;
 		padding: 20px 30px;
-		display: inline-block;
-
-		&::after {
-			content: '\f055';
-			display: block;
-			font-family: $font-fa;
-			color: $red;
-			transition: $duration ease;
-			line-height: 1;
-		}
-
-		&:hover {
-
-			&::after {
-				transform: scale(1.3);
-			}
-		}
 	}
 
 	&__more-wrap {
 		padding: 20px 0;
 	}
+
 
 	&__more {
 		cursor: pointer;
