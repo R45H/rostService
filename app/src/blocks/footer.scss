@@ -2,8 +2,129 @@
 	&__head{
 		border-top: solid 1px $light-gray;
 		padding: 10px 0;
+
+		@include screen-sm(){
+			display: none;
+		}
 	}
 	&__logo{
 		max-width: 165px;
+	}
+	&__main{
+		background: $light-gray;
+		color: $gray;
+		padding: 25px 0;
+		@include screen-sm(){
+			padding: 10px 0;
+		}
+	}
+	&__menu-link{
+		font-size: 1.6rem;
+		display: block;
+		transition: color ease .3s;
+		margin-bottom: 15px;
+		@include screen-sm(){
+			margin-bottom: 10px;
+		}
+		@include screen-xs(){
+			text-align: center;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:hover{
+			color: $red;
+		}
+	}
+	&__motto{
+		font-size: 1.6rem;
+		color: $dark-gray;
+	}
+	&__contacts{
+		p{
+			margin: 0 0 5px 0;
+		}
+		@include screen-xs(){
+			text-align: center;
+		}
+	}
+	&__info{
+		font-size: 1.6rem;
+		color: $dark-gray;
+		font-weight: bold;
+		margin-bottom: 10px;
+		@include screen-lg(){
+			font-size: 1.4rem;
+		}
+
+		&_sm{
+			font-size: 1.4rem;
+			@include screen-lg(){
+				font-size: 1.1rem;
+			}
+		}
+
+
+	}
+	&__subscribe{
+		margin-top: 50px;
+		margin-bottom: 5px;
+		@include screen-md(){
+			margin-top: 15px;
+		}
+		@include screen-xs(){
+			text-align: center;
+		}
+	}
+	&__email{
+		position: relative;
+	}
+	&__send{
+		background: #fff;
+		outline: none;
+		position: absolute;
+		top:5px;
+		right: 1px;
+		height: 25px;
+		width: 40px;
+		border:none;
+		border-left: solid $light-gray 1px;
+		color: $red;
+		font-size: 17px;
+		transition: color ease .3s;
+		&:hover{
+			cursor: pointer;
+			color: $dark-gray;
+		}
+	}
+	&__input{
+		height: 35px;
+		font-size: 1.6rem;
+		padding: 10px;
+		padding-right: 41px;
+
+		@include  input-placeholder(){
+			font-style: normal;
+
+		}
+
+	}
+	&__checkbox{
+		margin-top: 20px;
+		@include screen-md(){
+			margin-top: 10px;
+		}
+	}
+	&__head-mobile{
+		margin: 20px 0 15px 0;
+		@include screen-sm(min){
+			display: none;
+		}
+		@include screen-xs(){
+			text-align: center;
+		}
+	}
+	&__socials{
+		padding-left: 10px;
 	}
 }

@@ -1,0 +1,34 @@
+.checkbox{
+	padding-left: 20px;
+	position: relative;
+	display: block;
+	font-size: 12px;
+	cursor: pointer;
+
+	&__vis{
+		height: 12px;
+		width: 12px;
+		border: 1px solid $gray;
+		background: $light-gray;
+		border-radius: 3px;
+		position: absolute;
+		left:0;
+		top:1px;
+	}
+	&__hid{
+		opacity: 0;
+		position: absolute;
+		width:15px;
+		height: 15px;
+		left:0;
+	}
+	&__hid:checked + &__vis:before{
+		content: '\f00c';
+		font-family: 'FontAwesome';
+		color: $red;
+		font-size: 11px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+}

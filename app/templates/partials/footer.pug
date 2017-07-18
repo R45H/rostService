@@ -3,23 +3,93 @@ footer.footer
 	.footer__head
 		.container
 			.row.align-items-center
-				.col-lg-3
+				.col-md-3
 					a.logo.logo_gray.footer__logo(href="/")
 						img.logo__img(src="img/logo.svg")
-				.col-lg-4
+				.col-md-4
 					.subtitle Рубрики
 
-				.col-lg-2
+				.col-md-5.col-lg-2
 					.subtitle Контакты
-				.col-lg-3
+				.hidden-md-down.col-lg-3
 					.subtitle социальные сети
 
 
 	.footer__main
 		.container
 			.row
-				.col-lg-3
-				.col-lg-2
-				.col-lg-2
-				.col-lg-2
-				.col-lg-3
+				.col-md-4
+					.footer__head-mobile
+						.subtitle Рубрики
+					.row
+						.col-6
+							.footer__menu
+								a.footer__menu-link(href='') Марки авто
+								a.footer__menu-link(href='') Авто запчасти
+								a.footer__menu-link(href='') Двигатели
+								a.footer__menu-link(href='') Сцепления
+								a.footer__menu-link(href='') Фильтры
+								a.footer__menu-link(href='') Коробки передачь
+						.col-6
+							.footer__menu
+								a.footer__menu-link(href='') О компании
+								a.footer__menu-link(href='') Партнеры
+								a.footer__menu-link(href='') Контакты
+								a.footer__menu-link(href='') Скидки
+								a.footer__menu-link(href='') Вакансии
+								a.footer__menu-link(href='') Наша команда
+				.col-md-5
+					.row
+						.col-sm-6.col-md-12.col-lg-5
+							.footer__head-mobile
+								.subtitle Контакты
+							.footer__contacts
+								p Бесплатно по России
+								.footer__info 8 (800) 700-48-37
+								p Санкт-Петербург
+								.footer__info +7 (812) 448-10-37
+								p Электронный адрес
+								.footer__info info@rostservice.com
+								p График работы
+								.footer__info.footer__info_sm ПН-ПТ - С 9:00 до 17:00
+						.col-sm-6.col-md-12.col-lg-7.footer__socials
+							.footer__head-mobile
+								.subtitle социальные сети
+							.socials
+								a.socials__item.socials_fb(href="")
+									i.fa.fa-facebook(aria-hidden="true")
+								a.socials__item.socials_tw(href="")
+									i.fa.fa-twitter(aria-hidden="true")
+								a.socials__item.socials_yb(href="")
+									i.fa.fa-youtube-play(aria-hidden="true")
+								a.socials__item.socials_pin(href="")
+									i.fa.fa-pinterest-p(aria-hidden="true")
+								a.socials__item.socials_in(href="")
+									i.fa.fa-instagram(aria-hidden="true")
+								a.socials__item.socials_plus
+									i.fa.fa-plus(aria-hidden="true")
+							.subtitle.footer__subscribe Подписка на новости и акции
+							form.footer__email
+								input.footer__input(type="text", placeholder="Email")
+								button.footer__send
+									i.fa.fa-paper-plane-o(aria-hidden="true")
+
+								label.checkbox.footer__checkbox Я согласен на новостную подписку
+									input(type="checkbox").checkbox__hid
+									span.checkbox__vis
+				.col-md-3.flex-md-first
+					.footer__head-mobile
+						a.logo.logo_gray.footer__logo(href="/")
+							img.logo__img(src="img/logo.svg")
+					.footer__motto
+						| Надежность
+						span.red /
+						| Комфорт
+						span.red /
+						| Качество
+
+					p Общество с ограниченной ответственностью "РостСервис" занимается оптовой торговлей запасными частями и агрегатами, принадлежностями к коммерческим автомобилям с февраля 2005 года.
+
+					p © Copyright by rostservice 2005 - 2017.
+						br
+						| Все права защищены

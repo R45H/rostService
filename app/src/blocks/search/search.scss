@@ -239,10 +239,9 @@
 	}
 
 	&_index {
-
 		position: absolute;
 		left: 0;
-		bottom: -59px;
+		bottom: -90px;
 		padding: 0 15px;
 		z-index: 2;
 
@@ -265,7 +264,7 @@
 			display: block;
 			width: 15px;
 			height: 60px;
-			bottom: 0;
+			bottom: 31px;
 		}
 		&:before {
 			background: url("../img/search-shadow-l.png") right bottom/contain no-repeat;
