@@ -1,7 +1,10 @@
 .car {
 	text-align: center;
-	&:hover{
-		.car__title{
+	display: block;
+
+	&:hover {
+
+		.car__title {
 			color: $red;
 		}
 	}
@@ -18,9 +21,5 @@
 		color: $gray;
 		text-decoration: none;
 		margin: 0;
-
-		//&:hover {
-		//	color: $red;
-		//}
 	}
 }

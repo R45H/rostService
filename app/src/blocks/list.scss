@@ -5,13 +5,17 @@
 		margin: 20px 0;
 	}
 
-	&__head{
-		&:hover{
-			.text-title{
+	&__head {
+		display: block;
+
+		&:hover {
+
+			.list__title {
 				color: $red;
 			}
 		}
 	}
+
 	&__img {
 		display: inline-block;
 		width: 100%;
@@ -20,6 +24,7 @@
 		background-size: contain;
 		margin-bottom: 10px;
 	}
+
 	&__items {
 		text-align: left;
 	}
@@ -74,7 +79,6 @@
 	&__more-wrap {
 		padding: 20px 0;
 	}
-
 
 	&__more {
 		cursor: pointer;
