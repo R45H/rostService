@@ -68,12 +68,12 @@
 
 		&:hover{
 			color: $dark-gray;
-			border: 2px solid $red;
+			border: 1px solid $red;
 			background: #fff;
 			.btn__plus{
-				&::after {
-					transform: scale(1.3);
-				}
+				//&::after {
+				//	transform: scale(1.3);
+				//}
 			}
 		}
 	}

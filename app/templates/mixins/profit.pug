@@ -2,7 +2,7 @@ mixin profit(data)
 	each val in data
 		div&attributes(attributes)
 			.profit
-				.profit__title=val.title
+				.profit__title.subtitle=val.title
 				.profit__wrap
 					img.profit__img(src="img/"+val.img)
 					.profit__descr=val.descr

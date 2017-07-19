@@ -1,0 +1,28 @@
+.specialist{
+	border: 1px solid $light-gray;
+	font-size: 1.4rem;
+	color: $dark-gray;
+	padding-bottom:20px;
+	margin-bottom: 30px;
+	text-align: center;
+	&__img{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		height: 300px;
+	}
+	&__name{
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+	&__position{
+		color: $gray;
+		margin-bottom: 20px;
+	}
+	&__mail{
+		margin-bottom: 5px;
+	}
+	&__tel{
+
+	}
+}

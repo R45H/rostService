@@ -1,0 +1,23 @@
+.breadcrumb {
+	padding: 15px 0;
+	font-size: 1.4rem;
+	&__link {
+		color: $gray;
+		display: inline-block;
+
+		&:after {
+			content: '\f105';
+			display: inline-block;
+			font-family: 'FontAwesome';
+			padding: 0 5px;
+		}
+	}
+	&__last-item {
+
+		display: inline-block;
+		color: $dark-gray;
+		&:after {
+			display: none;
+		}
+	}
+}

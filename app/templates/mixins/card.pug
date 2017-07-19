@@ -36,7 +36,7 @@ mixin card(data)
 									.card__logos-item-i(style="background-image: url('" + val + "');")
 
 			.card__text-wrap
-				a.text-title(href= data.link ? data.link : "#")= data.title
+				a.subtitle.card__title(href= data.link ? data.link : "#")= data.title
 
 				if data.subtitle
 					p.card__subtitle= data.subtitle

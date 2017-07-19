@@ -1,0 +1,53 @@
+.text {
+	color: $dark-gray;
+	text-align: center;
+	p {
+		margin: 0 0 1.5rem 0;
+		text-align: center;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			padding-left: 35px;
+			position: relative;
+			text-align: left;
+			margin-bottom: 1rem;
+			@include screen-sm() {
+				padding-left: 25px;
+
+			}
+			&:before {
+				content: '\f105';
+				display: inline-block;
+				font-family: 'FontAwesome';
+				left: 0;
+				top: 3px;
+				font-size: 12px;
+				color: $red;
+				position: absolute;
+			}
+		}
+	}
+	.circle {
+		padding: 0 15px;
+	}
+	.bold {
+		font-weight: bold;
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+	.title {
+		margin-bottom: 3rem;
+		margin-top: 5.5rem;
+	}
+	.subtitle {
+		margin-bottom: 2rem;
+
+	}
+	.tab {
+		margin-top: 40px;
+	}
+}

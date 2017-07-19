@@ -1,5 +1,5 @@
 .profit {
-	padding: 20px;
+	padding: 20px 20px;
 	border: $light-gray solid 1px;
 	border-bottom: $red 2px solid;
 	position: relative;
@@ -9,13 +9,7 @@
 	justify-content: space-around;
 
 	&__title {
-		font-family: $font-title;
-		font-weight: 700;
-		text-transform: uppercase;
-		margin-bottom: 15px;
-		color: $dark-gray;
 		text-align: center;
-		font-size: 1.5rem;
 	}
 	&__wrap {
 		display: flex;

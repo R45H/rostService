@@ -9,13 +9,14 @@ $(".menu-toggle").click(function () {
         var target = e.target;
 
         if ($(target).closest(".side-menu").length > 0 ) {
-            return false;
+            if(!$(target).hasClass('menu__link')){
+                 return false;
+            }
         } else {
             $('.menu-toggle').removeClass("active");
             $('.side-menu').removeClass('open');
             $('body').removeClass("shadow");
         }
-
 
     });
 

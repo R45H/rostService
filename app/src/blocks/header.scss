@@ -1,5 +1,17 @@
 .header {
-	padding: 25px 0 15px 0;
+	padding: 15px 0 ;
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	z-index: 15;
+
+	@include screen-lg(min){
+		height: 95px;
+		padding: 25px 0 15px 0;
+
+	}
 
 	&__tel{
 		height: 40px;

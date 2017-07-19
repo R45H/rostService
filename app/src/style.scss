@@ -2,10 +2,7 @@
 @import url('global/fonts.scss'); // Шрифты
 @import url('global/global.scss'); // Глобальные стили
 
-@import url('blocks/header.scss'); // Шапка
-@import url('blocks/wrapper.scss'); // Внешний контейнер
-@import url('blocks/main.scss'); // Контейнер контента
-@import url('blocks/footer.scss'); // Подвал
+
 @import url('blocks/btn.scss'); // кнопка
 @import url('blocks/top-cart.scss'); // верхняя корзина
 @import url('blocks/search-top.scss'); // поиск
@@ -18,7 +15,6 @@
 @import url('blocks/list.scss'); // Блок списка категорий
 @import url('blocks/mark.scss'); // Блок марки
 @import url('blocks/car.scss'); // Блок с тачкой
-@import url('blocks/text-title.scss'); // Маленький жирный заголовок
 @import url('blocks/search/search.scss'); // поиск по запчастям
 @import url('blocks/list.scss'); // поиск по запчастям
 @import url('blocks/logos-slider/logos-slider.scss'); //слайдер логотипов
@@ -30,3 +26,10 @@
 @import url('blocks/logos-big.scss'); //блок  топ производители
 @import url('blocks/socials.scss'); //соц сети
 @import url('blocks/checkbox.scss'); //кстомный чекбокс
+@import url('blocks/breadcrumb.scss'); //хлебные крошки
+@import url('blocks/text.scss'); //стили для текстовых страниц
+@import url('blocks/specialist.scss'); //каротчка сотрудника
+@import url('blocks/header.scss'); // Шапка
+@import url('blocks/wrapper.scss'); // Внешний контейнер
+@import url('blocks/main.scss'); // Контейнер контента
+@import url('blocks/footer.scss'); // Подвал

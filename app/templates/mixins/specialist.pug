@@ -1,0 +1,21 @@
+//-
+	data
+
+		img: Путь к картинке
+		name: имя
+		position: должность
+		mail: изменяемая часть почты
+		tel: телефон
+
+mixin specialist(data)
+	.specialist
+		//img.specialist__img(src= data.img)
+		.specialist__img(
+			style="background-image: url('" + data.img + "');"
+		)
+		.specialist__name.subtitle= data.name
+		.specialist__position= data.position
+		.specialist__mail
+			span.red= data.mail
+			| @rostservice.com
+		.specialist__tel= data.tel

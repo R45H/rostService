@@ -17,7 +17,7 @@ section.slider
 							.main-slider__text
 								img.main-slider__logo(src="img/slider-logo.png")
 								.main-slider__title Cummins -
-								|	Лучшие дизельные двигатели
+								|    Лучшие дизельные двигатели
 								div
 									.btn.btn_upper.btn_arrow.main-slider__btn(href="") подробней
 							.main-slider__img-wrap
@@ -39,14 +39,14 @@ section.main__logos
 					each val in logos
 						.logos-slider__item
 							.logos-slider__img
-								img(src="img/"+val.img)
+								img(src="img/" + val.img)
 			.col-12.col-lg-12.col-md-5
 				.profits
 					+profit(profit_index)(class="profits__item")
 section.main__tabs
 	.container
 		.tab
-			.tab__head.tab_first
+			.tab__head
 				a.tab__link.tab__link_active(href="#spares")
 					span.red-line
 					| Топ Запчасти
@@ -55,7 +55,7 @@ section.main__tabs
 					| топ марки
 				a.tab__link(href="#manufacturer")
 					span.red-line
-					|	топ производители
+					|    топ производители
 
 			.tab__body
 				.tab__content.visible#spares
@@ -77,7 +77,7 @@ section.main__tabs
 					.row.align-items-center.logos-big
 						each val in logos_big
 							.col-6.col-sm-4.col-md-2
-								img.logo__img(src="img/logos/"+val.img)
+								img.logo__img(src="img/logos/" + val.img)
 					.row.align-items-center
 						each val in logos_small
 							.col-4.col-sm-2.col-md-1
