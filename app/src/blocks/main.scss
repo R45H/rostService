@@ -66,4 +66,13 @@
 			color: $red;
 		}
 	}
+
+	&__map {
+		margin-bottom: 60px;
+	}
+
+	&__cont-btns {
+		width: 200px;
+		margin: 0 15px 15px;
+	}
 }

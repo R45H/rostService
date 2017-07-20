@@ -27,14 +27,31 @@ include ../mixins/specialist
 				br
 				a.main__link(href="mailto:" + mail.text) !{mail.textRed}
 
-#map.map
+#map.map.main__map
 
 .container
+	.main__title-wrap
+		.title
+			.title__text Обратная связь
+
+	form
+		.row
+			.col-md-4.mb-20
+				input(type="text" placeholder="Ваше имя")
+			.col-md-4.mb-20
+				input(type="tel" placeholder="Ваш телефон")
+			.col-md-4.mb-20
+				input(type="email" placeholder="Электронная почта")
+		textarea.mb-20(placeholder="Напишите Ваш вопрос, коментарий, предложение...")
+		.row.justify-content-center
+				a.btn.btn_tel.main__cont-btns(href="#") Обратный звонок
+				input.btn.btn_fill.main__cont-btns(type="submit" value="Отправить")
+
 	.main__title-wrap
 		.title
 			.title__text Контакты специалистов
 
 	.row
 		each val in specialist
-			.col-sm-6.col-md-4.col-lg-3
+			.col-sm-6.col-md-4.col-lg-3.main__space_bot
 				+specialist(val)

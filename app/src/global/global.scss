@@ -73,6 +73,7 @@ textarea {
 
 textarea {
 	resize: none;
+	height: 7em;
 }
 
 hr {
@@ -80,7 +81,8 @@ hr {
 }
 
 ::selection {
-
+	background: $font-gray;
+	color: white;
 }
 
 .red {
@@ -199,3 +201,6 @@ hr {
 	text-align: center;
 }
 
+.mb-20 {
+	margin-bottom: 20px;
+}
