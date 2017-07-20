@@ -13,9 +13,10 @@ mixin specialist(data)
 		.specialist__img(
 			style="background-image: url('" + data.img + "');"
 		)
-		.specialist__name.subtitle= data.name
-		.specialist__position= data.position
-		.specialist__mail
-			span.red= data.mail
-			| @rostservice.com
-		.specialist__tel= data.tel
+		.specialist__wrap
+			.specialist__name.subtitle= data.name
+			.specialist__position= data.position
+			a.specialist__mail.main__link(href= "mailto:" + data.mail + "@rostservice.com")
+				span.red= data.mail
+				| @rostservice.com
+			a.specialist__tel.main__link(href= "tel:" + data.telLink)= data.tel

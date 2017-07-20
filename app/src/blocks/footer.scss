@@ -53,6 +53,8 @@
 		color: $dark-gray;
 		font-weight: bold;
 		margin-bottom: 10px;
+		display: inline-block;
+
 		@include screen-lg(){
 			font-size: 1.4rem;
 		}
@@ -129,5 +131,12 @@
 	}
 	&__title{
 		margin-bottom: 0;
+	}
+}
+
+a.footer__info {
+
+	&:hover {
+		color: $red;
 	}
 }

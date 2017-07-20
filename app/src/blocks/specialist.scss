@@ -1,28 +1,36 @@
-.specialist{
+.specialist {
 	border: 1px solid $light-gray;
 	font-size: 1.4rem;
 	color: $dark-gray;
-	padding-bottom:20px;
 	margin-bottom: 30px;
 	text-align: center;
-	&__img{
-		background-repeat: no-repeat;
+
+	&__img {
+		background: no-repeat top center;
 		background-size: cover;
-		background-position: top center;
-		height: 300px;
+		padding-bottom: 120%;
 	}
-	&__name{
-		margin-top: 15px;
+
+	&__wrap {
+		padding: 20px;
+	}
+
+	&__name {
+		margin-top: 0;
 		margin-bottom: 5px;
 	}
-	&__position{
+
+	&__position {
 		color: $gray;
 		margin-bottom: 20px;
 	}
-	&__mail{
-		margin-bottom: 5px;
-	}
-	&__tel{
 
+	&__mail {
+		margin-bottom: 5px;
+		display: block;
+	}
+
+	&__tel {
+		display: block;
 	}
 }

@@ -45,11 +45,11 @@ footer.footer
 								.footer__title.subtitle Контакты
 							.footer__contacts
 								p Бесплатно по России
-								.footer__info 8 (800) 700-48-37
+								a.footer__info(href= tel1.link) #{tel1.text}
 								p Санкт-Петербург
-								.footer__info +7 (812) 448-10-37
+								a.footer__info(href= tel2.link) #{tel2.text}
 								p Электронный адрес
-								.footer__info info@rostservice.com
+								a.footer__info(href="mailto:" + mail.text) #{mail.text}
 								p График работы
 								.footer__info.footer__info_sm ПН-ПТ - С 9:00 до 17:00
 						.col-sm-6.col-md-12.col-lg-7.footer__socials

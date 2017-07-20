@@ -1,9 +1,26 @@
-doctype html
 block vars
+	-
+		tel1 = {
+			text: "8 (800) 700-48-37",
+			link: "tel:78007004837"
+		}
+
+		tel2 = {
+			text: "+7 (812) 448-10-37",
+			link: "tel:78124481037"
+		}
+
+		mail = {
+			text: "info@rostservice.com",
+			textRed: "<span class='red'>info</span>@rostservice.com"
+		}
+
+doctype html
 html(lang="ru")
 	head
-		include ../partials/head
-		block moreHead
+		block head
+			include ../partials/head
+
 		title #{page.title} | RostService
 	body
 		include ../partials/header

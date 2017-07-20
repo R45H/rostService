@@ -1,1 +1,40 @@
+include ../mixins/specialist
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		.breadcrumb__last-item Контакты
+
+	.main__title-wrap
+		.title
+			.title__text Контактная информация
+
+	.row
+		.col-md-4.main__cont-wrap
+			.subtitle гарантия на товар
+			p г.Санкт-Петербург, Шуваловский пр-т д.32 (Центральная складская база "Шуваловская")
+
+		.col-md-4.main__cont-wrap
+			.subtitle Время работы офиса и склада
+			p С 9:00 до 17:00 с понедельника по пятницу.
+
+		.col-md-4.main__cont-wrap
+			.subtitle Телефоны и е-mail
+			p
+				a.main__link(href= tel1.link) #{tel1.text}
+				= ', '
+				a.main__link(href= tel2.link) #{tel2.text}
+				br
+				a.main__link(href="mailto:" + mail.text) !{mail.textRed}
+
 #map.map
+
+.container
+	.main__title-wrap
+		.title
+			.title__text Контакты специалистов
+
+	.row
+		each val in specialist
+			.col-sm-6.col-md-4.col-lg-3
+				+specialist(val)

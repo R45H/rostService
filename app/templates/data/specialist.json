@@ -5,56 +5,64 @@
       "name": "Гришин Сергей",
       "position": "Директор по продажам",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     },
     {
       "img": "img/spec/cherkasskii.jpg",
       "name": "Черкасский Рудольф",
       "position": "Директор по продажам",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     },
     {
       "img": "img/spec/fokin.jpg",
       "name": "Фокин Игорь",
       "position": "Руководитель отдела продаж",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     },
     {
       "img": "img/spec/grishin.jpg",
       "name": "Гришин Сергей",
       "position": "Руководитель отдела продаж",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     },
     {
       "img": "img/spec/pygachev.jpg",
       "name": "Пугачев Алексей",
       "position": "Менеджер по продажам",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     },
     {
       "img": "img/spec/shlikova.jpg",
       "name": "Шлыкова Таисия",
       "position": "Менеджер по продажам",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     },
     {
       "img": "img/spec/bazlov.jpg",
       "name": "Базлов Вячеслав",
       "position": "Менеджер по продажам",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     },
     {
       "img": "img/spec/popkov.jpg",
       "name": "Базлов Вячеслав",
       "position": "Менеджер по продажам",
       "mail": "grishin.s",
-      "tel": "8 (800) 700-4001"
+      "tel": "8 (800) 700-4001",
+      "telLink": "78007004001"
     }
   ]
 }
