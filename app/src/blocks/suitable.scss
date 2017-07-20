@@ -1,0 +1,16 @@
+.suitable {
+	background: $ultra-light-gray;
+	padding: 10px 0;
+
+	&__text {
+		color: $dark-gray;
+		margin: 0;
+
+		&::before {
+			content: '\f05d';
+			font-family: $font-fa;
+			margin-right: 5px;
+			color: $red;
+		}
+	}
+}
