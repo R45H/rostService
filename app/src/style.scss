@@ -30,6 +30,10 @@
 @import url('blocks/breadcrumb.scss'); //хлебные крошки
 @import url('blocks/text.scss'); //стили для текстовых страниц
 @import url('blocks/specialist.scss'); //каротчка сотрудника
+@import url('blocks/content.scss'); //шаблон размещения контента
+@import url('blocks/catalog-tab/catalog-tab.scss'); //табы каталога
+@import url('blocks/attention.scss');
+
 @import url('blocks/map/map.scss'); //Карта
 @import url('blocks/suitable.scss'); //Блок "подходит для"
 @import url('blocks/item.scss'); //Детальная карточка объекта

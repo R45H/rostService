@@ -1,39 +1,55 @@
 .main {
+	position: relative;
+
 	&__space_bot {
 		margin-bottom: 30px;
 	}
+
 	&__logos {
 		@include screen-md() {
 			padding: 30px 0;
 		}
 	}
+
 	&__tabs{
 		padding: 40px 0;
 	}
+
 	&-hits{
 		background: $ultra-light-gray;
 		padding: 40px 0;
 		text-align: center;
+
 		&__title{
 			position: relative;
 			top: -55px;
+			margin-top: 0;
+
 			@include screen-sm() {
 				top: -50px;
 			}
+
 			@include screen-xxs(){
 				top: -62px;
 			}
 		}
 	}
+
 	&-partners{
 		text-align: center;
 		padding: 40px 0;
 	}
+
 	&-text{
 		padding: 30px 0;
 		background: $ultra-light-gray;
 		color: $light-gray;
 	}
+
+	&-wrap {
+		position: relative;
+	}
+
 	&__logo{
 		max-width: 100%;
 		margin-bottom: 50px;
@@ -74,5 +90,12 @@
 	&__cont-btns {
 		width: 200px;
 		margin: 0 15px 15px;
+
+	&__gray-bg{
+		height: 160px;
+		width: 100%;
+		background: $ultra-light-gray;
+		position: absolute;
+		z-index: -1;
 	}
 }

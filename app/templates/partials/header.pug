@@ -9,7 +9,6 @@ header.header
 				form.search-top(action="search-top" name="search-top-form")
 					input.search-top__input(type="text" placeholder="Найти среди 123 025 запчастей")
 					button.search-top__btn(type="submit")
-						i.fa.fa-search-top(aria-hidden="true")
 					.search-top__descr.hidden-lg-down Поиск среди
 						span.red  1 000 000 Автозапчастей
 						|	для комерческого траспорта
@@ -21,8 +20,9 @@ header.header
 
 			.col-xl-2.col-auto
 				.top-cart.header__cart
-					img.top-cart__icon(src="img/cart.png")
-					.top-cart__count 2
+					a.top-cart__link(href="/cart")
+						img.top-cart__icon(src="img/cart.png")
+						.top-cart__count 2
 					span.top-cart__price 13 644.00 р
 					span.top-cart__arrow
 						i.fa.fa-angle-down(aria-hidden="true")

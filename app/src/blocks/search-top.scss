@@ -19,11 +19,19 @@
 		right: 1px;
 		top: 1px;
 		background: #fff;
+		width:45px;
+		height: 36px;
 		font-size: 1.8rem;
 		color: $red;
 		padding: 0.7rem 1.2rem;
 		border: none;
 		outline: none;
+
+		&:after{
+			content: '\f002';
+			font-family: 'FontAwesome';
+		}
+
 
 		@include screen-md(){
 			padding: 0.7rem 0.8rem;

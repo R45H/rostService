@@ -1,0 +1,142 @@
+.catalog-tab {
+	font-size: 1.6rem;
+
+	&.active{
+		.catalog-tab__body{
+			display: block;
+		}
+	}
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__body{
+		//display: none;
+	}
+	&__content{
+		display: none;
+		&.visible{
+			display: block;
+		}
+	}
+	&__link {
+		display: flex;
+		width: 20%;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 15px 5px;
+		border-top: 2px solid #fff;
+		border-bottom: solid 1px #fff;
+
+		@include screen-md(){
+			width:40%;
+		}
+		@include screen-xs(){
+			width:45%;
+		}
+		&:hover {
+			color: $red;
+		}
+		&.active {
+			border: solid 1px $light-gray;
+			position: relative;
+			top: 1px;
+			border-top: 2px solid $red;
+			border-bottom: solid 1px #fff;
+			&:hover {
+				color: $gray;
+				cursor: default;
+			}
+		}
+	}
+	&__img {
+		max-width: 100%;
+	}
+	&__title {
+		font-size: 1.4rem;
+	}
+	&__subtitle {
+		margin-bottom: 30px;
+	}
+	&__hit-goods{
+		padding-top: 20px;
+		padding-bottom: 30px;
+		border: solid 1px $light-gray;
+	}
+	&__hits-wrap {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	&__hits {
+		width: 23%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		&:hover{
+			color: $red;
+		}
+
+		@include screen-md(){
+			width:40%;
+			justify-content: flex-start;
+			margin:15px 0 ;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		@include screen-xs(){
+			width:70%;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+	}
+	&__hits-img {
+		max-width:30px;
+		max-height: 30px;
+		margin-right: 10px;
+	}
+	&__goods{
+		display: flex;
+		margin-bottom:20px;
+		flex-wrap: wrap;
+		border-right: solid 1px $light-gray;
+	}
+	&__good{
+		width:25%;
+		padding: 15px 10px;
+		text-align: left;
+		border: solid 1px $light-gray;
+		border-right: none;
+		border-top: none;
+		display: block;
+
+		&:hover{
+			background: $ultra-light-gray;
+			color: $red;
+		}
+		&:empty{
+			&:hover{
+				background: transparent;
+				color: $gray;
+				cursor: default;
+			}
+		}
+
+
+		@include screen-md(){
+			width:50%;
+			border: solid 1px $light-gray;
+			border-right: none;
+			border-top: none;
+		}
+		@include screen-xxs(){
+			width:100%;
+			&:empty{
+				display: none;
+			}
+		}
+	}
+
+}

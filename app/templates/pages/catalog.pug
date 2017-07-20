@@ -1,0 +1,77 @@
+include ../mixins/search
+include ../mixins/list
+include ../mixins/card
+include ../mixins/catalog-tab
+
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		.breadcrumb__last-item Авто запчасти
+.main__gray-bg
+.container
+	.content
+		section.content__main.col-lg-9.col-md-8.offset-md-4.offset-lg-3
+			.title.content__search-title
+				.title__text поиск по каталогу
+			.row
+				.col-md-8.offset-md-2
+					form.search-top.content__search(action="search-top" name="search-top-form")
+						input.search-top__input(type="text" placeholder="Например: Амортизатор")
+						button.search-top__btn(type="submit")
+
+			section.content__popular
+				.title
+					.title__text Популярные категории
+				.row
+					each val in popular_cat
+						.col-12.col-sm-6.col-lg-4
+							+list(val)
+				.btn.btn_more Все категории
+					.btn__plus.plus
+
+			section.content__catalog
+				.title
+					.title__text Каталог автозапчастей
+				.catalog-tabs
+					-var n = 0;
+					-var flag;
+					-for (i = 0 ; i < 5; i++){
+						- flag = false;
+						if i == 0
+							- flag = true
+							+catalog_tab(flag,i)(class="active")
+						else
+							+catalog_tab(flag,i)
+
+					-}
+			section.content__popular-spares
+				.title
+					.title__text популярные запчасти
+				.row
+					each val in popular_spares
+						.col-12.col-sm-6.col-lg-4.main__space_bot
+							+card(val)
+			section.content__top-models
+				.title
+					.title__text Топ Моделей авто
+
+				.row
+					each val in top_models
+						.col-12.col-sm-6.col-lg-3.list.list_models
+							each item in val.model
+								a.list__item(href='')=item.item
+		aside.content__side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
+			+search(class="search_side")
+			.attention
+				.attention__head.subtitle ВНИМАНИЕ!
+				.attention__body Внимательно следите за тем, какая марка и модель указанна в поиске выше. В противном случае, мы не несем ответсвенности если Вы дезинформируте себя и приобрете товар не подходящий для вашего авто.
+			.list
+				.list__title  каталог автозапчастей
+				.list__items
+				each val in spare_catalog
+					a.list__item.list__item_big(href="")
+						.list__side-img
+							img(src=val.img)
+						span=val.item
+

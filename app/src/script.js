@@ -9,4 +9,5 @@ $(document).ready(function () {
     @@include('blocks/hits-slider/hits-slider.js')
     @@include('blocks/item-slider/item-slider.js')
     @@include('blocks/gallery/gallery.js')
+    @@include('blocks/catalog-tab/catalog-tab.js')
 });

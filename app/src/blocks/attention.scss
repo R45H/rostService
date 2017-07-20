@@ -1,0 +1,15 @@
+.attention{
+	&__head{
+		margin-top: 25px;
+		color: $red;
+
+		&:before{
+			content: '\f06a';
+			font-family: 'FontAwesome';
+			padding-right: 5px;
+		}
+	}
+	&__body{
+		color: $dark-gray;
+	}
+}

@@ -1,0 +1,221 @@
+mixin catalog_tab(flag,id)
+   .catalog-tab&attributes(attributes)
+       .catalog-tab__head
+
+           a(href="#spares"+id, class= flag ? "catalog-tab__link active": "catalog-tab__link" )
+               img.catalog-tab__img(src="img/oil-filter.png")
+               .catalog-tab__title Катализаторы Глушители, заслонки
+
+           a.catalog-tab__link(href="#disc"+id)
+               img.catalog-tab__img(src="img/engine-gaskets.png")
+               .catalog-tab__title Тормоза, Супорта, Колодки, Диски
+
+           a.catalog-tab__link(href="#resors"+id)
+               img.catalog-tab__img(src="img/engine-gaskets.png")
+               .catalog-tab__title Амортизаторы, ресоры, пружины
+
+           a.catalog-tab__link(href="#accum"+id)
+               img.catalog-tab__img(src="img/engine-gaskets.png")
+               .catalog-tab__title Аккумуляторы, предохранители
+       .catalog-tab__body
+           div(class= flag ? "catalog-tab__content visible" : "catalog-tab__content",id="spares"+id)
+               .catalog-tab__hit-goods
+                   .catalog-tab__subtitle.subtitle топ товаров в данной категории
+                   .catalog-tab__hits-wrap
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/lamp.png')
+                           | Катализаторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/auspuff.png')
+                           | Глушители
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/callectors.png')
+                           | Калекторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/systems.png')
+                           | Системы
+               .catalog-tab__goods
+                       a.catalog-tab__good(href="") Вытяжные заслонки
+                       a.catalog-tab__good(href="") Форсунки
+                       a.catalog-tab__good(href="")
+                       a.catalog-tab__good(href="") Глушители
+                       a.catalog-tab__good(href="") Катализаторы
+                       a.catalog-tab__good(href="") Турбины
+                       a.catalog-tab__good(href="") Калекторы
+                       a.catalog-tab__good(href="") Трубы глушителей
+                       a.catalog-tab__good(href="")
+                       a.catalog-tab__good(href="") Втулки
+                       a.catalog-tab__good(href="") Прокладки
+                       a.catalog-tab__good(href="") Болты
+                       a.catalog-tab__good(href="") Шайбы
+                       a.catalog-tab__good(href="") Крепления
+                       a.catalog-tab__good(href="")
+                       a.catalog-tab__good(href="") Кронштейны
+                       a.catalog-tab__good(href="") Средние трубы
+                       a.catalog-tab__good(href="") Нейтрализаторы
+                       a.catalog-tab__good(href="") Вытяжные заслонки
+                       a.catalog-tab__good(href="") Форсунки
+                       a.catalog-tab__good(href="")
+                       a.catalog-tab__good(href="") Глушители
+                       a.catalog-tab__good(href="") Катализаторы
+                       a.catalog-tab__good(href="") Втулки
+                       a.catalog-tab__good(href="") Глушители
+                       a.catalog-tab__good(href="") Катализаторы
+                       a.catalog-tab__good(href="") Турбины
+                       a.catalog-tab__good(href="") Калекторы
+                       a.catalog-tab__good(href="") Трубы глушителей
+                       a.catalog-tab__good(href="")
+                       a.catalog-tab__good(href="")
+                       a.catalog-tab__good(href="")
+           div.catalog-tab__content(id="disc"+id)
+               .catalog-tab__hit-goods
+                   .catalog-tab__subtitle.subtitle топ товаров в данной категории
+                   .catalog-tab__hits-wrap
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/lamp.png')
+                           | Катализаторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/auspuff.png')
+                           | Глушители
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/callectors.png')
+                           | Калекторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/systems.png')
+                           | Системы
+               .catalog-tab__goods
+                   a.catalog-tab__good(href="") Вытяжные заслонки
+                   a.catalog-tab__good(href="") Форсунки
+                   a.catalog-tab__good(href="") Резонаторы
+                   a.catalog-tab__good(href="") Глушители
+                   a.catalog-tab__good(href="") Катализаторы
+                   a.catalog-tab__good(href="") Турбины
+                   a.catalog-tab__good(href="") Калекторы
+                   a.catalog-tab__good(href="") Трубы глушителей
+                   a.catalog-tab__good(href="") Насадки на выхлоп
+                   a.catalog-tab__good(href="") Втулки
+                   a.catalog-tab__good(href="") Прокладки
+                   a.catalog-tab__good(href="") Болты
+                   a.catalog-tab__good(href="") Шайбы
+                   a.catalog-tab__good(href="") Крепления
+                   a.catalog-tab__good(href="") Шплинты
+                   a.catalog-tab__good(href="") Кронштейны
+                   a.catalog-tab__good(href="") Средние трубы
+                   a.catalog-tab__good(href="") Нейтрализаторы
+                   a.catalog-tab__good(href="") Вытяжные заслонки
+                   a.catalog-tab__good(href="") Форсунки
+                   a.catalog-tab__good(href="") Резонаторы
+                   a.catalog-tab__good(href="") Глушители
+                   a.catalog-tab__good(href="") Катализаторы
+                   a.catalog-tab__good(href="") Втулки
+                   a.catalog-tab__good(href="") Глушители
+                   a.catalog-tab__good(href="") Катализаторы
+                   a.catalog-tab__good(href="") Турбины
+                   a.catalog-tab__good(href="") Калекторы
+                   a.catalog-tab__good(href="") Трубы глушителей
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+
+           div.catalog-tab__content(id="resors"+id)
+               .catalog-tab__hit-goods
+                   .catalog-tab__subtitle.subtitle топ товаров в данной категории
+                   .catalog-tab__hits-wrap
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/lamp.png')
+                           | Катализаторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/auspuff.png')
+                           | Глушители
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/callectors.png')
+                           | Калекторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/systems.png')
+                           | Системы
+               .catalog-tab__goods
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="") Резонаторы
+                   a.catalog-tab__good(href="") Глушители
+                   a.catalog-tab__good(href="") Катализаторы
+                   a.catalog-tab__good(href="") Турбины
+                   a.catalog-tab__good(href="") Калекторы
+                   a.catalog-tab__good(href="") Трубы глушителей
+                   a.catalog-tab__good(href="") Насадки на выхлоп
+                   a.catalog-tab__good(href="") Втулки
+                   a.catalog-tab__good(href="") Прокладки
+                   a.catalog-tab__good(href="") Болты
+                   a.catalog-tab__good(href="") Шайбы
+                   a.catalog-tab__good(href="") Крепления
+                   a.catalog-tab__good(href="") Шплинты
+                   a.catalog-tab__good(href="") Кронштейны
+                   a.catalog-tab__good(href="") Средние трубы
+                   a.catalog-tab__good(href="") Нейтрализаторы
+                   a.catalog-tab__good(href="") Вытяжные заслонки
+                   a.catalog-tab__good(href="") Форсунки
+                   a.catalog-tab__good(href="") Резонаторы
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="") Глушители
+                   a.catalog-tab__good(href="") Катализаторы
+                   a.catalog-tab__good(href="") Турбины
+                   a.catalog-tab__good(href="") Калекторы
+                   a.catalog-tab__good(href="") Трубы глушителей
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+
+
+           div.catalog-tab__content( id="accum"+id)
+               .catalog-tab__hit-goods
+                   .catalog-tab__subtitle.subtitle топ товаров в данной категории
+                   .catalog-tab__hits-wrap
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/lamp.png')
+                           | Катализаторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/auspuff.png')
+                           | Глушители
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/callectors.png')
+                           | Калекторы
+                       a.catalog-tab__hits(href='')
+                           img.catalog-tab__hits-img(src='img/catalog/systems.png')
+                           | Системы
+               .catalog-tab__goods
+                   a.catalog-tab__good(href="") Вытяжные заслонки
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="") Катализаторы
+                   a.catalog-tab__good(href="") Турбины
+                   a.catalog-tab__good(href="") Калекторы
+                   a.catalog-tab__good(href="") Трубы глушителей
+                   a.catalog-tab__good(href="") Насадки на выхлоп
+                   a.catalog-tab__good(href="") Втулки
+                   a.catalog-tab__good(href="") Прокладки
+                   a.catalog-tab__good(href="") Болты
+                   a.catalog-tab__good(href="") Шайбы
+                   a.catalog-tab__good(href="") Крепления
+                   a.catalog-tab__good(href="") Шплинты
+                   a.catalog-tab__good(href="") Кронштейны
+                   a.catalog-tab__good(href="") Средние трубы
+                   a.catalog-tab__good(href="") Нейтрализаторы
+                   a.catalog-tab__good(href="") Вытяжные заслонки
+                   a.catalog-tab__good(href="") Форсунки
+                   a.catalog-tab__good(href="") Резонаторы
+                   a.catalog-tab__good(href="") Глушители
+                   a.catalog-tab__good(href="") Катализаторы
+                   a.catalog-tab__good(href="") Втулки
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="") Турбины
+                   a.catalog-tab__good(href="") Калекторы
+                   a.catalog-tab__good(href="") Трубы глушителей
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+                   a.catalog-tab__good(href="")
+
+
