@@ -52,26 +52,13 @@ function initMap() {
 		map1.setMapTypeId(customMapTypeId);
 
 		/* Образец карточки */
-		var contentString = '<div class="map__info"><div>г. Санкт-Петербург, Шуваловский пр-т, д. 32</div></div>';
+		var contentString = '<div class="map__info">г. Санкт-Петербург, Шуваловский пр-т, д. 32</div>';
 		/* ================ */
 
-		/* Рамка */ //TODO Разобраться почему эта дрянь принудительно задаёт высоту и ширину, и как это отключить
-		var infoBubble = new InfoBubble({
-			content: contentString,
-			arrowSize: 15,
-			padding: 10,
-			borderWidth: 1,
-			borderColor: '#78787b',
-			disableAutoPan: false,
-			borderRadius: 5,
-			disableAnimation: true,
-			hideCloseButton: true,
-			backgroundColor: 'white',
-			shadowStyle: 0,
-			minHeight: 45,
-			minWidth: 400
+		/* Рамка */
+		var infoWindow = new google.maps.InfoWindow({
+			content: contentString
 		});
-
 		/* ===== */
 
 		var image = 'img/marker.png';
@@ -85,7 +72,11 @@ function initMap() {
 			icon: image
 		});
 
-		infoBubble.open(map1, marker1);
+		infoWindow.open(map1, marker1);
+
+		marker1.addListener('click', function() {
+			infoWindow.open(map1, marker1);
+		});
 		/* ======= */
 
 		/* Центрирование карты при ресайзе */

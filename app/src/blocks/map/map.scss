@@ -2,10 +2,72 @@
 	height: 400px;
 	width: 100%;
 
+	@include screen-xs() {
+		height: 80vh;
+	}
+
 	&__info {
 		text-align: center;
 		color: $dark-gray;
-		white-space: nowrap;
 		font-size: 1.6rem;
+		font-family: $font-title;
 	}
 }
+
+// Стили для переключателей "схема" / "спутник"
+.gm-style-mtc {
+	cursor: url('https://maps.gstatic.com/mapfiles/openhand_8_8.cur') 8 8, default;
+
+	&:first-child {
+
+		div {
+			margin-right: 10px;
+		}
+	}
+
+	&:last-child {
+
+		div {
+			//border-left: 1px solid darken($red, 10%);
+		}
+	}
+
+	div {
+		cursor: pointer;
+		font-size: 1.4rem !important;
+		padding: 1rem 1.3rem !important;
+		transition: .3s ease all;
+		box-shadow: none !important;
+		border-radius: 4px !important;
+		font-family: $font-main !important;
+		min-width: 8em !important;
+		background-color: white !important;
+		color: $red !important;
+		border: 2px solid $red !important;
+		font-weight: bold !important;
+
+		&:hover,
+		&:focus {
+			background-color: $red !important;
+			color: white !important;
+		}
+
+		&:active {
+			margin-top: 1px;
+		}
+
+		&[style*='font-weight: 500'] {
+			background-color: $red !important;
+			border-bottom-color: $dark-red !important;
+			color: white !important;
+			font-weight: bold !important;
+
+			&:hover,
+			&:focus {
+				background-color: $dark-red !important;
+				border: 2px solid $dark-red !important;
+			}
+		}
+	}
+}
+//==========
