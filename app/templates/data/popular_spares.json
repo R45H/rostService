@@ -1,0 +1,50 @@
+{
+  "popular_spares": [
+    {
+      "img": "img/engine.png",
+      "title": "Амортизатор задний      ГАЗель-Next",
+      "vendor": " Артикул: A21R23.2915004",
+      "price": "2 202",
+      "mark": "img/logo-manufacturer.png"
+    },
+    {
+      "img": "img/accessories.png",
+      "title": "Вал рулевого управления ГАЗ-3302 нижний в сборе",
+      "vendor": "Артикул: 1878005402",
+      "price": "5 292",
+      "discount": "-10%",
+      "mark": "img/logo-manufacturer.png"
+
+    },
+    {
+      "img": "img/disks.png",
+      "title": "Диск сцепления 240 ТР",
+      "subtitle": "Газель, Волга ЗМЗ 406 \"ГАЗ\"",
+      "vendor": "Артикул: 1878005402",
+      "price": "5 292",
+      "mark": "img/logo-manufacturer.png"
+    },
+    {
+      "img": "img/accessories.png",
+      "title": "Арка крыла задняя левая      ГАЗель-Next",
+      "vendor": "Артикул: A63R42-8404119" ,
+      "discount": "-5%",
+      "price": "3 292",
+      "mark": "img/logo-manufacturer.png"
+    },
+    {
+      "img": "img/oil-filter.png",
+      "title": "Бак топливный 70 литров      ГАЗель-Next",
+      "vendor": "Артикул: 1878005402",
+      "price": "5 292",
+      "mark": "img/logo-manufacturer.png"
+    },
+    {
+      "img": "img/motor.png",
+      "title": "Бачок омывателя      с электромотором ГАЗель-Next",
+      "vendor": "Артикул: 1878005402",
+      "price": "5 292",
+      "mark": "img/logo-manufacturer.png"
+    }
+  ]
+}

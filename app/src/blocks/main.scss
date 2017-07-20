@@ -1,4 +1,6 @@
 .main {
+	position: relative;
+
 	&__space_bot {
 		margin-bottom: 30px;
 	}
@@ -17,6 +19,7 @@
 		&__title{
 			position: relative;
 			top: -55px;
+			margin-top: 0;
 			@include screen-sm() {
 				top: -50px;
 			}
@@ -37,5 +40,16 @@
 	&__logo{
 		max-width: 100%;
 		margin-bottom: 50px;
+	}
+	&-wrap {
+		position: relative;
+
+	}
+	&__gray-bg{
+		height: 160px;
+		width: 100%;
+		background: $ultra-light-gray;
+		position: absolute;
+		z-index: -1;
 	}
 }

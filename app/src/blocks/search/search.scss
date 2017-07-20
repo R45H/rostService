@@ -75,6 +75,12 @@
 		+ input {
 			margin-bottom: 30px;
 		}
+		&:before{
+			content: '\f05a';
+			color: $red;
+			font-family:'FontAwesome';
+
+		}
 	}
 	&__selectors {
 		padding: 3rem 2.5rem;
@@ -196,7 +202,6 @@
 			top: 30%;
 		}
 	}
-
 	&__list {
 		position: absolute;
 		opacity: 0;
@@ -279,6 +284,23 @@
 			@include screen-md() {
 				display: none;
 			}
+		}
+	}
+	&_side{
+
+		.search__selectors{
+			background: $ultra-light-gray;
+			padding-right: 1.5rem;
+		}
+		.search__selector-vis:before, .search__selector-vis:after{
+			background: #fff;
+		}
+		.search__title{
+			padding: 0 1.5rem;
+			width:70%;
+		}
+		.search__logo{
+			width:23%;
 		}
 	}
 }

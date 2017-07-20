@@ -5,7 +5,7 @@
 
 @import url('blocks/btn.scss'); // кнопка
 @import url('blocks/top-cart.scss'); // верхняя корзина
-@import url('blocks/search-top.scss'); // поиск
+@import url('blocks/search-top.scss'); // поиск  в шапке
 @import url('blocks/logo.scss'); // поиск
 @import url('blocks/telephone.scss'); // телефон в шапке
 @import url('blocks/menu/menu.scss'); // верхнее меню
@@ -29,6 +29,10 @@
 @import url('blocks/breadcrumb.scss'); //хлебные крошки
 @import url('blocks/text.scss'); //стили для текстовых страниц
 @import url('blocks/specialist.scss'); //каротчка сотрудника
+@import url('blocks/content.scss'); //шаблон размещения контента
+@import url('blocks/catalog-tab/catalog-tab.scss'); //табы каталога
+@import url('blocks/attention.scss');
+
 @import url('blocks/header.scss'); // Шапка
 @import url('blocks/wrapper.scss'); // Внешний контейнер
 @import url('blocks/main.scss'); // Контейнер контента

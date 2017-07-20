@@ -25,7 +25,11 @@
 	//&:hover {
 	//	box-shadow: 0 0 7px 0 rgba(black, .1);
 	//}
-
+	&__title{
+		&:hover{
+			color: $red;
+		}
+	}
 	&__wrap {
 		height: 100%;
 		width: 100%;

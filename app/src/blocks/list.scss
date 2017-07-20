@@ -1,5 +1,6 @@
 .list {
 	text-align: center;
+	margin-bottom: 30px;
 
 	@include screen-md(){
 		margin: 20px 0;
@@ -7,7 +8,7 @@
 
 	&__head{
 		&:hover{
-			.text-title{
+			.subtitle{
 				color: $red;
 			}
 		}
@@ -29,6 +30,7 @@
 		display: block;
 		text-decoration: none;
 		font-size: 1.6rem;
+		text-align: left;
 		padding: 5px 40px 5px 0;
 		color: $gray;
 		border-bottom: 1px solid lighten($light-gray, 5%);
@@ -65,6 +67,12 @@
 				opacity: 0;
 			}
 		}
+
+		&_big{
+			padding: 15px 10px;
+			display: flex;
+			align-items: center;
+		}
 	}
 
 	&__plus {
@@ -84,6 +92,32 @@
 		&:hover {
 			color: $red;
 
+		}
+	}
+	&__side-img{
+		width:30px;
+		height: 30px;
+		margin-right: 15px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		img{
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+
+	&_models{
+		margin-top: 10px;
+		.list__item {
+			padding: 5px 0;
+
+			&::after {
+				display: none;
+			}
+		}
+		@include screen-md(){
+			margin-top: 0;
 		}
 	}
 }

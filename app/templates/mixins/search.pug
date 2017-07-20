@@ -1,5 +1,5 @@
 mixin search()
-	.search&attributes(attributes)= name
+	.search&attributes(attributes)
 		.search__list
 			.search__list-title Популярные марки
 			ul.search-values
@@ -50,7 +50,7 @@ mixin search()
 				.search__selector-arrow
 
 			.search__subtitle подбор запчастей по номеру TC (VIN)
-			.search__advice  Как определить номет ТС (VIN)
+			a.search__advice(href='')  Как определить номет ТС (VIN)
 			input(type="text", placeholder="Введите сюда VIN и нажмите найти")
 			button.btn.btn_fill.btn_arrow.search__btn(type="submit") найти
 

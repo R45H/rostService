@@ -12,6 +12,8 @@
 	transform: skewX(-20deg);
 	min-width: 270px;
 	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
 
 	@include screen-sm(){
 		font-size: 2rem;
