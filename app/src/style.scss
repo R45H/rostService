@@ -5,7 +5,7 @@
 
 @import url('blocks/btn.scss'); // кнопка
 @import url('blocks/top-cart.scss'); // верхняя корзина
-@import url('blocks/search-top.scss'); // поиск  в шапке
+@import url('blocks/search-top.scss'); // поиск
 @import url('blocks/logo.scss'); // поиск
 @import url('blocks/telephone.scss'); // телефон в шапке
 @import url('blocks/menu/menu.scss'); // верхнее меню
@@ -21,6 +21,7 @@
 @import url('blocks/tab/tab.scss'); //табы
 @import url('blocks/producer.scss'); //производители на главной
 @import url('blocks/title.scss'); //заголовки
+@import url('blocks/subtitle.scss'); //Подзаголовки
 @import url('blocks/hits-slider/hits-slider.scss'); //слайдер хитов на главной
 @import url('blocks/partners.scss'); //блок  партнеры
 @import url('blocks/logos-big.scss'); //блок  топ производители
@@ -32,6 +33,8 @@
 @import url('blocks/content.scss'); //шаблон размещения контента
 @import url('blocks/catalog-tab/catalog-tab.scss'); //табы каталога
 @import url('blocks/attention.scss');
+
+@import url('blocks/map/map.scss'); //Карта
 
 @import url('blocks/header.scss'); // Шапка
 @import url('blocks/wrapper.scss'); // Внешний контейнер

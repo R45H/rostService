@@ -1,4 +1,4 @@
-.title{
+.title {
 	position: relative;
 	display: inline-block;
 	padding: 0 15px;
@@ -15,59 +15,55 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 
-	@include screen-sm(){
+	@include screen-sm() {
 		font-size: 2rem;
 		min-width: 220px;
 	}
-	@include screen-xs(){
+
+	@include screen-xs() {
 		margin: 0 40px;
 		font-size: 1.7rem;
 		min-width: 190px;
-
 	}
 
-	&__text{
+	&__text {
 		transform: skewX(20deg);
-
 	}
-	&:before,&:after{
+
+	&:before,
+	&:after {
 		content: '';
 		display: inline-block;
 		width: 70px;
 		height: 2px;
-		background: $light-gray ;
+		background: $light-gray;
 		position: absolute;
 		top: 15px;
-		@include screen-sm(){
+
+		@include screen-sm() {
 			top: 45%;
 		}
-		@include screen-xs(){
+
+		@include screen-xs() {
 			width: 30px;
 
 		}
-	 }
-	&:before{
+	}
+
+	&:before {
 		left: -90px;
-		@include screen-xs(){
+
+		@include screen-xs() {
 			left: -40px;
 		}
 
-	 }
-	&:after{
+	}
+
+	&:after {
 		right: -90px;
-		@include screen-xs(){
+
+		@include screen-xs() {
 			right: -40px;
 		}
 	}
-}
-
-.subtitle{
-	color: $dark-gray;
-	font-size: 1.6rem;
-	display: inline-block;
-	text-decoration: none;
-	font-family: $font-title;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-bottom: 15px;
 }

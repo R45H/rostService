@@ -3,7 +3,8 @@ block vars
 html(lang="ru")
 	head
 		include ../partials/head
-		title #{page.title} | Sitename
+		block moreHead
+		title #{page.title} | RostService
 	body
 		include ../partials/header
 		include ../partials/side-menu
@@ -17,4 +18,4 @@ html(lang="ru")
 
 			// END OF VISIBLE CONTENT
 
-			// Write invisible content here
+			//- Write invisible content here

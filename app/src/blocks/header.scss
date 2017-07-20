@@ -6,6 +6,7 @@
 	height: 70px;
 	background: #fff;
 	z-index: 15;
+	box-shadow: 0 0 10px -3px $dark-gray;
 
 	@include screen-lg(min){
 		height: 95px;

@@ -89,9 +89,12 @@
 			border-bottom: 2px solid $red;
 			background: $ultra-dark;
 		}
-		@include screen-xl(min) {
-			&:nth-child(5) {
-				.menu__link {
+
+		&:nth-child(5) {
+
+			.menu__link {
+
+				@include screen-xl(min) {
 					font-size: 14px;
 					padding: 11px 0;
 				}

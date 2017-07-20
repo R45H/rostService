@@ -7,9 +7,10 @@
 
 mixin mark(data)
 	.mark
-		a.mark__img-wrap(href= data.link ? data.link : "#")
-			img.mark__img(src= data.img)
-		a.mark__title.subtitle(href= data.link ? data.link : "#")= data.title
+		a.mark__wrap(href= data.link ? data.link : "#")
+			.mark__img-wrap
+				img.mark__img(src= data.img)
+			.mark__title.subtitle= data.title
 		p.mark__count Моделей:
 			= ' '
 			= data.cnt
