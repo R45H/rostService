@@ -26,7 +26,7 @@ include ../mixins/catalog-tab
 				.row
 					each val in popular_cat
 						.col-12.col-sm-6.col-lg-4
-							+list(val)
+							+list(val)(class="list_mb")
 				.btn.btn_more Все категории
 					.btn__plus.plus
 
@@ -58,7 +58,7 @@ include ../mixins/catalog-tab
 
 				.row
 					each val in top_models
-						.col-12.col-sm-6.col-lg-3.list.list_models
+						.col-12.col-sm-6.col-lg-3.list.list_models.list_mb
 							each item in val.model
 								a.list__item(href='')=item.item
 		aside.content__side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
@@ -66,12 +66,18 @@ include ../mixins/catalog-tab
 			.attention
 				.attention__head.subtitle ВНИМАНИЕ!
 				.attention__body Внимательно следите за тем, какая марка и модель указанна в поиске выше. В противном случае, мы не несем ответсвенности если Вы дезинформируте себя и приобрете товар не подходящий для вашего авто.
-			.list
-				.list__title  каталог автозапчастей
+			.list.list_mb
+				.list__title.subtitle  каталог автозапчастей
 				.list__items
 				each val in spare_catalog
 					a.list__item.list__item_big(href="")
 						.list__side-img
 							img(src=val.img)
 						span=val.item
+			.row
+				each val in one_card
+					.col-md-12.col-sm-6.col-12
+						+card(val)(class="main__space_bot")
+					.col-md-12.col-sm-6.col-12
+						+card(val)(class="main__space_bot")
 

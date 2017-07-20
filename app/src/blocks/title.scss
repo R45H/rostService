@@ -21,13 +21,17 @@
 	}
 
 	@include screen-xs() {
-		margin: 0 40px;
+		margin: 30px 40px;
 		font-size: 1.7rem;
 		min-width: 190px;
 	}
 
 	&__text {
 		transform: skewX(20deg);
+
+		@include screen-xs(){
+			padding: 5px 0;
+		}
 	}
 
 	&:before,

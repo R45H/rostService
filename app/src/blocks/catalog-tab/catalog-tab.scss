@@ -26,8 +26,8 @@
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 15px 5px;
+		border: solid 1px #fff;
 		border-top: 2px solid #fff;
-		border-bottom: solid 1px #fff;
 
 		@include screen-md(){
 			width:40%;
@@ -40,8 +40,8 @@
 		}
 		&.active {
 			border: solid 1px $light-gray;
-			position: relative;
-			top: 1px;
+			margin-bottom: -1px;
+
 			border-top: 2px solid $red;
 			border-bottom: solid 1px #fff;
 			&:hover {

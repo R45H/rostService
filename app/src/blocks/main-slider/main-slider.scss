@@ -80,9 +80,7 @@
 			margin: 0 auto;
 			width: 70%;
 		}
-		@include screen-xs(){
-			width: 80%;
-		}
+
 	}
 	&__img {
 		display: inline-block;

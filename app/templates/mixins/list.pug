@@ -12,7 +12,7 @@
 	titleBot - Заголовок под картинкой
 
 mixin list(data)
-	.list
+	div(class="list "+attributes.class)
 		a.list__head(href= data.link ? data.link : "#")
 			if attributes.titleBot
 				.list__img(style="background-image: url('" + data.img + "');")
