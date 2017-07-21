@@ -19,7 +19,7 @@
 					a.item-slider__img.gallery__img(href="img/item1.jpg" style="background-image: url(img/item1.jpg);")
 					a.item-slider__img.gallery__img(href="img/item1.jpg" style="background-image: url(img/item1.jpg);")
 					a.item-slider__img.gallery__img(href="img/item1.jpg" style="background-image: url(img/item1.jpg);")
-			.col-md-5.push-md-1
+			.col-md-6.col-xl-5.push-xl-1
 				.item__row
 					.item__text-wrap
 						p.item__text= 'Артикул: '
@@ -30,7 +30,7 @@
 							span.item__value Есть
 					img.item__brand(src="img/logo-manufacturer.png")
 
-				.item__row
+				.item__row.item__row_price
 					.discount.item__discount
 						.discount__text Скидка
 						.discount__value -10%
@@ -43,12 +43,20 @@
 						p.item__text-sm Экономия: <b>353 руб.</b>, включая 19% НДС.
 						p.item__text-sm Доставка: <b>450 руб.</b>
 
-				.row.item__row
-					.col-md-5
-						.number
+				.row.item__row.item__row_2x.item__row_bag
+					.col-sm-5.col-md-12.col-lg-5
+						.number.item__number
 							.number__btn.number__btn_minus
 							input.number__input(type="text" value="1")
 							.number__btn.number__btn_plus
 
-					.col-md-7
-						a.btn.btn_fill.btn_bag.btn_wide(href="#") Корзина
+					.col-sm-7.col-md-12.col-lg-7
+						a.btn.btn_fill.btn_bag.btn_wide.item__bag(href="#") Корзина
+
+				.row.item__row
+					.col-12
+						p.subtitle Способы оплаты
+						.item__pay-wrap
+							- for (i = 1; i <= 9; i++) {
+								img.item__pay-img(src="img/pay-icons/" + i + ".png")
+							- }
