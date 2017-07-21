@@ -10,11 +10,17 @@
 	font-family: $font-main;
 	width: auto;
 	background: white;
+	outline: none;
+	position: relative;
 
 	&:hover {
 		background-color: $red;
 		color: #fff;
 		cursor: pointer;
+	}
+
+	&:active {
+		top: 1px;
 	}
 
 	&__plus{
@@ -57,7 +63,6 @@
 	&_arrow {
 		font-weight: bold;
 		font-size: 1.6rem;
-		position: relative;
 		padding-left: 55px;
 		padding-right: 55px;
 
@@ -78,7 +83,6 @@
 		padding-right: 50px;
 		font-weight: normal;
 		border: 1px solid $light-gray;
-		position: relative;
 
 		&:hover{
 			color: $dark-gray;
@@ -98,7 +102,6 @@
 		font-size: 1.4rem;
 		color: $gray;
 		padding: 1.1rem 3rem 1.1rem 5rem;
-		position: relative;
 
 		&::before {
 			content: '';
@@ -116,6 +119,29 @@
 			background: white;
 			color: $red;
 			border-color: $red;
+		}
+	}
+
+	&_wide {
+		width: 100%;
+	}
+
+	&_bag {
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		padding: 1.5rem 5rem 1.5rem 2rem;
+		text-align: center;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 30px;
+			height: 25px;
+			background: url('../img/bag-btn.png') no-repeat;
+			position: absolute;
+			top: 50%;
+			margin-top: -13px;
+			right: 15px;
 		}
 	}
 }

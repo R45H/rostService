@@ -92,13 +92,13 @@
 			&:hover {
 
 				.item-slider__nav-item {
-					border-color: $font-gray;
+					border-color: $gray;
 				}
 
 				+ li {
 
 					.item-slider__nav-item {
-						border-top-color: $font-gray;
+						border-top-color: $gray;
 					}
 				}
 			}

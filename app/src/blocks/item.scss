@@ -8,4 +8,74 @@
 		color: $dark-gray;
 		margin: 1em 0;
 	}
+
+	&__row {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 50px;
+	}
+
+	&__brand {
+		margin-left: auto;
+		max-width: 100px;
+		max-height: 100px;
+	}
+
+	&__text-wrap {
+
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		margin: 0 0 5px;
+		color: $gray;
+	}
+
+	&__value {
+		color: $dark-gray;
+	}
+
+	&__discount {
+		margin-right: 25px;
+		align-self: flex-start;
+	}
+
+	&__price-wrap {
+		flex-grow: 1;
+		margin-right: 35px;
+		align-self: center;
+	}
+
+	&__old-price {
+		font-size: 2rem;
+		text-decoration: line-through;
+		line-height: 1;
+
+		i {
+			font-size: 1.8rem;
+			font-weight: normal;
+		}
+	}
+
+	&__price {
+		font-weight: bold;
+		font-size: 4.5rem;
+		color: $red;
+		white-space: nowrap;
+		line-height: 1;
+
+		i {
+			color: $dark-gray;
+		}
+	}
+
+	&__text-sm-wrap {
+		flex-grow: 1;
+		align-self: center;
+	}
+
+	&__text-sm {
+		margin: 0;
+		line-height: 1.4;
+	}
 }

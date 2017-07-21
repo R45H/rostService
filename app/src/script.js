@@ -10,4 +10,5 @@ $(document).ready(function () {
     @@include('blocks/item-slider/item-slider.js')
     @@include('blocks/gallery/gallery.js')
     @@include('blocks/catalog-tab/catalog-tab.js')
+    @@include('blocks/number/number.js')
 });
