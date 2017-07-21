@@ -1,12 +1,17 @@
 .subtitle{
 	color: $dark-gray;
 	font-size: 1.6rem;
-	display: inline-block;
+	display: block;
+	text-align: center;
 	text-decoration: none;
 	font-family: $font-title;
 	text-transform: uppercase;
 	font-weight: 700;
 	margin: 0 0 10px;
+
+	&_red{
+		color: $red;
+	}
 }
 
 a.subtitle {

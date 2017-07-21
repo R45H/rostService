@@ -1,0 +1,22 @@
+.side{
+	&__list{
+		margin-bottom: 35px;
+	}
+	&__banner{
+		margin-bottom:30px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		height: 395px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		img{
+			max-width: 100%;
+		}
+	}
+	&__banner-btn{
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+}

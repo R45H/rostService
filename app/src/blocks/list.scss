@@ -1,10 +1,6 @@
 .list {
 	text-align: center;
 
-	@include screen-md(){
-		margin: 20px 0;
-	}
-
 	&__head {
 		display: block;
 
@@ -34,6 +30,7 @@
 		font-size: 1.6rem;
 		padding: 5px 40px 5px 0;
 		color: $gray;
+		text-align: left;
 		border-bottom: 1px solid lighten($light-gray, 5%);
 
 		&:first-child {
@@ -84,8 +81,6 @@
 	&__more-wrap {
 		padding: 20px 0;
 	}
-
-
 	&__more {
 		cursor: pointer;
 		display: inline-block;
@@ -111,6 +106,7 @@
 
 	&_models{
 		margin-top: 10px;
+		margin-bottom: 20px;
 		.list__item {
 			padding: 5px 0;
 			text-align: left;
