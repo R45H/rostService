@@ -1,0 +1,31 @@
+{
+  "pay":[
+    {
+      "item":"pay/visa.jpg"
+    },
+    {
+      "item":"pay/master.jpg"
+    },
+    {
+      "item":"pay/qiwi.jpg"
+    },
+    {
+      "item":"pay/yandex.jpg"
+    },
+    {
+      "item":"pay/webmoney.jpg"
+    },
+    {
+      "item":"pay/western.jpg"
+    },
+    {
+      "item":"pay/zolot.jpg"
+    },
+    {
+      "item":"pay/tink.jpg"
+    },
+    {
+      "item":"pay/robo.jpg"
+    }
+  ]
+}

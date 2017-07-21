@@ -98,5 +98,10 @@
 		background: $ultra-light-gray;
 		position: absolute;
 		z-index: -1;
+		margin-top:10px;
+
+		@media (min-width: 576px) and (max-width: 768px){
+			height: 125px;
+		}
 	}
 }

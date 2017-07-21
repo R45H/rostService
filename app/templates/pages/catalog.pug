@@ -61,12 +61,12 @@ include ../mixins/catalog-tab
 						.col-12.col-sm-6.col-lg-3.list.list_models.list_mb
 							each item in val.model
 								a.list__item(href='')=item.item
-		aside.content__side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
+		aside.content__side.side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
 			+search(class="search_side")
-			.attention
+			.attention.side__attention
 				.attention__head.subtitle ВНИМАНИЕ!
 				.attention__body Внимательно следите за тем, какая марка и модель указанна в поиске выше. В противном случае, мы не несем ответсвенности если Вы дезинформируте себя и приобрете товар не подходящий для вашего авто.
-			.list.list_mb
+			.list.side__list
 				.list__title.subtitle  каталог автозапчастей
 				.list__items
 				each val in spare_catalog
@@ -74,10 +74,21 @@ include ../mixins/catalog-tab
 						.list__side-img
 							img(src=val.img)
 						span=val.item
-			.row
+			.subtitle.subtitle_red специальное Предложение
+			.row.side__hits
 				each val in one_card
-					.col-md-12.col-sm-6.col-12
-						+card(val)(class="main__space_bot")
-					.col-md-12.col-sm-6.col-12
-						+card(val)(class="main__space_bot")
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
+			.side__banner(style="background-image: url(img/side_banner.jpg)")
+				a.btn.btn_white.side__banner-btn(href="") Подробнее
+			.subtitle Способы оплаты
+			.side__pay.pay
+					each val in pay
+						.pay__item
+							img.pay__img(src="img/"+val.item)
+
+
+
 
