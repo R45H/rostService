@@ -26,7 +26,15 @@
 	&__plus{
 		position: absolute;
 		right: 10px;
-		top: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&:hover {
+
+			&::after {
+				transform: none;
+			}
+		}
 	}
 
 	&_fill {
@@ -83,17 +91,13 @@
 		padding-right: 50px;
 		font-weight: normal;
 		border: 1px solid $light-gray;
+		color: $gray;
+		user-select: none;
 
 		&:hover{
-			color: $dark-gray;
+			color: $red;
 			border: 1px solid $red;
 			background: #fff;
-
-			.btn__plus{
-				//&::after {
-				//	transform: scale(1.3);
-				//}
-			}
 		}
 	}
 
