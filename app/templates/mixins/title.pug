@@ -3,4 +3,4 @@ mixin title(text)
 			.title__bg
 				.title__text=text
 			if attributes.descr
-				.title__descr=attributes.descr
+				.title__descr(class= attributes.marginTop ? "title__descr_mt" : "")= attributes.descr

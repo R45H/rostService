@@ -184,7 +184,23 @@
 			margin-top: 0;
 		}
 	}
+
 	&_mb {
 		margin-bottom: 30px;
+	}
+
+	&_sm {
+
+		.list {
+			// =====
+
+			&__item {
+				font-size: 1.4rem;
+			}
+
+			&__img {
+				padding-bottom: 25%;
+			}
+		}
 	}
 }

@@ -74,6 +74,13 @@
 	&__descr{
 		margin-top: 10px;
 		font-size: 1.6rem;
+
+		&_mt {
+			margin-top: 40px;
+		}
 	}
 
+	&_mb_2x {
+		margin-bottom: 70px;
+	}
 }
