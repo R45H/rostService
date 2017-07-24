@@ -1,13 +1,12 @@
 include ../mixins/specialist
+include ../mixins/title
 
 .container
 	.breadcrumb
 		a.breadcrumb__link(href="/") Главная
 		.breadcrumb__last-item Контакты
 
-	.main__title-wrap
-		.title
-			.title__text Контактная информация
+	+title("Контактная информация")
 
 	.row
 		.col-md-4.main__cont-wrap
@@ -30,9 +29,8 @@ include ../mixins/specialist
 #map.map.main__map
 
 .container
-	.main__title-wrap
-		.title
-			.title__text Обратная связь
+	+title("Обратная связь")
+
 
 	form
 		.row
@@ -47,9 +45,7 @@ include ../mixins/specialist
 				a.btn.btn_tel.main__cont-btns(href="#") Обратный звонок
 				input.btn.btn_fill.main__cont-btns(type="submit" value="Отправить")
 
-	.main__title-wrap
-		.title
-			.title__text Контакты специалистов
+	+title("Контакты специалистов")
 
 	.row
 		each val in specialist

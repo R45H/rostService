@@ -13,7 +13,6 @@
     }
   }
   &__main {
-    text-align: center;
     @include screen-xs() {
       padding: 0;
     }
@@ -52,7 +51,7 @@
   }
   &__popular {
     margin-top: 30px;
-
+  text-align: center;
     @include screen-sm(){
       margin-top: 0;
     }

@@ -3,6 +3,7 @@ include ../mixins/search
 include ../mixins/list
 include ../mixins/producer
 include ../mixins/card
+include ../mixins/title
 
 
 
@@ -86,16 +87,15 @@ section.main__tabs
 						.btn__plus.plus
 section.main-hits
 	.container
-		.title.main-hits__title
-			.title__text  Самые продаваемые товары
+		+title("Самые продаваемые товары")(class="main-hits__title")
+
 		.hits-slider
 			each val in hits
 				.hits-slider__item
 					+card(val)(class="hits-slider__card")
 section.main-partners
 	.container
-		.title
-			.title__text  Наши партнеры
+		+title("Наши партнеры")
 		.partners
 			.partners__item
 				img(src="img/parnters1.png")

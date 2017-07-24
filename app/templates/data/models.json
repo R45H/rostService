@@ -1,0 +1,40 @@
+{
+  "models":[
+    {
+      "img": "img/models/gaz1.jpg",
+      "title": "Газель NEXT (Фургон-бокс)"
+    },
+    {
+      "img": "img/models/gaz2.jpg",
+      "title": "ГАЗ-3302      (Фургон-бокс)"
+    },
+    {
+      "img": "img/models/gaz3.jpg",
+      "title": "ГАЗ-3302      (Фургон)"
+    },
+    {
+      "img": "img/models/gaz4.jpg",
+      "title": "ГАЗон NEXT     (Спецтехника)"
+    },
+    {
+      "img": "img/models/gaz5.jpg",
+      "title": "ГАЗ-Волга 21      1956-1970 год"
+    },
+    {
+      "img": "img/models/gaz6.jpg",
+      "title": "ГАЗ-Волга 2410      (Седан)"
+    },
+    {
+      "img": "img/models/gaz7.jpg",
+      "title": "ГАЗ-Волга 3102      (Седан)"
+    },
+    {
+      "img": "img/models/gaz8.jpg",
+      "title": "ГАЗ-Волга 31105       1956-1970 год"
+    },
+    {
+      "img": "img/models/gaz9.jpg",
+      "title": "ГАЗ-Волга Сайбер       (Седан)"
+    }
+  ]
+}

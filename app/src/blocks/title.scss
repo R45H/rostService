@@ -1,31 +1,69 @@
 .title {
-	position: relative;
-	display: inline-block;
-	padding: 0 15px;
-	border-left: 5px solid $red;
-	background: $dark-gray;
-	color: #fff;
-	font-size: 2.7rem;
-	font-family: $font-title;
-	font-weight: bold;
-	text-transform: uppercase;
-	transform: skewX(-20deg);
-	min-width: 270px;
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	&__bg{
+		display: inline-block;
+		padding: 0 15px;
+		border-left: 5px solid $red;
+		background: $dark-gray;
+		font-size: 2.7rem;
+		font-family: $font-title;
+		font-weight: bold;
+		text-transform: uppercase;
+		transform: skewX(-20deg);
+		min-width: 270px;
+		color: #fff;
+		position: relative;
+		&:before,
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 70px;
+			height: 2px;
+			background: $light-gray;
+			position: absolute;
+			top: 15px;
 
-	@include screen-sm() {
-		font-size: 2rem;
-		min-width: 220px;
+			@include screen-sm() {
+				top: 45%;
+			}
+
+			@include screen-xs() {
+				width: 30px;
+
+			}
+		}
+
+		&:before {
+			left: -90px;
+
+			@include screen-xs() {
+				left: -40px;
+			}
+
+		}
+
+		&:after {
+			right: -90px;
+
+			@include screen-xs() {
+				right: -40px;
+			}
+		}
+		@include screen-sm() {
+			font-size: 2rem;
+			min-width: 220px;
+		}
+
+		@include screen-xs() {
+			margin: 30px 40px;
+			font-size: 1.7rem;
+			min-width: 190px;
+		}
+
+
 	}
-
-	@include screen-xs() {
-		margin: 30px 40px;
-		font-size: 1.7rem;
-		min-width: 190px;
-	}
-
 	&__text {
 		transform: skewX(20deg);
 
@@ -33,41 +71,9 @@
 			padding: 5px 0;
 		}
 	}
-
-	&:before,
-	&:after {
-		content: '';
-		display: inline-block;
-		width: 70px;
-		height: 2px;
-		background: $light-gray;
-		position: absolute;
-		top: 15px;
-
-		@include screen-sm() {
-			top: 45%;
-		}
-
-		@include screen-xs() {
-			width: 30px;
-
-		}
+	&__descr{
+		margin-top: 10px;
+		font-size: 1.6rem;
 	}
 
-	&:before {
-		left: -90px;
-
-		@include screen-xs() {
-			left: -40px;
-		}
-
-	}
-
-	&:after {
-		right: -90px;
-
-		@include screen-xs() {
-			right: -40px;
-		}
-	}
 }
