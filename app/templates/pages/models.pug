@@ -13,7 +13,7 @@ include ../mixins/title
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
-			+title("Модельный ряд - ГАЗ")(descr="Выберете модель Вашего авто")
+			+title("Модельный ряд - ГАЗ")(descr="Выберите модель Вашего авто")
 			.row(style="margin-top: 50px;")
 				each val in models
 					.col-12.col-sm-6.col-lg-4.main__space_bot
@@ -27,14 +27,14 @@ include ../mixins/title
 			+search(class="search_side")
 			.attention.side__attention
 				.attention__head.subtitle ВНИМАНИЕ!
-				.attention__body Внимательно следите за тем, какая марка и модель указанна в поиске выше. В противном случае, мы не несем ответсвенности если Вы дезинформируте себя и приобрете товар не подходящий для вашего авто.
+				.attention__body Внимательно следите за тем, какая марка и модель указана в поиске выше. В противном случае, мы не несем ответственности если Вы дезинформируете себя и приобретете товар не подходящий для вашего авто.
 			.subtitle.subtitle_red специальное Предложение
-				.row.side__hits
-					each val in one_card
-						.col-md-12.col-sm-6.col-12.main__space_bot
-							+card(val)
-						.col-md-12.col-sm-6.col-12.main__space_bot
-							+card(val)
+			.row.side__hits
+				each val in one_card
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
 			.subtitle Способы оплаты
 			.side__pay.pay
 				each val in pay

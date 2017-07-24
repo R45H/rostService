@@ -116,15 +116,19 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 10px;
+
+		&:hover {
+
+			.list__block-title {
+				color: $red;
+			}
+		}
 	}
 	&__block-title {
 		display: inline-block;
 		color: $dark-gray;
 		vertical-align: middle;
 		font-size: 1.6rem;
-		&:hover {
-			color: $red;
-		}
 	}
 	&__block-item {
 		position: relative;
@@ -159,7 +163,7 @@
 		&:active {
 
 			&::before {
-				left: 5px;
+				left: 25px;
 				opacity: 0;
 			}
 		}

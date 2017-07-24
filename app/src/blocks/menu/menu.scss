@@ -27,9 +27,9 @@
 	}
 
 	.menu{
-
 		margin-top: 30px;
 		flex-direction: column;
+
 		&__item{
 			border-left: none;
 			border-right: none;
@@ -40,10 +40,18 @@
 		position: absolute;
 		top:15px;
 		left: 15px;
+
+		&:active {
+			top: 16px;
+		}
 	}
+
 	&__toggle.active{
+
 		&:hover {
+
 			.menu-toggle__bar {
+
 				&:before, &:after {
 					background: $dark-gray;
 				}
@@ -54,7 +62,12 @@
 		position: absolute;
 		top: 15px;
 		right: 15px;
+
+		&:active {
+			top: 16px;
+		}
 	}
+
 	&__search-top{
 		margin-top: 55px;
 	}
