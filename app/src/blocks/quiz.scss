@@ -1,0 +1,36 @@
+.quiz {
+
+	&__question,
+	&__answer {
+		position: relative;
+		padding-left: 2.2em;
+
+		&::before {
+			font-family: $font-fa;
+			font-style: normal;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&__question {
+		font-style: italic;
+		color: $gray;
+		margin: 0 0 5px;
+
+		&::before {
+			content: "\f059";
+		}
+	}
+
+	&__answer {
+		color: $dark-gray;
+		margin: 0;
+
+		&::before {
+			content: "\f05a";
+			color: $red;
+		}
+	}
+}

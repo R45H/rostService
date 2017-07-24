@@ -3,16 +3,15 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 30px;
 
 	&__item{
 		width:30%;
 		margin: 5px 0;
 		text-align: center;
 	}
+
 	&__img{
 		max-height: 55px;
 		max-width: 100%;
-
 	}
 }

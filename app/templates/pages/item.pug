@@ -1,3 +1,8 @@
+include ../mixins/profit
+include ../mixins/quiz
+include ../mixins/feature
+include ../mixins/card
+
 .container
 	.breadcrumb
 		a.breadcrumb__link(href="/") Главная
@@ -11,7 +16,7 @@
 		p.suitable__text Этот продукт подходит для ГАЗ-3302 (2005-2008 год) 1,6 TDI
 
 .container
-	.item
+	.item.main__item
 		h1.item__title Вал рулевого управления ГАЗ-3302 нижний в сборе
 		.row
 			.col-md-6
@@ -55,8 +60,48 @@
 
 				.row.item__row
 					.col-12
-						p.subtitle Способы оплаты
+						p.subtitle.item__subtitle Способы оплаты
 						.pay
 							each val in pay
 								.pay__item.item__pay
 									img.pay__img(src="img/" + val.item)
+
+	.row.main__profits
+		each val in profit_item
+			.col-sm-6.col-lg-3.main__space_bot
+				+profit(val)(class="profit_thin")
+
+	.tab.tab_bigger.tab_left
+		.tab__head
+			a.tab__link.tab__link_active(href="#tab1")
+				span.red-line
+				| Описание
+			a.tab__link(href="#tab2")
+				span.red-line
+				| Характеристики
+			a.tab__link(href="#tab3")
+				span.red-line
+				| Вопросы и ответы
+
+		.tab__body
+
+			#tab1.tab__content.visible
+				p Лорем ипсум долор сит амет, детрацто постулант малуиссет но хис, хас аутем харум зрил не, нисл фацер деленити хас ин. Но пер мазим ехплицари елаборарет, еам диссентиас реферрентур ин, мел ет дицант ментитум цотидиеяуе. Вирис фацете бонорум сеа ад, мел малорум репрехендунт не. Вих еним аццусам но, меи но сале аутем мунди. Яуи ех популо фиерент яуаестио, хис но вери пробо.
+				p Ин меа яуис либер яуодси, не волумус иудицабит реформиданс иус. Тамяуам сусципит салутатус ет при, долоре тациматес волутпат ех вел. Чоро елояуентиам ад нец, ад ирацундиа волуптариа мел. Иусто оратио репримияуе хас не, еос тота трацтатос еу. Ех меа инсоленс елеифенд хонестатис, еос алияуид импердиет пхилосопхиа но.
+
+			#tab2.tab__content
+				.tab__features
+					each val in feature
+						+feature(val)(class="tab__feature")
+
+			#tab3.tab__content
+				each val in quiz
+					+quiz(val)(class="tab__quiz")
+
+	.text-center
+		.title
+			.title__text С этим товаром так же покупают
+	.row
+		each val in popular_spares
+			.col-sm-6.col-md-4.col-lg-3.main__space_bot
+				+card(val)

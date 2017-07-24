@@ -42,7 +42,9 @@ section.main__logos
 								img(src="img/" + val.img)
 			.col-12.col-lg-12.col-md-5
 				.profits
-					+profit(profit_index)(class="profits__item")
+					each val in profit_index
+						.profits__item
+							+profit(val)
 section.main__tabs
 	.container
 		.tab
@@ -57,7 +59,7 @@ section.main__tabs
 					span.red-line
 					|    топ производители
 
-			.tab__body
+			.tab__body.text-center
 				.tab__content.visible#spares
 					.row
 						each val in spares
