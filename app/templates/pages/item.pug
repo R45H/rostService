@@ -19,4 +19,44 @@
 					a.item-slider__img.gallery__img(href="img/item1.jpg" style="background-image: url(img/item1.jpg);")
 					a.item-slider__img.gallery__img(href="img/item1.jpg" style="background-image: url(img/item1.jpg);")
 					a.item-slider__img.gallery__img(href="img/item1.jpg" style="background-image: url(img/item1.jpg);")
-			.col-md-6
+			.col-md-6.col-xl-5.push-xl-1
+				.item__row
+					.item__text-wrap
+						p.item__text= 'Артикул: '
+							span.item__value 3302-3401042
+						p.item__text= 'Производитель: '
+							span.item__value ГАЗ - Автозапчасти
+						p.item__text= 'Наличие на складе: '
+							span.item__value Есть
+					img.item__brand(src="img/logo-manufacturer.png")
+
+				.item__row.item__row_price
+					.discount.item__discount
+						.discount__text Скидка
+						.discount__value -10%
+					.item__price-wrap
+						.item__old-price= '4 130 '
+							i.fa.fa-rub
+						.item__price= '3 753 '
+							i.fa.fa-rub
+					.item__text-sm-wrap
+						p.item__text-sm Экономия: <b>353 руб.</b>, включая 19% НДС.
+						p.item__text-sm Доставка: <b>450 руб.</b>
+
+				.row.item__row.item__row_2x.item__row_bag
+					.col-sm-5.col-md-12.col-lg-5
+						.number.item__number
+							.number__btn.number__btn_minus
+							input.number__input(type="text" value="1")
+							.number__btn.number__btn_plus
+
+					.col-sm-7.col-md-12.col-lg-7
+						a.btn.btn_fill.btn_bag.btn_wide.item__bag(href="#") Корзина
+
+				.row.item__row
+					.col-12
+						p.subtitle Способы оплаты
+						.pay
+							each val in pay
+								.pay__item.item__pay
+									img.pay__img(src="img/" + val.item)

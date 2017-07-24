@@ -8,4 +8,170 @@
 		color: $dark-gray;
 		margin: 1em 0;
 	}
+
+	&__row {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 50px;
+
+		&_2x {
+			margin-bottom: 80px;
+		}
+
+		&_price {
+
+			@include screen-md() {
+				flex-wrap: wrap;
+			}
+
+			@include screen-sm() {
+				flex-wrap: nowrap;
+			}
+
+			@include screen-xs() {
+				flex-wrap: wrap;
+			}
+		}
+
+		&_bag {
+
+			@include screen-xs() {
+				text-align: center;
+			}
+		}
+	}
+
+	&__brand {
+		margin-left: auto;
+		max-width: 100px;
+		max-height: 100px;
+
+		@include screen-md() {
+			max-width: 60px;
+			max-height: 60px;
+		}
+	}
+
+	&__text-wrap {
+		margin-right: 10px;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		margin: 0 0 5px;
+		color: $gray;
+	}
+
+	&__value {
+		color: $dark-gray;
+	}
+
+	&__discount {
+		margin-right: 25px;
+		align-self: flex-start;
+	}
+
+	&__price-wrap {
+		flex-grow: 1;
+		margin-right: 35px;
+		align-self: center;
+
+		@include screen-md() {
+			margin: 0 0 5px;
+		}
+
+		@include screen-sm() {
+			margin: 0 35px 0 0;
+		}
+
+		@include screen-xs() {
+			margin: 0 0 5px;
+		}
+	}
+
+	&__old-price {
+		font-size: 2rem;
+		text-decoration: line-through;
+		line-height: 1;
+
+		i {
+			font-size: 1.8rem;
+			font-weight: normal;
+		}
+	}
+
+	&__price {
+		font-weight: bold;
+		font-size: 4.5rem;
+		color: $red;
+		white-space: nowrap;
+		line-height: 1;
+
+		i {
+			color: $dark-gray;
+		}
+	}
+
+	&__text-sm-wrap {
+		flex-grow: 1;
+		align-self: center;
+
+		@include screen-xs() {
+			width: 100%;
+		}
+	}
+
+	&__text-sm {
+		margin: 0;
+		line-height: 1.4;
+	}
+
+	&__pay {
+		width: 10%;
+
+		@include screen-md() {
+			width: 19%;
+		}
+
+		@include screen-sm() {
+			width: 10%;
+		}
+
+		@include screen-xs() {
+			width: 70px;
+		}
+	}
+
+	&__number {
+
+		@include screen-md() {
+			margin-bottom: 15px;
+			max-width: 230px;
+		}
+
+		@include screen-sm() {
+			margin-bottom: 0;
+			max-width: none;
+		}
+
+		@include screen-xs() {
+			margin-bottom: 15px;
+			max-width: 290px;
+		}
+	}
+
+	&__bag {
+
+		@include screen-md() {
+			max-width: 230px;
+		}
+
+		@include screen-sm() {
+			max-width: none;
+		}
+
+		@include screen-xs() {
+			max-width: 290px;
+		}
+	}
 }

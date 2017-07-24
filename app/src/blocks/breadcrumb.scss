@@ -1,21 +1,38 @@
 .breadcrumb {
 	padding: 20px 0;
 	font-size: 1.4rem;
+
 	&__link {
 		color: $gray;
 		display: inline-block;
+		position: relative;
+		margin-right: 15px;
 
 		&:after {
 			content: '\f105';
 			display: inline-block;
 			font-family: 'FontAwesome';
 			padding: 0 5px;
+			position: absolute;
+			right: -15px;
+			line-height: 1;
+			pointer-events: none;
+		}
+
+		&:hover {
+			color: $red;
+
+			&::after {
+				color: $gray;
+			}
 		}
 	}
+
 	&__last-item {
 
 		display: inline-block;
 		color: $dark-gray;
+
 		&:after {
 			display: none;
 		}

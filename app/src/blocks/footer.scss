@@ -18,20 +18,28 @@
 			padding: 10px 0;
 		}
 	}
+
 	&__menu-link{
 		font-size: 1.6rem;
 		display: block;
-		transition: color ease .3s;
-		margin-bottom: 15px;
+		padding: 7px 0;
+
 		@include screen-sm(){
-			margin-bottom: 10px;
+			padding: 5px 0;
 		}
+
 		@include screen-xs(){
 			text-align: center;
 		}
-		&:last-child{
-			margin-bottom: 0;
+
+		&:first-child{
+			padding-top: 0;
 		}
+
+		&:last-child{
+			padding-bottom: 0;
+		}
+
 		&:hover{
 			color: $red;
 		}

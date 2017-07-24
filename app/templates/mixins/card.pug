@@ -21,9 +21,9 @@ mixin card(data)
 				)
 
 				if data.discount
-					.card__discount
-						span.card__discount-text Скидка
-						span.card__discount-value= data.discount
+					.discount.card__discount
+						span.discount__text Скидка
+						span.discount__value= data.discount
 
 				if data.mark
 					img.card__mark(src= data.mark)

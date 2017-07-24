@@ -11,6 +11,7 @@
 @import url('blocks/menu/menu.scss'); // верхнее меню
 @import url('blocks/main-slider/main-slider.scss'); // слайдер на главной
 @import url('blocks/profit.scss'); // слайдер на главной
+@import url('blocks/discount.scss'); // Плашка со скидкой
 @import url('blocks/card.scss'); // Карточка товара
 @import url('blocks/list.scss'); // Блок списка категорий
 @import url('blocks/mark.scss'); // Блок марки
@@ -33,6 +34,7 @@
 @import url('blocks/content.scss'); //шаблон размещения контента
 @import url('blocks/catalog-tab/catalog-tab.scss'); //табы каталога
 @import url('blocks/attention.scss');
+@import url('blocks/number/number.scss'); // Блок количества товаров с "+" и "-"
 @import url('blocks/side.scss'); // стили бокового блока
 @import url('blocks/pay.scss'); // стили бокового блока
 
