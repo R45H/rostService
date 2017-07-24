@@ -1,9 +1,151 @@
-.side{
-	&__list{
+.side {
+	&__list {
 		margin-bottom: 35px;
+
+		.icon {
+			display: inline-block;
+		}
+
+		.icon-1 {
+			background-image: url(../img/spare_car.png);
+			background-position: -72px -46px;
+			width: 23px;
+			height: 24px;
+		}
+
+		.icon-10 {
+			background-image: url(../img/spare_car.png);
+			background-position: -46px -72px;
+			width: 24px;
+			height: 21px;
+		}
+		.icon-11 {
+			background-image: url(../img/spare_car.png);
+			background-position: 0px -72px;
+			width: 23px;
+			height: 22px;
+		}
+		.icon-2 {
+			background-image: url(../img/spare_car.png);
+			background-position: 0px -24px;
+			width: 24px;
+			height: 24px;
+		}
+		.icon-3 {
+			background-image: url(../img/spare_car.png);
+			background-position: 0px -94px;
+			width: 24px;
+			height: 17px;
+		}
+		.icon-4 {
+			background-image: url(../img/spare_car.png);
+			background-position: -96px -67px;
+			width: 14px;
+			height: 21px;
+		}
+		.icon-5 {
+			background-image: url(../img/spare_car.png);
+			background-position: -48px 0px;
+			width: 24px;
+			height: 24px;
+		}
+		.icon-6 {
+			background-image: url(../img/spare_car.png);
+			background-position: -96px -23px;
+			width: 20px;
+			height: 23px;
+		}
+		.icon-7 {
+			background-image: url(../img/spare_car.png);
+			background-position: 0px 0px;
+			width: 24px;
+			height: 24px;
+		}
+		.icon-8 {
+			background-image: url(../img/spare_car.png);
+			background-position: -23px -48px;
+			width: 24px;
+			height: 23px;
+		}
+		.icon-9 {
+			background-image: url(../img/spare_car.png);
+			background-position: -72px 0px;
+			width: 24px;
+			height: 23px;
+		}
+		.list__item {
+			&:hover {
+				.icon-1 {
+					background-image: url(../img/spare_car.png);
+					background-position: 0px -48px;
+					width: 23px;
+					height: 24px;
+				}
+				.icon-10 {
+					background-image: url(../img/spare_car.png);
+					background-position: -70px -72px;
+					width: 24px;
+					height: 21px;
+				}
+				.icon-11 {
+					background-image: url(../img/spare_car.png);
+					background-position: -23px -72px;
+					width: 23px;
+					height: 22px;
+				}
+				.icon-2 {
+					background-image: url(../img/spare_car.png);
+					background-position: -24px 0px;
+					width: 24px;
+					height: 24px;
+				}
+				.icon-3 {
+					background-image: url(../img/spare_car.png);
+					background-position: -24px -94px;
+					width: 24px;
+					height: 17px;
+				}
+				.icon-4 {
+					background-image: url(../img/spare_car.png);
+					background-position: -96px -46px;
+					width: 14px;
+					height: 21px;
+				}
+				.icon-5 {
+					background-image: url(../img/spare_car.png);
+					background-position: -48px -24px;
+					width: 24px;
+					height: 24px;
+				}
+				.icon-6 {
+					background-image: url(../img/spare_car.png);
+					background-position: -96px 0px;
+					width: 20px;
+					height: 23px;
+				}
+				.icon-7 {
+					background-image: url(../img/spare_car.png);
+					background-position: -24px -24px;
+					width: 24px;
+					height: 24px;
+				}
+				.icon-8 {
+					background-image: url(../img/spare_car.png);
+					background-position: -47px -48px;
+					width: 24px;
+					height: 23px;
+				}
+				.icon-9 {
+					background-image: url(../img/spare_car.png);
+					background-position: -72px -23px;
+					width: 24px;
+					height: 23px;
+				}
+			}
+		}
 	}
-	&__banner{
-		margin-bottom:30px;
+	&__banner {
+		margin-bottom: 30px;
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
@@ -11,11 +153,11 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
-		img{
+		img {
 			max-width: 100%;
 		}
 	}
-	&__banner-btn{
+	&__banner-btn {
 		margin-bottom: 20px;
 		text-transform: uppercase;
 	}

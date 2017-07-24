@@ -11,7 +11,7 @@ include ../mixins/catalog-tab
 .main__gray-bg
 .container
 	.content
-		section.content__main.col-lg-9.col-md-8.offset-md-4.offset-lg-3
+		section.content__main.col-lg-9.col-md-8
 			.title.content__search-title
 				.title__text поиск по каталогу
 			.row
@@ -72,7 +72,7 @@ include ../mixins/catalog-tab
 				each val in spare_catalog
 					a.list__item.list__item_big(href="")
 						.list__side-img
-							img(src=val.img)
+							i(class=val.img)
 						span=val.item
 			.subtitle.subtitle_red специальное Предложение
 			.row.side__hits

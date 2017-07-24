@@ -1,7 +1,10 @@
 .content {
+  display:flex;
+  @include screen-sm(){
+    flex-wrap: wrap;
+  }
   &__side {
     @include screen-sm(min) {
-      position: absolute;
       top: 0;
       z-index: 5;
     }
@@ -13,6 +16,10 @@
     text-align: center;
     @include screen-xs() {
       padding: 0;
+    }
+
+    .title:first-child{
+      margin-top: 0px;
     }
   }
   &__search {

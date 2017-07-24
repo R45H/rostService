@@ -25,7 +25,7 @@ mixin list(data)
 
 		.list__items
 			each val in data.items
-				a.list__item(href= val.link ? val.link : "#")= val.text
+				a.list__item(href= val.link ? val.link : "#" class= attributes.noarr ? " list__item_noarrow" : "")= val.text
 
 		if attributes.plus
 			.list__plus-wrap

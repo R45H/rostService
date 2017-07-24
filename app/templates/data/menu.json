@@ -2,7 +2,7 @@
   "menu": [
     {
       "name": "Марки Авто",
-      "link": "/category.html"
+      "link": "/autos.html"
     },
     {
       "name": "Авто запчасти",

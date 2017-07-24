@@ -1,14 +1,29 @@
 {
 	"mark": [
 		{
-			"img": "img/mark.jpg",
+			"img": "img/marks/volkswagen.jpg",
 			"title": "Volkswagen",
 			"cnt": 33
 		},
 		{
-			"img": "img/motor.png",
-			"title": "Volkswagen",
+			"img": "img/marks/mers.jpg",
+			"title": "mercedes-benz",
 			"cnt": 33
+		},
+		{
+			"img": "img/marks/bmw.jpg",
+			"title": "bmw",
+			"cnt": 24
+		},
+		{
+			"img": "img/marks/opel.jpg",
+			"title": "opel",
+			"cnt": 24
+		},
+		{
+			"img": "img/marks/ford.jpg",
+			"title": "ford",
+			"cnt": 24
 		}
 	]
 }
