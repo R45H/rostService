@@ -1,0 +1,42 @@
+include ../mixins/search
+include ../mixins/list
+include ../mixins/card
+include ../mixins/car
+include ../mixins/title
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		a.breadcrumb__link Марки авто
+		.breadcrumb__last-item Модельный ряд - ГАЗ
+
+.container
+	.content
+		section.content__main.col-lg-9.col-md-8
+			+title("Модельный ряд - ГАЗ")(descr="Выберете модель Вашего авто")
+			.row(style="margin-top: 50px;")
+				each val in models
+					.col-12.col-sm-6.col-lg-4.main__space_bot
+						+car(val)
+			+title("Топ запчасти для ГАЗ")
+				.spares-slider
+
+
+
+		aside.content__side.side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
+			+search(class="search_side")
+			.attention.side__attention
+				.attention__head.subtitle ВНИМАНИЕ!
+				.attention__body Внимательно следите за тем, какая марка и модель указанна в поиске выше. В противном случае, мы не несем ответсвенности если Вы дезинформируте себя и приобрете товар не подходящий для вашего авто.
+			.subtitle.subtitle_red специальное Предложение
+				.row.side__hits
+					each val in one_card
+						.col-md-12.col-sm-6.col-12.main__space_bot
+							+card(val)
+						.col-md-12.col-sm-6.col-12.main__space_bot
+							+card(val)
+			.subtitle Способы оплаты
+			.side__pay.pay
+				each val in pay
+					.pay__item
+						img.pay__img(src="img/" + val.item)

@@ -1,0 +1,201 @@
+{
+  "marks_cat":[
+    {
+      "title": "Газ",
+      "img": "img/gaz.png",
+      "link":"models.html",
+      "items": [
+        {
+          "text": "ГАЗ - 2705 ",
+          "link":"models.html"
+        },
+        {
+          "text": " ГАЗ - Волга - 311055",
+          "link":"models.html"
+
+        },
+        {
+          "text": " ГАЗ - 3221 «Газель»",
+          "link":"models.html"
+
+        },
+        {
+          "text": "ГАЗ - 22171 «Соболь»",
+          "link":"models.html"
+        },
+        {
+          "text": " ГАЗ - 2217",
+          "link":"models.html"
+        }
+      ],
+      "more": 12
+    },
+    {
+      "title": "МАЗ",
+      "img": "img/maz.png",
+      "link":"models.html",
+      "items": [
+        {
+          "text": "МАЗ - 2705 ",
+          "link":"models.html"
+        },
+        {
+          "text": " МАЗ - 311055",
+          "link":"models.html"
+        },
+        {
+          "text": " МАЗ - 3221 ",
+          "link":"models.html"
+        },
+        {
+          "text": "МАЗ - 22171",
+          "link":"models.html"
+        },
+        {
+          "text": " МАЗ - 2217",
+          "link":"models.html"
+        }
+      ],
+      "more":25
+    },
+    {
+      "title": "лиаз",
+      "img": "img/liaz.png",
+      "link":"models.html",
+      "items": [
+        {
+          "text": "ЛиАЗ - 5292",
+          "link":"models.html"
+        },
+        {
+          "text": "ЛиАЗ - 6213",
+          "link":"models.html"
+        },
+        {
+          "text": "ЛиАЗ - 5256 ",
+          "link":"models.html"
+        },
+        {
+          "text": "ЛиАЗ - 5256 “Школа”",
+          "link":"models.html"
+        },
+        {
+          "text": "ЛиАЗ - 5292",
+          "link":"models.html"
+        }
+      ],
+      "more":25
+    },
+    {
+      "title": "паз",
+      "img": "img/paz.png",
+      "link":"models.html",
+      "items": [
+        {
+          "text": "паз - 5292"
+        },
+        {
+          "text": "паз - 6213"
+        },
+        {
+          "text": "паз - 5256 "
+        },
+        {
+          "text": "паз - 5256 “Школа”"
+        },
+        {
+          "text": "паз - 5292"
+        }
+      ],
+      "more":25
+    },
+    {
+      "title": "Газ",
+      "img": "img/gaz.png",
+      "items": [
+        {
+          "text": "ГАЗ - 2705 "
+        },
+        {
+          "text": " ГАЗ - Волга - 311055"
+        },
+        {
+          "text": " ГАЗ - 3221 «Газель»"
+        },
+        {
+          "text": "ГАЗ - 22171 «Соболь»"
+        },
+        {
+          "text": " ГАЗ - 2217"
+        }
+      ],
+      "more": 12
+    },
+    {
+      "title": "МАЗ",
+      "img": "img/maz.png",
+      "items": [
+        {
+          "text": "МАЗ - 2705 "
+        },
+        {
+          "text": " МАЗ - 311055"
+        },
+        {
+          "text": " МАЗ - 3221 "
+        },
+        {
+          "text": "МАЗ - 22171"
+        },
+        {
+          "text": " МАЗ - 2217"
+        }
+      ],
+      "more":25
+    },
+    {
+      "title": "лиаз",
+      "img": "img/liaz.png",
+      "items": [
+        {
+          "text": "ЛиАЗ - 5292"
+        },
+        {
+          "text": "ЛиАЗ - 6213"
+        },
+        {
+          "text": "ЛиАЗ - 5256 "
+        },
+        {
+          "text": "ЛиАЗ - 5256 “Школа”"
+        },
+        {
+          "text": "ЛиАЗ - 5292"
+        }
+      ],
+      "more":25
+    },
+    {
+      "title": "паз",
+      "img": "img/paz.png",
+      "items": [
+        {
+          "text": "паз - 5292"
+        },
+        {
+          "text": "паз - 6213"
+        },
+        {
+          "text": "паз - 5256 "
+        },
+        {
+          "text": "паз - 5256 “Школа”"
+        },
+        {
+          "text": "паз - 5292"
+        }
+      ],
+      "more":25
+    }
+  ]
+}

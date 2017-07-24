@@ -1,0 +1,52 @@
+include ../mixins/search
+include ../mixins/list
+include ../mixins/mark
+include ../mixins/card
+include ../mixins/title
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		.breadcrumb__last-item Авто запчасти
+
+.container
+	.content
+		section.content__main.col-lg-9.col-md-8
+			+title("запчасти для 30 марок авто")(descr="и более чем 900 моделей:")
+
+			.row
+				each val in marks_cat
+					.col-12.col-sm-6.col-lg-3.main__space_bot
+						+list(val)(titleBot, class="list_models")
+			.row
+				-for (i = 0; i < 7; i++){
+					each val in mark
+						.col-mark
+							+mark(val)
+					-}
+		aside.content__side.side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
+			+search(class="search_side")
+			.attention.side__attention
+				.attention__head.subtitle ВНИМАНИЕ!
+				.attention__body Внимательно следите за тем, какая марка и модель указанна в поиске выше. В противном случае, мы не несем ответсвенности если Вы дезинформируте себя и приобрете товар не подходящий для вашего авто.
+			.list.side__list
+				.list__title.subtitle  топ 5 автомарок
+
+				each val in top5marok
+					.list__block
+						a.list__block-head(href="")
+							.list__side-img
+								img(src="img/"+val.img)
+							.list__block-title=val.item
+
+						each item in val.list
+							a.list__block-item(href="")=item
+
+			.side__banner(style="background-image: url(img/side_banner.jpg)")
+				a.btn.btn_white.side__banner-btn(href="") Подробнее
+			.subtitle Способы оплаты
+			.side__pay.pay
+				each val in pay
+					.pay__item
+						img.pay__img(src="img/" + val.item)
+

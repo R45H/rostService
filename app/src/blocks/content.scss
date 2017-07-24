@@ -1,7 +1,10 @@
 .content {
+  display:flex;
+  @include screen-sm(){
+    flex-wrap: wrap;
+  }
   &__side {
     @include screen-sm(min) {
-      position: absolute;
       top: 0;
       z-index: 5;
     }
@@ -10,9 +13,12 @@
     }
   }
   &__main {
-    text-align: center;
     @include screen-xs() {
       padding: 0;
+    }
+
+    .title:first-child{
+      margin-top: 0px;
     }
   }
   &__search {
@@ -45,7 +51,7 @@
   }
   &__popular {
     margin-top: 30px;
-
+  text-align: center;
     @include screen-sm(){
       margin-top: 0;
     }

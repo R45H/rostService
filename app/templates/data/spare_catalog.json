@@ -1,47 +1,47 @@
 {
   "spare_catalog":[
     {
-      "img": "img/spare-cat/item1.png",
+      "img": "icon icon-1",
       "item":"Топливная система"
     },
     {
-      "img": "img/spare-cat/item2r.png",
+      "img": "icon icon-2",
       "item":"Тормозная система"
     },
     {
-      "img": "img/spare-cat/item3.png",
+      "img": "icon icon-3",
       "item":"Электрика"
     },
     {
-      "img":"img/spare-cat/item4.png",
+      "img":"icon icon-4",
       "item":"Фильтры"
     },
     {
-      "img": "img/spare-cat/item5.png",
+      "img": "icon icon-5",
       "item":"Детали экстерьера"
     },
     {
-      "img": "img/spare-cat/item6.png",
+      "img": "icon icon-6",
       "item":"Климатические системы"
     },
     {
-      "img": "img/spare-cat/item7.png",
+      "img": "icon icon-7",
       "item":"Радиаторы и охлаждение"
     },
     {
-      "img": "img/spare-cat/item8.png",
+      "img": "icon icon-8",
       "item":"Сцепление"
     },
     {
-      "img": "img/spare-cat/item9.png",
+      "img": "icon icon-9",
       "item":"Системы управления"
     },
     {
-      "img": "img/spare-cat/item10.png",
+      "img": "icon icon-10",
       "item":"Двигатели"
     },
     {
-      "img": "img/spare-cat/item11.png",
+      "img": "icon icon-11",
       "item":"Коробки передач"
     }
   ]

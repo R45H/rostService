@@ -36,3 +36,15 @@
 		border-top: 1px solid lighten($light-gray, 5%);
 	}
 }
+
+.col-mark{
+	width: 20%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+	@include screen-md(){
+			width: 33.3333%;
+	}
+	@include screen-xs(){
+			width: 50%;
+	}
+}

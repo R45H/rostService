@@ -2,6 +2,7 @@ include ../mixins/profit
 include ../mixins/quiz
 include ../mixins/feature
 include ../mixins/card
+include ../mixins/title
 
 .container
 	.breadcrumb
@@ -98,9 +99,7 @@ include ../mixins/card
 				each val in quiz
 					+quiz(val)(class="tab__quiz")
 
-	.text-center
-		.title
-			.title__text С этим товаром так же покупают
+	+title("С этим товаром так же покупают")
 	.row
 		each val in popular_spares
 			.col-sm-6.col-md-4.col-lg-3.main__space_bot
