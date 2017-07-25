@@ -13,11 +13,12 @@
     }
   }
   &__main {
+    overflow-x: hidden;
     @include screen-xs() {
       padding: 0;
     }
 
-    .title:first-child{
+    &>.title:first-child{
       margin-top: 0px;
     }
   }
@@ -45,7 +46,36 @@
     }
 
   }
-
+  &__about{
+    margin-top: 10px;
+  }
+  &__about-logo{
+    position: relative;
+    bottom: -50px;
+    @include screen-sm(){
+      bottom: -20px;
+      max-height: 70px;
+    }
+  }
+  &__about-bg{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin-bottom:50px;
+    border-bottom: 2px solid $light-gray;
+    @include  screen-sm(){
+      margin-bottom: 25px;
+    }
+  }
+  &__about-text{
+    text-align: justify;
+    color: $dark-gray;
+    margin-bottom: 30px;
+  }
   &__catalog {
     margin-top: 60px;
   }

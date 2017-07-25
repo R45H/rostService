@@ -1,0 +1,60 @@
+.spares-slider {
+	position: relative;
+
+	&__wrap {
+		margin: 0 -15px;
+	}
+	&__item {
+		padding: 0 15px;
+	}
+
+	&__nav {
+		position: absolute;
+		top: 35px;
+		right: 0;
+
+		@include screen-sm() {
+			top: 30px;
+		}
+		@include screen-xs(){
+		top: 35px;
+		right: 10px;
+	}
+}
+
+&__prev, &__next {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	transition: all .3s ease;
+
+	&.slick-disabled {
+		filter: grayscale(100%);
+		opacity: 0.5;
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+&__prev {
+	right: 0;
+	background: url("../img/arrow-left.png") center/contain no-repeat;
+}
+
+&__next {
+	next: 0;
+	background: url("../img/arrow-right.png") center/contain no-repeat;
+
+}
+
+.slick-dots {
+	position: static;
+	margin-top: 20px;
+}
+
+}
