@@ -2,6 +2,10 @@
 	&__head {
 		border-bottom: 2px solid $light-gray;
 		text-align: center;
+
+		@include screen-md() {
+			text-align: left;
+		}
 	}
 	&__content {
 		padding: 25px 0;
@@ -29,6 +33,7 @@
 			display: block;
 			max-width: 500px;
 			margin: 0 auto;
+			text-align: center;
 		}
 		@include screen-xs() {
 			padding: 8px 15px;
@@ -182,16 +187,33 @@
 
 	&__content {
 		display: none;
-		text-align: center;
 
 		&.visible {
 			display: block;
 		}
 	}
+
 	&__text {
 		margin: 0 0 25px 0;
 	}
+
 	&__btn {
 		margin: 25px auto;
+	}
+
+	&__feature {
+		margin-bottom: 5px;
+	}
+
+	&__quiz {
+		margin: 0 0 30px;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&_bigger {
+		font-size: 1.6rem;
 	}
 }

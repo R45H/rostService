@@ -6,6 +6,7 @@
 	}
 
 	&__logos {
+
 		@include screen-md() {
 			padding: 30px 0;
 		}
@@ -103,5 +104,13 @@
 		@media (min-width: 576px) and (max-width: 768px){
 			height: 125px;
 		}
+	}
+
+	&__item {
+		margin-bottom: 40px;
+	}
+
+	&__profits {
+		margin-bottom: 15px;
 	}
 }

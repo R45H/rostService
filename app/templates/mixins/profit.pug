@@ -1,8 +1,18 @@
 mixin profit(data)
-	each val in data
-		div&attributes(attributes)
-			.profit
-				.profit__title.subtitle=val.title
-				.profit__wrap
-					img.profit__img(src="img/"+val.img)
-					.profit__descr=val.descr
+	- var cls = attributes.class
+
+	.profit(class= cls ? cls : "")
+
+		if cls == "profit_thin"
+			img.profit__img(src= "img/" + data.img)
+		else
+			.profit__title.subtitle= data.title
+
+		.profit__wrap
+
+			if cls == "profit_thin"
+				.profit__title.subtitle= data.title
+			else
+				img.profit__img(src= "img/" + data.img)
+
+			.profit__descr= data.descr

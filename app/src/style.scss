@@ -10,7 +10,9 @@
 @import url('blocks/telephone.scss'); // телефон в шапке
 @import url('blocks/menu/menu.scss'); // верхнее меню
 @import url('blocks/main-slider/main-slider.scss'); // слайдер на главной
-@import url('blocks/profit.scss'); // слайдер на главной
+@import url('blocks/subtitle.scss'); //Подзаголовки
+@import url('blocks/profit.scss'); // Преимущества
+@import url('blocks/profits.scss'); // Обёртка преимуществ
 @import url('blocks/discount.scss'); // Плашка со скидкой
 @import url('blocks/card.scss'); // Карточка товара
 @import url('blocks/list.scss'); // Блок списка категорий
@@ -22,7 +24,6 @@
 @import url('blocks/tab/tab.scss'); //табы
 @import url('blocks/producer.scss'); //производители на главной
 @import url('blocks/title.scss'); //заголовки
-@import url('blocks/subtitle.scss'); //Подзаголовки
 @import url('blocks/hits-slider/hits-slider.scss'); //слайдер хитов на главной
 @import url('blocks/partners.scss'); //блок  партнеры
 @import url('blocks/logos-big.scss'); //блок  топ производители
@@ -37,6 +38,8 @@
 @import url('blocks/number/number.scss'); // Блок количества товаров с "+" и "-"
 @import url('blocks/side.scss'); // стили бокового блока
 @import url('blocks/pay.scss'); // стили бокового блока
+@import url('blocks/quiz.scss'); // Блок вопросов и ответов
+@import url('blocks/feature.scss'); // Характеристики
 @import url('blocks/spares-slider/spares-slider.scss'); // слайдер запчастей
 
 @import url('blocks/map/map.scss'); //Карта

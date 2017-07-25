@@ -1,0 +1,43 @@
+.feature {
+	text-align: center;
+
+	@include screen-xs(min) {
+		display: flex;
+		text-align: left;
+	}
+
+	&__name {
+		color: $gray;
+		margin-bottom: 3px;
+
+		@include screen-xs(min) {
+			margin-bottom: 0;
+			width: 40%;
+			display: flex;
+			align-items: baseline;
+			white-space: nowrap;
+			margin-right: 15px;
+		}
+		
+		&::after {
+
+			@include screen-xs(min) {
+				content: '';
+				margin-left: 15px;
+				height: 2px;
+				width: 100%;
+				background: repeating-linear-gradient(to right, $light-gray 0, $light-gray 2px, transparent 2px, transparent 4px);
+			}
+		}
+	}
+
+	&__value {
+		color: $dark-gray;
+		margin-bottom: 15px;
+
+		@include screen-xs(min) {
+			margin-bottom: 0;
+			width: 60%;
+		}
+	}
+}

@@ -1,5 +1,6 @@
-.side {
-	&__list {
+.side{
+
+	&__list{
 		margin-bottom: 35px;
 
 		.icon {
@@ -144,6 +145,7 @@
 			}
 		}
 	}
+
 	&__banner {
 		margin-bottom: 30px;
 		display: flex;
@@ -153,12 +155,18 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
-		img {
+
+		img{
 			max-width: 100%;
 		}
 	}
+
 	&__banner-btn {
 		margin-bottom: 20px;
 		text-transform: uppercase;
+	}
+
+	&__pay {
+		margin-bottom: 30px;
 	}
 }
