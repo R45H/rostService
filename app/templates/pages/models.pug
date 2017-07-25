@@ -14,7 +14,7 @@ include ../mixins/title
 	.content
 		section.content__main.col-lg-9.col-md-8
 			+title("Модельный ряд - ГАЗ")(descr="Выберите модель Вашего авто")
-			.row(style="margin-top: 50px;")
+			.row
 				each val in models
 					.col-12.col-sm-6.col-lg-4.main__space_bot
 						+car(val)

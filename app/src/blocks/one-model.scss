@@ -1,0 +1,27 @@
+.one-model{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	&__img,&__descr{
+		padding: 0 15px;
+	}
+	&__img{
+		width:55%;
+		img {
+			max-width: 100%;
+		}
+		@include screen-md(){
+			width:100%;
+		}
+	}
+	&__descr{
+		width: 43%;
+		color: $dark-gray;
+		font-size: 1.6rem;
+		@include screen-md(){
+			width:100%;
+		}
+	}
+
+}
