@@ -1,0 +1,20 @@
+include ../mixins/search
+include ../mixins/list
+include ../mixins/card
+include ../mixins/title
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		.breadcrumb__last-item Производители
+
+.container
+	+title("Каталог производителей")
+	.main__descr
+		p Лорем ипсум долор сит амет, яуод ессе вулпутате ин усу, усу ет хинц цлита доценди. Вим яуот ерат ипсум ут, татион ратионибус усу не. Партиендо цонсеяуунтур ат нец, яуо цонгуе десерунт ат. Ех еос стет инани.
+
+
+	.row
+		each val in producers
+			.col-12.col-sm-6.col-md-4
+				+list(val)(class="list_producer",	img_sm)
