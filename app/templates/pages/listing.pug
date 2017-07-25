@@ -1,0 +1,67 @@
+include ../mixins/search
+include ../mixins/list
+include ../mixins/card
+include ../mixins/title
+include ../mixins/catalog-tab
+
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		.breadcrumb__last-item Авто запчасти
+
+.container
+	.content
+		section.content__main.col-lg-9.col-md-8
+			+title("Запчасти для ГАЗ")(descr= "Лорем ипсум долор сит амет, те усу фугит лабитур легендос")
+
+			.filters.content__filters
+				.filters__price Цена
+				select.select.filters__select
+					option Производитель
+					option Производитель
+					option Производитель
+				form.search-top.filters__search(action="search-top" name="search-top-form")
+					input.search-top__input(type="text" placeholder="Артикул")
+					button.search-top__btn(type="submit")
+
+				.filters__view-wrap
+					.filters__view.active
+						i.fa.fa-th
+					.filters__view
+						i.fa.fa-th-list
+
+			.row
+				- for (i = 0; i < 4; i++) {
+					each val in popular_spares
+						.col-12.col-sm-6.col-lg-4.main__space_bot
+							+card(val)
+				- }
+
+		aside.content__side.side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
+			+search(class="search_side")
+			.attention.side__attention
+				.attention__head.subtitle ВНИМАНИЕ!
+				.attention__body Внимательно следите за тем, какая марка и модель указана в поиске выше. В противном случае, мы не несем ответственности если Вы дезинформируете себя и приобретете товар не подходящий для вашего авто.
+			.list.side__list
+				.list__title.subtitle каталог автозапчастей
+				.list__items
+				each val in spare_catalog
+					a.list__item.list__item_big(href="")
+						.list__side-img
+							i(class=val.img)
+						span=val.item
+			.subtitle.subtitle_red специальное Предложение
+			.row.side__hits
+				each val in one_card
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
+			.side__banner(style="background-image: url(img/side_banner.jpg)")
+				a.btn.btn_white.side__banner-btn(href="") Подробнее
+			.subtitle Способы оплаты
+			.side__pay.pay
+					each val in pay
+						.pay__item
+							img.pay__img(src="img/"+val.item)

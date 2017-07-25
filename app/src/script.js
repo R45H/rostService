@@ -11,4 +11,5 @@ $(document).ready(function () {
     @@include('blocks/gallery/gallery.js')
     @@include('blocks/catalog-tab/catalog-tab.js')
     @@include('blocks/number/number.js')
+    @@include('blocks/select/select.js')
 });
