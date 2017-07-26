@@ -1,0 +1,52 @@
+{
+  "subcateg":[
+    {
+      "name":"Тормозные колодки",
+      "img":"img/braking/braking1.jpg"
+    },
+    {
+      "name":"Тормозные      Супорта",
+      "img":"img/braking/braking2.jpg"
+    },
+    {
+      "name":"Тормозные      диски и барабаны",
+      "img":"img/braking/braking3.jpg"
+    },
+    {
+      "name":"Тормозные      шланги и трубки",
+      "img":"img/braking/braking4.jpg"
+    },
+    {
+      "name":"Вакумные      насосы",
+      "img":"img/braking/braking8.jpg"
+    },
+    {
+      "name":"Запчасти и      Рем. Комплекты",
+      "img":"img/braking/braking5.jpg"
+    },
+    {
+      "name":"Тормозные      жидкости",
+      "img":"img/braking/braking6.jpg"
+    },
+    {
+      "name":"Датчики и        индикаторы",
+      "img":"img/braking/braking7.jpg"
+    },
+    {
+      "name":"Ручной      тормоз",
+      "img":"img/braking/braking9.jpg"
+    },
+    {
+      "name":"Бочки для тормозной жидкости",
+      "img":"img/braking/braking10.jpg"
+    },
+    {
+      "name":"Тормозные усилители",
+      "img":"img/braking/braking11.jpg"
+    },
+    {
+      "name":"Тормозные аккумуляторы",
+      "img":"img/braking/braking12.jpg"
+    }
+  ]
+}

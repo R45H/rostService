@@ -51,7 +51,10 @@
 		}
 	}
 	&__img {
-		max-width: 100%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding-bottom: 80%;
 	}
 	&__title {
 		font-size: 1.4rem;

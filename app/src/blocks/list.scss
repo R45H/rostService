@@ -18,14 +18,6 @@
 		background: no-repeat 50% 50%;
 		background-size: contain;
 		margin-bottom: 10px;
-
-
-		&_sm{
-			width:50%;
-			padding-bottom: 30%;
-			margin-left: auto;
-			margin-right: auto;
-		}
 	}
 	&__items {
 		text-align: left;
@@ -197,24 +189,20 @@
 		margin-bottom: 30px;
 	}
 
-	&_sm {
+	&_producer {
+		margin-bottom: 50px;
 
 		.list {
-			// =====
-
 			&__item {
 				font-size: 1.4rem;
 			}
-
 			&__img {
-				padding-bottom: 25%;
+				width: 50%;
+				padding-bottom: 30%;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
-	}
-
-	&_producer{
-		margin-bottom: 50px;
-
 		@include screen-xs(){
 			margin-bottom: 30px;
 		}

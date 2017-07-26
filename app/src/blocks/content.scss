@@ -19,6 +19,7 @@
 
 	&__main {
 		overflow-x: hidden;
+		overflow-y: visible;
 
 		@include screen-xs() {
 			padding: 0;
@@ -31,7 +32,11 @@
 			}
 		}
 	}
+	&__main-img{
+		text-align: center;
+		margin-bottom: 20px;
 
+	}
 	&__search {
 		padding-bottom: 60px;
 

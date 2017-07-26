@@ -1,12 +1,15 @@
 .text {
 	color: $dark-gray;
 	text-align: center;
+
+
 	p {
 		margin: 0 0 1.5rem 0;
 		text-align: center;
 	}
 	ul {
 		margin: 0;
+		margin-bottom: 30px;
 		padding: 0;
 		list-style: none;
 
@@ -30,7 +33,24 @@
 				position: absolute;
 			}
 		}
+		&.sm{
+			li{
+				padding-left: 10px;
+			}
+		}
 	}
+
+	&_left{
+		text-align: left;
+
+		p {
+			text-align: left;
+		}
+		.subtitle{
+			text-align: left;
+		}
+	}
+
 	.circle {
 		padding: 0 15px;
 	}

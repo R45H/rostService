@@ -3,6 +3,7 @@
     {
       "title": "Двигатели",
       "img": "img/engine.png",
+      "link": "catalog-categ.html",
       "items": [
         {
           "text": "Cummins"
@@ -24,6 +25,8 @@
     {
       "title": "Сцепление",
       "img": "img/disks.png",
+      "link": "catalog-categ.html",
+
       "items": [
         {
           "text": "Готовые комплекты"
@@ -45,6 +48,8 @@
     {
       "title": "Фильтры",
       "img": "img/filters.png",
+      "link": "catalog-categ.html",
+
       "items": [
         {
           "text": "Масляные          "

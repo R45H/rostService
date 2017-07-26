@@ -2,20 +2,20 @@ mixin catalog_tab(flag,id)
    .catalog-tab&attributes(attributes)
        .catalog-tab__head
 
-           a(href="#spares"+id, class= flag ? "catalog-tab__link active": "catalog-tab__link" )
-               img.catalog-tab__img(src="img/oil-filter.png")
+           a(href="#spares"+id, class= flag ? " catalog-tab__link active": "catalog-tab__link" )
+               .catalog-tab__img(style='background-image: url("img/oil-filter.png")')
                .catalog-tab__title Катализаторы Глушители, заслонки
 
            a.catalog-tab__link(href="#disc"+id)
-               img.catalog-tab__img(src="img/engine-gaskets.png")
+               .catalog-tab__img(style='background-image: url("img/engine-gaskets.png")')
                .catalog-tab__title Тормоза, Супорта, Колодки, Диски
 
            a.catalog-tab__link(href="#resors"+id)
-               img.catalog-tab__img(src="img/engine-gaskets.png")
+               .catalog-tab__img(style='background-image: url("img/engine-gaskets.png")')
                .catalog-tab__title Амортизаторы, ресоры, пружины
 
            a.catalog-tab__link(href="#accum"+id)
-               img.catalog-tab__img(src="img/engine-gaskets.png")
+               .catalog-tab__img(style='background-image: url("img/engine-gaskets.png")')
                .catalog-tab__title Аккумуляторы, предохранители
        .catalog-tab__body
            div(class= flag ? "catalog-tab__content visible" : "catalog-tab__content",id="spares"+id)
