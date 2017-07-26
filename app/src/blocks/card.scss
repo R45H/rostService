@@ -7,6 +7,8 @@
 	overflow: hidden;
 	border-right: 1px solid $light-gray;
 	transition: $duration ease;
+	max-width: 350px;
+	margin: 0 auto;
 
 	&::after {
 		content: '';

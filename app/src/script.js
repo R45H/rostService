@@ -13,4 +13,6 @@ $(document).ready(function () {
     @@include('blocks/number/number.js')
     @@include('blocks/select/select.js')
     @@include('blocks/spares-slider/spares-slider.js')
+    @@include('blocks/filters/filters.js')
+    @@include('blocks/sort/sort.js')
 });

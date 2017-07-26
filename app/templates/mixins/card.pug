@@ -11,7 +11,7 @@
 		price - Стоимость без валюты
 
 mixin card(data)
-	.card(attributes.class ? class= attributes.class)
+	.card(class= attributes.class ? attributes.class : "")
 		.card__wrap
 			.card__img-wrap
 				a.card__img(
@@ -38,11 +38,12 @@ mixin card(data)
 			.card__text-wrap
 				a.subtitle.card__title(href= data.link ? data.link : "#")= data.title
 
-				if data.subtitle
-					p.card__subtitle= data.subtitle
+				.card__sub-wrap
+					if data.subtitle
+						p.card__subtitle= data.subtitle
 
-				if data.vendor
-					p.card__vendor= data.vendor
+					if data.vendor
+						p.card__vendor= data.vendor
 
 				.card__text-i
 
