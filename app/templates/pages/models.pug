@@ -7,19 +7,42 @@ include ../mixins/title
 .container
 	.breadcrumb
 		a.breadcrumb__link(href="/") Главная
-		a.breadcrumb__link Марки авто
+		a.breadcrumb__link(href="/autos.html") Марки авто
 		.breadcrumb__last-item Модельный ряд - ГАЗ
 
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
 			+title("Модельный ряд - ГАЗ")(descr="Выберите модель Вашего авто")
-			.row(style="margin-top: 50px;")
+			.row
 				each val in models
 					.col-12.col-sm-6.col-lg-4.main__space_bot
 						+car(val)
-			+title("Топ запчасти для ГАЗ")
-				.spares-slider
+
+			.spares-slider
+				+title("Топ запчасти для ГАЗ")
+				.spares-slider__nav
+				.spares-slider__wrap
+					each val in spares
+						+list(val)(class="spares-slider__item")
+			section.content__about
+				+title("об Автомобилях ГАЗ")
+				.content__about-bg(style="background-image: url('img/gaz-about.jpg');")
+					img.content__about-logo(src="img/gaz.png")
+				.content__about-text
+					p.
+						Го́рьковский автомоби́льный заво́д (сокращённо ГАЗ) — советское и российское автомобилестроительное предприятие, крупный производитель легковых, лёгких грузовых автомобилей, микроавтобусов и военной техники. Завод был основан в 1932 году как Нижегородский автомобильный завод имени В. М. Молотова. Находится в Нижнем Новгороде (с 1932 по 1990 годы — Горький). До 2005 года функционировал как единое ОАО «ГАЗ», в ходе реструктуризации сборочные производства легковых и грузовых автомобилей выделены в отдельное дочернее общество — ООО Автомобильный завод «ГАЗ». В августе 2009 года, после сокращений, на ОАО «ГАЗ» (ныне объединяет автокомпонентные производства предприятия) и ООО Автомобильный завод «ГАЗ» работало 27 000 человек[1], к 2013 году численность персонала сократилась уже до 25 000 человек.
+					p.
+						С 2005 года Горьковский автозавод входит в один из крупнейших[2] автомобилестроительных холдингов России «Группа ГАЗ». Предприятие объединяет два дивизиона «Группы ГАЗ» — Дивизион «Лёгкие коммерческие и легковые автомобили» и Дивизион «Автокомпоненты». В Дивизион «Легкие коммерческие и легковые автомобили» входят мощности ГАЗа по выпуску автомобильной техники, в Дивизион «Автокомпоненты» — заготовительные производства завода (металлургическое, кузнечное и инструментальное и прессово-рамное производства; производство арматуры, колёс и рулевого управления; корпус цветного литья; завод автомобильных агрегатов; завод штампов и пресс-форм).
+				.subtitle  Модельный ряд производимых авто на каторые у нас есть запчасти
+				.row
+
+					each val in gaz_models
+						.col-12.col-sm-6.col-lg-3.list.list_models.list_mb
+							each item in val.col
+								a.list__item(href='')=item.item
+
+
 
 
 
@@ -28,13 +51,23 @@ include ../mixins/title
 			.attention.side__attention
 				.attention__head.subtitle ВНИМАНИЕ!
 				.attention__body Внимательно следите за тем, какая марка и модель указана в поиске выше. В противном случае, мы не несем ответственности если Вы дезинформируете себя и приобретете товар не подходящий для вашего авто.
-			.subtitle.subtitle_red специальное Предложение
+			.list.list_models
+				a.list__head(href="")
+					.list__img(style="background-image: url('img/gaz.png');")
+					.list__title.subtitle Самые популярные модели ГАЗ
+				.list__items
+					a.list__item(href= "") ГАЗон NEXT (Спецтехника)
+					a.list__item(href= "") Газель NEXT (Фургон-бокс)
+					a.list__item(href= "") ГАЗ-3302 (Фургон-бокс)
+					a.list__item(href= "") ГАЗ-3302 (Фургон)
+					a.list__item(href= "") ГАЗ-Волга 21 1956-1970 год
+
+			.subtitle специальное Предложение
 			.row.side__hits
 				each val in one_card
 					.col-md-12.col-sm-6.col-12.main__space_bot
 						+card(val)
-					.col-md-12.col-sm-6.col-12.main__space_bot
-						+card(val)
+
 			.subtitle Способы оплаты
 			.side__pay.pay
 				each val in pay

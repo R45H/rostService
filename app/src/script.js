@@ -12,4 +12,5 @@ $(document).ready(function () {
     @@include('blocks/catalog-tab/catalog-tab.js')
     @@include('blocks/number/number.js')
     @@include('blocks/select/select.js')
+    @@include('blocks/spares-slider/spares-slider.js')
 });
