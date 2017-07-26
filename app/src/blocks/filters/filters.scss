@@ -7,6 +7,10 @@
 	color: $dark-gray;
 
 	@include screen-md() {
+		justify-content: space-between;
+	}
+
+	@include screen-md() {
 		align-items: center;
 	}
 
@@ -16,10 +20,6 @@
 
 	&__price {
 		margin-right: 30px;
-		cursor: pointer;
-		padding: .8rem 15px .6rem 0;
-		line-height: 1.15;
-		position: relative;
 
 		@include screen-md() {
 			margin-right: 20px;
@@ -28,33 +28,6 @@
 		@include screen-xs() {
 			margin-right: 0;
 			margin-bottom: 15px;
-		}
-
-		&::before,
-		&::after {
-			content: '';
-			position: absolute;
-			right: 0;
-		}
-
-		&::before {
-			border-bottom: 5px solid $gray;
-			border-left: 4px solid transparent;
-			border-right: 4px solid transparent;
-			bottom: 50%;
-			margin-bottom: 1px;
-		}
-
-		&::after {
-			border-top: 5px solid $red;
-			border-left: 4px solid transparent;
-			border-right: 4px solid transparent;
-			top: 50%;
-			margin-top: 1px;
-		}
-
-		&:hover {
-			color: $red;
 		}
 	}
 
@@ -82,11 +55,10 @@
 		margin-right: 30px;
 
 		@include screen-md() {
-			margin-right: 20px;
+			margin-right: 0;
 		}
 
 		@include screen-xs() {
-			margin-right: 0;
 			margin-bottom: 15px;
 			width: 100%;
 			max-width: 300px;
@@ -119,8 +91,8 @@
 		margin-left: auto;
 		align-self: center;
 
-		@include screen-xs() {
-			margin: 0 auto;
+		@include screen-md() {
+			display: none;
 		}
 	}
 
@@ -130,9 +102,23 @@
 		font-size: 2rem;
 		color: $light-gray;
 		cursor: pointer;
+		position: relative;
+		user-select: none;
+
+		&:hover {
+			color: darken($light-gray, 15%);
+		}
+
+		&:active {
+			top: 1px;
+		}
 
 		&.active {
 			color: $dark-gray;
+
+			&:hover {
+				color: lighten($dark-gray, 30%);
+			}
 		}
 	}
 }
