@@ -1,0 +1,48 @@
+.sort {
+	cursor: pointer;
+	padding: .8rem 15px .6rem 0;
+	line-height: 1.15;
+	position: relative;
+	user-select: none;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		transition: $duration / 2 linear margin, $duration / 2 linear transform $duration / 3;
+	}
+
+	&::before {
+		border-bottom: 5px solid $gray;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		bottom: 50%;
+		margin-bottom: 1px;
+	}
+
+	&::after {
+		border-top: 5px solid $red;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		top: 50%;
+		margin-top: 1px;
+	}
+
+	&:hover {
+		color: $red;
+	}
+
+	&_asc {
+
+		&::before {
+			transform: rotate(180deg);
+			margin-bottom: -6px;
+		}
+
+		&::after {
+			transform: rotate(180deg);
+			margin-top: -6px;
+		}
+	}
+}
