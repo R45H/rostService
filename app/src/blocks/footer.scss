@@ -45,7 +45,7 @@
 		}
 	}
 	&__motto{
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		color: $dark-gray;
 	}
 	&__contacts{
@@ -79,6 +79,8 @@
 	&__subscribe{
 		margin-top: 50px;
 		margin-bottom: 5px;
+		text-align: left;
+
 		@include screen-md(){
 			margin-top: 15px;
 		}
@@ -89,29 +91,42 @@
 	&__email{
 		position: relative;
 	}
+
+	&__input-wrap {
+		position: relative;
+	}
+
 	&__send{
 		background: #fff;
 		outline: none;
 		position: absolute;
-		top:5px;
-		right: 1px;
-		height: 25px;
+		top: 0;
+		right: 0;
+		height: 100%;
 		width: 40px;
 		border:none;
-		border-left: solid $light-gray 1px;
 		color: $red;
 		font-size: 17px;
 		transition: color ease .3s;
+		padding: 0;
+		cursor: pointer;
+
 		&:hover{
-			cursor: pointer;
 			color: $dark-gray;
+		}
+
+		.fa {
+			width: 100%;
+			line-height: 1.4;
+			border-left: solid $light-gray 1px;
+			border-right: 1px solid transparent;
 		}
 	}
 	&__input{
 		height: 35px;
 		font-size: 1.6rem;
-		padding: 10px;
-		padding-right: 41px;
+		padding: 10px 41px 10px 10px;
+		border: none;
 
 		@include  input-placeholder(){
 			font-style: normal;

@@ -7,8 +7,9 @@ header.header
 					img.logo__img(src="img/logo.svg")
 			.col-xl-4.col-lg-3.hidden-md-down
 				form.search-top(action="search-top" name="search-top-form")
-					input.search-top__input(type="text" placeholder="Найти среди 123 025 запчастей")
-					button.search-top__btn(type="submit")
+					.search-top__input-wrap
+						input.search-top__input(type="text" placeholder="Найти среди 123 025 запчастей")
+						button.search-top__btn(type="submit")
 					.search-top__descr.hidden-lg-down Поиск среди
 						span.red  1 000 000 Автозапчастей
 						|	для комерческого траспорта

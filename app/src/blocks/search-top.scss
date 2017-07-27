@@ -1,37 +1,46 @@
 .search-top {
 	position: relative;
+
+	&__input-wrap {
+		position: relative;
+	}
+
 	&__input {
-		padding: 1rem 1.5rem;
-		padding-right: 45px;
+		padding: 1rem 45px 1rem 1.5rem;
 		width: 100%;
 		border: 1px solid $light-gray;
-		
+
 		@include input-placeholder(){
 			color: $light-gray;
 		}
+
 		@include screen-md(){
-			padding: 1rem ;
-			padding-right: 35px;
+			padding: 1rem 35px 1rem 1rem;
 		}
 	}
 	&__btn {
 		position: absolute;
-		right: 1px;
-		top: 1px;
+		right: 0;
+		top: 0;
 		background: #fff;
 		width:45px;
-		height: 36px;
+		height: 100%;
 		font-size: 1.8rem;
 		color: $red;
 		padding: 0.7rem 1.2rem;
-		border: none;
 		outline: none;
+		border: 1px solid $light-gray;
+		border-left: none;
+		transition: color ease .3s;
 
 		&:after{
 			content: '\f002';
-			font-family: 'FontAwesome';
+			font-family: $font-fa;
 		}
 
+		&:hover {
+			color: $dark-gray;
+		}
 
 		@include screen-md(){
 			padding: 0.7rem 0.8rem;
