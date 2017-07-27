@@ -32,24 +32,32 @@
 		border: 1px solid $light-gray;
 		border-left: none;
 		transition: color ease .3s;
+		cursor: pointer;
 
-		&:after{
+		@include screen-md(){
+			padding: 0.7rem 0.8rem;
+		}
+
+		&::after{
 			content: '\f002';
 			font-family: $font-fa;
+			display: block;
 		}
 
 		&:hover {
 			color: $dark-gray;
 		}
 
-		@include screen-md(){
-			padding: 0.7rem 0.8rem;
+		&:active {
+
+			&::after {
+				margin-top: 1px;
+			}
 		}
-		&:active,&:focus{
+
+		&:active,
+		&:focus {
 			outline: none;
-		}
-		&:hover{
-			cursor: pointer;
 		}
 	}
 	&__descr{

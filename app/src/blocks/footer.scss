@@ -120,6 +120,20 @@
 			line-height: 1.4;
 			border-left: solid $light-gray 1px;
 			border-right: 1px solid transparent;
+
+			&::before {
+				display: block;
+			}
+		}
+
+		&:active {
+
+			.fa {
+
+				&::before {
+					margin-top: 1px;
+				}
+			}
 		}
 	}
 	&__input{
