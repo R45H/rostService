@@ -3,6 +3,18 @@
 	&__list{
 		margin-bottom: 35px;
 
+		.list__item{
+			&:first-child{
+				border-top: 1px solid lighten($light-gray, 5%);
+			}
+
+			&.active{
+
+			}
+		}
+		.list__title{
+			margin-bottom: 15px;
+		}
 		.icon {
 			display: inline-block;
 		}
@@ -146,24 +158,25 @@
 		}
 	}
 
-	&__banner {
+	&__banner-wrap {
 		margin-bottom: 30px;
-		display: flex;
-		align-items: flex-end;
-		justify-content: center;
-		height: 395px;
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-
-		img{
-			max-width: 100%;
-		}
+		position: relative;
 	}
-
+	&__banner{
+		max-width: 100%;
+	}
 	&__banner-btn {
-		margin-bottom: 20px;
 		text-transform: uppercase;
+		width: calc(100% - 30px);
+		margin: 0 15px;
+		position: absolute;
+		bottom: 20px;
+		left:0;
+		text-align: center;
+		height: 50px;
+		font-size: 1.6rem;
+		font-weight: 700;
+		padding: 15px ;
 	}
 
 	&__pay {

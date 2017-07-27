@@ -13,7 +13,7 @@ include ../mixins/catalog-tab
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
-			+title("поиск по каталогу")(class="content__search-title")
+			+title("поиск по каталогу")
 
 			.row
 				.col-md-8.offset-md-2
@@ -28,7 +28,7 @@ include ../mixins/catalog-tab
 					each val in popular_cat
 						.col-12.col-sm-6.col-lg-4
 							+list(val)(class="list_mb")
-				.btn.btn_more Все категории
+				a.btn.btn_more(href="") Все категории
 					.btn__plus.plus
 
 			section.content__catalog
@@ -45,7 +45,7 @@ include ../mixins/catalog-tab
 							+catalog_tab(flag,i)
 
 					-}
-			section.content__popular-spares
+			section.content__popular
 				+title("популярные запчасти")
 
 				.row
@@ -68,11 +68,11 @@ include ../mixins/catalog-tab
 			.list.side__list
 				.list__title.subtitle  каталог автозапчастей
 				.list__items
-				each val in spare_catalog
-					a.list__item.list__item_big(href="catalog-categ.html")
-						.list__side-img
-							i(class=val.img)
-						span=val.item
+					each val in spare_catalog
+						a.list__item.list__item_big(href="catalog-categ.html")
+							.list__side-img
+								i(class=val.img)
+							span=val.item
 			.subtitle.subtitle_red специальное Предложение
 			.row.side__hits
 				each val in one_card
@@ -80,7 +80,8 @@ include ../mixins/catalog-tab
 						+card(val)
 					.col-md-12.col-sm-6.col-12.main__space_bot
 						+card(val)
-			.side__banner(style="background-image: url(img/side_banner.jpg)")
+			.side__banner-wrap
+				img.side__banner(src="img/side_banner.jpg")
 				a.btn.btn_white.side__banner-btn(href="") Подробнее
 			.subtitle Способы оплаты
 			.side__pay.pay

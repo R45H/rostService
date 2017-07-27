@@ -42,7 +42,8 @@ include ../mixins/title
 						each item in val.list
 							a.list__block-item(href="")=item
 
-			.side__banner(style="background-image: url(img/side_banner.jpg)")
+			.side__banner-wrap
+				img.side__banner(src="img/side_banner.jpg")
 				a.btn.btn_white.side__banner-btn(href="") Подробнее
 			.subtitle Способы оплаты
 			.side__pay.pay

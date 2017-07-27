@@ -1,0 +1,168 @@
+include ../mixins/search
+include ../mixins/list
+include ../mixins/card
+include ../mixins/title
+include ../mixins/profit
+include ../mixins/mark
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		a.breadcrumb__link(href="/catalog.html") Авто запчасти
+		a.breadcrumb__link(href="/catalog-categ.html") Тормозные системы
+		.breadcrumb__last-item Тормозные колодки
+
+.container
+	.content
+		section.content__main.col-lg-9.col-md-8
+			+title("Тормозные колодки")
+			.content__main-img
+				img(src="img/braking/braking1.jpg")
+			.text
+				p Bestselling запасных частей с прокладками колонны. У вас есть выбор из большого авто запчастей отправляющиеся в тормозных накладок и других дешевых сделок на нашем диапазоне Kfzteile.
+
+			.row.main__profits
+				each val in profit_podcat
+					.col-sm-6.col-lg-4
+						+profit(val)(class="profit_thin")
+
+			section.content__popular
+				+title("топ марки  авто")
+				.row
+					-for (i = 0; i < 2; i++){
+						each val in mark
+							.col-mark
+								+mark(val)
+					-}
+				a.btn.btn_more(href="autos.html") Показать все
+					.btn__plus.plus
+
+			section.content__popular
+				+title("топ Производители")
+
+				.row.align-items-center
+					.col-mark
+						a(href="")
+							img.logo__img(src="img/logos/bosch.png")
+					.col-mark
+						a(href="")
+							img.logo__img(src="img/logos/hella.png")
+					.col-mark
+						a(href="")
+							img.logo__img(src="img/logos/vemo.png")
+					.col-mark
+						a(href="")
+							img.logo__img(src="img/logos/febi.png")
+					.col-mark
+						a(href="")
+							img.logo__img(src="img/logos/Sachs.png")
+				a.btn.btn_more(href="producers.html") Показать все
+					.btn__plus.plus
+
+			section.content__popular
+
+				+title("популярные запчасти")
+				.row
+					each val in popular_spares
+						.col-12.col-sm-6.col-lg-4.main__space_bot
+							+card(val)
+					each val in popular_spares
+						.col-12.col-sm-6.col-lg-4.main__space_bot
+							+card(val)
+
+			section.content__info
+				+title("Важная информация")(descr="О запчастях тормозной системы, установке, правельной эксплуатации")
+				.text.text_left
+					p  Тормозные системы легковых автомобилей обеспечивает снижение скорости, транспортное средство может полностью остановить и обеспечивает неподвижную позицию в течение длительного времени.
+					.subtitle Различные тормозные системы
+					ul
+						li
+							b Обслуживание тормозной системы.
+							| Уменьшает скорость применяется и приносит транспортное средство к остановке.
+						li
+							b Notbremsmodul.
+							| Если приостановить рабочие тормоза или теряют свою эффективность, входит в зацепление с Notrbremse и обеспечивает объект.
+
+						li
+							b Handbrake.
+							| Дает автомобилю стационарное положение для определенных периодов времени.
+
+					.subtitle Структура тормозов
+					ul.sm
+						li  петля трубы "на тормоза спереди слева и сзади справа".
+						li  детектор сигнала
+						li  петли трубопровода "слева от тормозного устройства переднего правого и сзади".
+						li  Танк Haupthemmzylinders.
+						li  Druckhemmkraftverstärker.
+						li  Вакуумный усилитель тормозов
+						li  Hemmspedal.
+						li  регулятор давления
+						li  Кабель ручного тормоза.
+						li  Задние тормоза устройство
+						li  Настройка клапана стояночного тормоза.
+						li  Рычаг стояночного тормоза.
+						li  Передние колеса тормозной механизм.
+
+					.subtitle поддержка приложений
+					ul
+						li.
+							Контроль Hemmfluidstands незаменим. Максимальный уровень имеет особое значение. Периодичность технического
+							осмотра - каждые 10000 км. Когда незаменим, заполните снова Hemmfluiden. Все 40 000 до 50 000 километров, вы это
+							делаете.
+						li.
+							Проверьте Scotch-блоки и проверить эффективность функциональной способности каждые 100000 километров
+								рекомендуется.
+						li.
+							Проверьте крышку контейнера, указанного в заглавии в виде отверстия для воздуха части емкости для жидкости. При
+								этом не должно происходить никакого загрязнения. Крышка бак, так называемый воздушный клапан, жидкостный
+								резервуар, здесь может быть не происходит никакого загрязнения.
+						li.
+							Верхняя часть Reibbezüge Hemmbeläge должны быть очищены от Verdreckungen. Жиры являются показателем для
+								проверки компрессию.
+
+						li.
+							Handbrake, задний Bramsanlage, Hemmbeläge и регуляторы давления должны проверяться каждые 25000 километров.
+
+						li.
+							Важно, чтобы проверить, является ли система шлангов, включая смягчиться повреждения руля направления или
+								уничтожить другую Beuteile.
+						li.
+							Содержание соединений труб и систем шлангов должны быть проверены в периодические интервалы времени на
+								предмет повреждений или вмятин, как вид определенной влажности в суставах.
+
+						li.
+							Один должен вакуумный насос не реже одного раза чек в течение трех лет, или даже каждые 30000 км.
+
+
+
+		aside.content__side.side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
+			+search(class="search_side")
+			.attention.side__attention
+				.attention__head.subtitle ВНИМАНИЕ!
+				.attention__body Внимательно следите за тем, какая марка и модель указанна в поиске выше. В противном случае, мы не несем ответсвенности если Вы дезинформируте себя и приобрете товар не подходящий для вашего авто.
+			.list.side__list
+				.list__title.subtitle  Тормозные системы
+				.list__items
+					each val in spare_catalog_cat
+						a.list__item.list__item_big(href="")
+							span=val.item
+			.subtitle.subtitle_red специальное Предложение
+			.row.side__hits
+				each val in one_card
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
+					.col-md-12.col-sm-6.col-12.main__space_bot
+						+card(val)
+			.side__banner-wrap
+				img.side__banner(src="img/side_banner.jpg")
+				a.btn.btn_white.side__banner-btn(href="") Подробнее
+
+			.subtitle Способы оплаты
+			.side__pay.pay
+				each val in pay
+					.pay__item
+						img.pay__img(src="img/" + val.item)
+
+
+
+

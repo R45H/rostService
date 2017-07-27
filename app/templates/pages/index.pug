@@ -80,11 +80,13 @@ section.main__tabs
 					.row.align-items-center.logos-big
 						each val in logos_big
 							.col-6.col-sm-4.col-md-2
-								img.logo__img(src="img/logos/" + val.img)
+								a(href="")
+									img.logo__img(src="img/logos/" + val.img)
 					.row.align-items-center
 						each val in logos_small
 							.col-4.col-sm-2.col-md-1
-								img.logo__img(src="img/logos/" + val.img)
+								a(href="")
+									img.logo__img(src="img/logos/" + val.img)
 					.btn.btn_more.tab__btn Все производители
 						.btn__plus.plus
 section.main-hits
