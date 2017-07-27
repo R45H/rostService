@@ -123,6 +123,7 @@
 
 			&::before {
 				display: block;
+				position: relative;
 			}
 		}
 
@@ -131,7 +132,7 @@
 			.fa {
 
 				&::before {
-					margin-top: 1px;
+					top: 1px;
 				}
 			}
 		}

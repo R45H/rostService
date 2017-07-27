@@ -173,38 +173,56 @@
 			}
 		}
 	}
+
 	&__nav {
-		position: absolute;
-		top: 230px;
-		width: 100%;
+
 	}
-	&__prev, &__next {
+
+	&__prev,
+	&__next {
 		position: absolute;
-		width: 40px;
-		height: 40px;
+		width: 7%;
+		height: 100%;
+		top: 0;
 		transition: all .3s ease;
 
-		&.slick-disabled {
-			filter: grayscale(100%);
-			opacity: 0.5;
-			&:hover {
-				cursor: default;
-			}
+		@include screen-sm() {
+			width: 10%;
+		}
+
+		@include screen-xs() {
+			top: 50%;
+			height: 60px;
+			width: 60px;
+			margin-top: -30px;
 		}
 
 		&:hover {
 			cursor: pointer;
+			background-color: rgba(0, 0, 0, .1);
+		}
+
+		&.slick-disabled {
+			filter: grayscale(100%);
+			opacity: 0.5;
+
+			&:hover {
+				cursor: default;
+				background-color: transparent;
+			}
 		}
 	}
-	&__prev {
-		left: 3%;
-		background: url("../img/arrow-left.png") center/contain no-repeat;
-	}
-	&__next {
-		right: 3%;
-		background: url("../img/arrow-right.png") center/contain no-repeat;
 
+	&__prev {
+		left: 0;
+		background: url("../img/arrow-left.png") center no-repeat;
 	}
+
+	&__next {
+		right: 0;
+		background: url("../img/arrow-right.png") center no-repeat;
+	}
+
 	&__dots {
 		padding: 0;
 		margin: 0;
@@ -213,6 +231,8 @@
 		position: absolute;
 		bottom: 20px;
 		right: 7%;
+		z-index: 1;
+
 		@include screen-sm(){
 			bottom: 10px;
 		}
@@ -224,9 +244,9 @@
 			margin-right: 10px;
 			border: 2px solid $gray;
 			transition: all .3s ease;
+			cursor: pointer;
 
 			&:hover {
-				cursor: pointer;
 				background: rgba(224, 226, 226, 0.5);
 			}
 			&.slick-active {

@@ -33,15 +33,15 @@ section.slider
 section.main__logos
 	.container
 		.row.align-items-center
-			.col-12.col-lg-4.col-md-7
+			.col-lg-4.col-md-7
 				+search(class="search_index")
-			.col-12.col-lg-8.offset-lg-4.flex-last.flex-lg-unordered
+			.col-lg-8.offset-lg-4.flex-last.flex-lg-unordered
 				.logos-slider
 					each val in logos
 						.logos-slider__item
 							.logos-slider__img
 								img(src="img/" + val.img)
-			.col-12.col-lg-12.col-md-5
+			.col-md-5.col-lg-12
 				.profits
 					each val in profit_index
 						.profits__item
@@ -60,34 +60,34 @@ section.main__tabs
 					span.red-line
 					|    топ производители
 
-			.tab__body.text-center
+			.tab__body
 				.tab__content.visible#spares
 					.row
 						each val in spares
-							.col-12.col-sm-6.col-lg-3
+							.col-sm-6.col-lg-3.main__space_bot
 								+list(val)
-					.btn.btn_more.tab__btn Все категории
+					.btn.btn_more Все категории
 						.btn__plus.plus
 
 				.tab__content#trademark
-					.tab__text Выберете вашу марку авто
+					.tab__text Выберите вашу марку авто
 					.row
 						each val in top_marks
-							.col-12.col-sm-6.col-lg-3
+							.col-sm-6.col-lg-3.main__space_bot
 								+producer(val)
 
 				.tab__content#manufacturer
-					.row.align-items-center.logos-big
+					.row.align-items-center.main__space_bot
 						each val in logos_big
 							.col-6.col-sm-4.col-md-2
 								a(href="")
 									img.logo__img(src="img/logos/" + val.img)
-					.row.align-items-center
+					.row.align-items-center.main__space_bot
 						each val in logos_small
 							.col-4.col-sm-2.col-md-1
 								a(href="")
 									img.logo__img(src="img/logos/" + val.img)
-					.btn.btn_more.tab__btn Все производители
+					.btn.btn_more Все производители
 						.btn__plus.plus
 section.main-hits
 	.container

@@ -6,11 +6,10 @@
 
 	p {
 		margin: 0 0 1.5rem 0;
-		text-align: center;
+		text-align: justify;
 	}
 	ul {
-		margin: 0;
-		margin-bottom: 30px;
+		margin: 0 0 30px;
 		padding: 0;
 		list-style: none;
 
@@ -49,6 +48,17 @@
 		}
 		.subtitle{
 			text-align: left;
+		}
+	}
+
+	&_center{
+		text-align: center;
+
+		p {
+			text-align: center;
+		}
+		.subtitle{
+			text-align: center;
 		}
 	}
 

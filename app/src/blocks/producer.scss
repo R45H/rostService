@@ -1,6 +1,9 @@
 .producer {
 	text-align: center;
+	display: block;
+
 	&:hover {
+
 		.producer__title {
 			color: $red;
 		}
@@ -11,13 +14,13 @@
 		padding-bottom: 50%;
 		background: no-repeat 50% 100%;
 		background-size: contain;
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 	}
 
 	&__title {
 		color: $gray;
 		padding: 0 50px;
 		text-decoration: none;
-		margin: 30px 0;
+		margin: 0;
 	}
 }
