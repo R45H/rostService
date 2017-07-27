@@ -69,13 +69,15 @@
 	}
 	&__text {
 		transform: skewX(20deg);
+		font-size: 1em;
+		margin: 0;
 
 		@include screen-xs(){
 			padding: 5px 0;
 		}
 	}
 	&__descr{
-		margin-top: 10px;
+		margin: 10px 0 0;
 		font-size: 1.6rem;
 
 		&_mt {

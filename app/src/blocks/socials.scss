@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	&__item {
 		display: inline-flex;
 		align-items: center;
@@ -10,33 +11,45 @@
 		width: 35px;
 		height: 35px;
 		font-size: 17px;
-		@include screen-lg(){
+		position: relative;
+
+		@include screen-lg() {
 			width: 30px;
-			height:30px;
+			height: 30px;
 		}
+
 		&:hover {
 			cursor: pointer;
 			color: #fff;
 			filter: hue-rotate(15deg);
 		}
-	}
-	&_fb{
-		background: #3b5998;
-	}
-	&_tw{
-		background: #55acee;
-	}
-	&_yb{
-		background: #cf3427;
-	}
-	&_pin{
-		background: #ca2127;
-	}
-	&_in{
-		background: #b63591;
-	}
-	&_plus{
-		background: #394451;
-	}
 
+		&:active {
+			top: 1px;
+		}
+
+		&_fb {
+			background: #3b5998;
+		}
+
+		&_tw {
+			background: #55acee;
+		}
+
+		&_yb {
+			background: #cf3427;
+		}
+
+		&_pin {
+			background: #ca2127;
+		}
+
+		&_in {
+			background: #b63591;
+		}
+
+		&_plus {
+			background: #394451;
+		}
+	}
 }

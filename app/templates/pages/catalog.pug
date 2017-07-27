@@ -18,8 +18,9 @@ include ../mixins/catalog-tab
 			.row
 				.col-md-8.offset-md-2
 					form.search-top.content__search(action="search-top" name="search-top-form")
-						input.search-top__input(type="text" placeholder="Например: Амортизатор")
-						button.search-top__btn(type="submit")
+						.search-top__input-wrap
+							input.search-top__input(type="text" placeholder="Например: Амортизатор")
+							button.search-top__btn(type="submit")
 
 			section.content__popular
 				+title("Популярные категории")

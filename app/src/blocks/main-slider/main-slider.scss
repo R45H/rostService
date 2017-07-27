@@ -59,9 +59,9 @@
 		}
 	}
 	&__title {
-		font-weight: 700;
 		font-size: 4.3rem;
-		font-family: $font-black;
+		font-family: $font-main;
+		font-weight: 900;
 		text-transform: uppercase;
 	}
 	&__logo {
@@ -127,7 +127,8 @@
 		color: #fff;
 		font-size: 22px;
 		text-align: right;
-		font-family: $font-black;
+		font-family: $font-title;
+
 		&:after {
 			content: '';
 			position: absolute;
@@ -145,7 +146,7 @@
 		font-family: $font-main;
 		font-size: 55px;
 		line-height: 55px;
-		font-weight: 700;
+		font-weight: 900;
 		@include screen-sm(){
 			font-size: 37px;
 			line-height: 40px;

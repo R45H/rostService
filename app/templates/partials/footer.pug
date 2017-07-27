@@ -56,23 +56,24 @@ footer.footer
 							.footer__head-mobile
 								.footer__title.subtitle социальные сети
 							.socials
-								a.socials__item.socials_fb(href="")
+								a.socials__item.socials__item_fb(href="#" target="_blank")
 									i.fa.fa-facebook(aria-hidden="true")
-								a.socials__item.socials_tw(href="")
+								a.socials__item.socials__item_tw(href="#" target="_blank")
 									i.fa.fa-twitter(aria-hidden="true")
-								a.socials__item.socials_yb(href="")
+								a.socials__item.socials__item_yb(href="#" target="_blank")
 									i.fa.fa-youtube-play(aria-hidden="true")
-								a.socials__item.socials_pin(href="")
+								a.socials__item.socials__item_pin(href="#" target="_blank")
 									i.fa.fa-pinterest-p(aria-hidden="true")
-								a.socials__item.socials_in(href="")
+								a.socials__item.socials__item_in(href="#" target="_blank")
 									i.fa.fa-instagram(aria-hidden="true")
-								a.socials__item.socials_plus
+								a.socials__item.socials__item_plus(href="#" target="_blank")
 									i.fa.fa-plus(aria-hidden="true")
 							.subtitle.footer__subscribe Подписка на новости и акции
 							form.footer__email
-								input.footer__input(type="text", placeholder="Email")
-								button.footer__send
-									i.fa.fa-paper-plane-o(aria-hidden="true")
+								.footer__input-wrap
+									input.footer__input(type="text", placeholder="Email")
+									button.footer__send
+										i.fa.fa-paper-plane-o(aria-hidden="true")
 
 								label.checkbox.footer__checkbox Я согласен на новостную подписку
 									input(type="checkbox").checkbox__hid
@@ -83,9 +84,9 @@ footer.footer
 							img.logo__img(src="img/logo.svg")
 					.footer__motto
 						| Надежность
-						span.red /
+						span.red= " / "
 						| Комфорт
-						span.red /
+						span.red= " / "
 						| Качество
 
 					p Общество с ограниченной ответственностью "РостСервис" занимается оптовой торговлей запасными частями и агрегатами, принадлежностями к коммерческим автомобилям с февраля 2005 года.

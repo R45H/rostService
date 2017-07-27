@@ -1,6 +1,6 @@
 mixin title(text)
-		.title( class = attributes.class)
-			.title__bg
-				.title__text=text
-			if attributes.descr
-				.title__descr(class= attributes.marginTop ? "title__descr_mt" : "")= attributes.descr
+	.title( class = attributes.class)
+		.title__bg
+			h2.title__text= text
+		if attributes.descr
+			p.title__descr(class= attributes.marginTop ? "title__descr_mt" : "")= attributes.descr
