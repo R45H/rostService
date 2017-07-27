@@ -1,0 +1,33 @@
+include ../mixins/title
+include ../mixins/getorder
+include ../mixins/payorder
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		.breadcrumb__last-item Доставка и оплата
+
+	+title("Как получить заказ")(class="title_mb_2x")
+
+	.row.justify-content-center
+		each val in getorder
+			.col-md-6.col-lg-4.main__order-wrap
+				+getorder(val)
+
+	+title("Как оплатить заказ")(class="title_mb_2x")
+
+	.subtitle.main__space_bot= "Если вы "
+		span.red физическое лицо
+
+	.row.main__space_bot
+		each val in payorder[0].row
+			.col-sm-6.col-lg-4.main__order-wrap
+				+payorder(val)
+
+	.subtitle.main__space_bot= "Если вы "
+		span.red юридическое лицо
+
+	.row.main__space_bot
+		each val in payorder[1].row
+			.col-sm-6.col-lg-4.main__order-wrap
+				+payorder(val)

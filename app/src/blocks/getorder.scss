@@ -1,0 +1,66 @@
+.getorder {
+	text-align: center;
+	color: $dark-gray;
+	line-height: 1.4;
+
+	&__title {
+		margin-bottom: 30px;
+
+		@include screen-xs() {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__img {
+		display: block;
+		padding-bottom: 35%;
+		background: no-repeat center / contain;
+		margin: 0 auto 30px;
+
+		@include screen-xs() {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__desc {
+		margin: 0 0 1.4em;
+
+		@include screen-xs() {
+			margin-bottom: .7em;
+		}
+	}
+
+	&__map-link {
+		color: $red;
+
+		&::before {
+			content: '\f041';
+			font-family: $font-fa;
+			padding-right: 7px;
+		}
+	}
+
+	&__note {
+		color: $font-gray;
+		margin: 0;
+	}
+
+	&__company-row {
+
+		.circle {
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	&__company {
+		color: $red;
+		display: inline-block;
+	}
+}
