@@ -1,0 +1,36 @@
+//-
+	data
+		title - Заголовок
+		img - Картинка
+		desc - Массив описаний
+		map - Ссылка на карту
+			text - Текст ссылки карты
+			link - Ссылка
+		note - Серое примечание
+		links - Массив фирм, сгруппированных по строчкам
+			row - Строчка с массивом фирм
+
+mixin getorder(data)
+	.getorder
+		.subtitle.getorder__title= data.title
+		.getorder__img(style="background-image: url(img/" + data.img + ");")
+
+		- for (i = 0; i < data.desc.length; i++) {
+			p.getorder__desc!= data.desc[i]
+		- }
+
+		if data.map
+			a.getorder__map-link(href= data.map.link)= data.map.text
+
+		if data.note
+			p.getorder__note= data.note
+
+		if data.company
+			.text
+				each val in data.company
+					.getorder__company-row
+						span.circle •
+						- for (i = 0; i < val.row.length; i++) {
+							span.getorder__company= val.row[i]
+							span.circle •
+						- }

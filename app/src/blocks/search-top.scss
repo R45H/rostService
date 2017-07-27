@@ -41,7 +41,7 @@
 		&::after{
 			content: '\f002';
 			font-family: $font-fa;
-			display: block;
+			display: inline-block;
 		}
 
 		&:hover {

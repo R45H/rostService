@@ -1,0 +1,22 @@
+//-
+	data
+		row - Строка (Группа блоков)
+			img - Картинка
+			title - Заголовок
+			desc - Описание
+			logos - Массив логотипов
+
+mixin payorder(data)
+	.payorder
+		.payorder__img(style="background-image: url(img/" + data.img + ");")
+		.payorder__wrap
+			p.payorder__title= data.title
+
+			if data.desc
+				p.payorder__desc= data.desc
+
+			if data.logos
+				.payorder__logo-wrap
+					- for (i = 0; i < data.logos.length; i++) {
+						img.payorder__logo(src="img/" + data.logos[i])
+					- }

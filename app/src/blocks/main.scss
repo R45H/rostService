@@ -113,20 +113,30 @@
 	&__profits {
 		margin-bottom: 15px;
 	}
+
 	&__descr{
 		width:66.66666%;
-		margin:0 auto;
 		text-align: center;
 		padding: 0 15px;
 		font-size: 1.6rem;
-		margin-bottom: 60px;
+		margin: 0 auto 60px;
+
 		@include screen-sm(){
 			width:100%;
 		}
+
 		@include screen-xs(){
 			width:100%;
 			margin-bottom: 30px;
 
+		}
+	}
+
+	&__order-wrap {
+		margin-bottom: 30px;
+
+		@include screen-xs() {
+			margin-bottom: 50px;
 		}
 	}
 }

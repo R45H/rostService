@@ -7,7 +7,8 @@ div.side-menu
 	a.btn.btn_white.side-menu__enter(href="") Вход / Регистрация
 
 	form.search-top.search-top_black.side-menu__search-top(action="search-top" name="search-top-form")
-		input.search-top__input(type="text" placeholder="Найти")
-		button.search-top__btn(type="submit")
-			i.fa.fa-search-top(aria-hidden="true")
+		.search-top__input-wrap
+			input.search-top__input(type="text" placeholder="Найти")
+			button.search-top__btn(type="submit")
+				i.fa.fa-search-top(aria-hidden="true")
 	+menu(menu)
