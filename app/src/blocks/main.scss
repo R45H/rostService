@@ -16,6 +16,7 @@
 
 	&__tabs{
 		padding: 40px 0;
+		margin-bottom: 30px;
 	}
 
 	&-hits{
@@ -46,7 +47,8 @@
 	&-text{
 		padding: 30px 0;
 		background: $ultra-light-gray;
-		color: $light-gray;
+		color: darken($light-gray, 10%);
+		text-align: justify;
 	}
 
 	&-wrap {

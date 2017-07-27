@@ -42,6 +42,7 @@
 			content: '\f002';
 			font-family: $font-fa;
 			display: inline-block;
+			position: relative;
 		}
 
 		&:hover {
@@ -51,7 +52,7 @@
 		&:active {
 
 			&::after {
-				margin-top: 1px;
+				top: 1px;
 			}
 		}
 

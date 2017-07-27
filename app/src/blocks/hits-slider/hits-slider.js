@@ -21,18 +21,17 @@ $('.hits-slider').slick({
             }
         },
         {
-            breakpoint: 550,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                dots: true,
-                arrows: false
+                slidesToShow: 1
             }
         },
         {
-            breakpoint: 500,
+            breakpoint: 576,
             settings: {
                 slidesToShow: 1,
                 dots: true,
+	             dotsClass: 'hits-slider__dots',
                 arrows: false
             }
         }
