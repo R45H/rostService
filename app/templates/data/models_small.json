@@ -1,0 +1,24 @@
+{
+  "models_small":[
+    {
+      "img": "img/models/gaz4.jpg",
+      "title": "ГАЗон NEXT     (Спецтехника)",
+      "link": "podcateg-gaz-next.html"
+    },
+    {
+    "img": "img/models/gaz5.jpg",
+    "title": "ГАЗ-Волга 21      1956-1970 год",
+      "link": "podcateg-gaz-next.html"
+    },
+    {
+    "img": "img/models/gaz6.jpg",
+    "title": "ГАЗ-Волга 2410      (Седан)",
+      "link": "podcateg-gaz-next.html"
+    },
+    {
+    "img": "img/models/gaz7.jpg",
+    "title": "ГАЗ-Волга 3102      (Седан)",
+      "link": "podcateg-gaz-next.html"
+    }
+  ]
+}

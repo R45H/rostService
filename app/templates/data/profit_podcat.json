@@ -3,17 +3,17 @@
     {
       "title": "Гарантия на товар",
       "descr": "В течение 2-х лет",
-      "img": "profit5.png"
+      "img": "profit/profit5.png"
     },
     {
       "title": "Бесплатная доставка",
       "descr": "В течение 7 дней",
-      "img": "profit2.png"
+      "img": "profit/profit2.png"
     },
     {
       "title": "Возврат товара",
       "descr": "В течение 14 дней",
-      "img": "profit6.png"
+      "img": "profit/profit6.png"
     }
   ]
 }

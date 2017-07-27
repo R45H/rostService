@@ -1,4 +1,6 @@
 // HEADER
+include ../mixins/title
+
 header.header
 	.container
 		.row.justify-content-between
@@ -32,3 +34,9 @@ header.header
 				a.btn.btn_fill(href="") Вход / Регистрация
 			.btn.btn_fill.menu-toggle
 				span.menu-toggle__bar
+	.popup
+		.popup__head
+			+title("вход")
+			.popup__close
+		.popup__body
+

@@ -13,18 +13,19 @@ include ../mixins/title
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
-			+title("Модельный ряд - ГАЗ")(descr="Выберите модель Вашего авто")
-			.row
-				each val in models
-					.col-12.col-sm-6.col-lg-4.main__space_bot
-						+car(val)
-
-			.spares-slider
-				+title("Топ запчасти для ГАЗ")
-				.spares-slider__nav
-				.spares-slider__wrap
-					each val in spares
-						+list(val)(class="spares-slider__item")
+			section
+				+title("Модельный ряд - ГАЗ")(descr="Выберите модель Вашего авто")
+				.row
+					each val in models
+						.col-12.col-sm-6.col-lg-4.main__space_bot
+							+car(val)
+			section
+				.spares-slider
+					+title("Топ запчасти для ГАЗ")
+					.spares-slider__nav
+					.spares-slider__wrap
+						each val in spares
+							+list(val)(class="spares-slider__item")
 			section.content__about
 				+title("об Автомобилях ГАЗ")
 				.content__about-bg(style="background-image: url('img/gaz-about.jpg');")
@@ -36,11 +37,10 @@ include ../mixins/title
 						С 2005 года Горьковский автозавод входит в один из крупнейших[2] автомобилестроительных холдингов России «Группа ГАЗ». Предприятие объединяет два дивизиона «Группы ГАЗ» — Дивизион «Лёгкие коммерческие и легковые автомобили» и Дивизион «Автокомпоненты». В Дивизион «Легкие коммерческие и легковые автомобили» входят мощности ГАЗа по выпуску автомобильной техники, в Дивизион «Автокомпоненты» — заготовительные производства завода (металлургическое, кузнечное и инструментальное и прессово-рамное производства; производство арматуры, колёс и рулевого управления; корпус цветного литья; завод автомобильных агрегатов; завод штампов и пресс-форм).
 				.subtitle  Модельный ряд производимых авто на каторые у нас есть запчасти
 				.row
-
 					each val in gaz_models
 						.col-12.col-sm-6.col-lg-3.list.list_models.list_mb
 							each item in val.col
-								a.list__item(href='')=item.item
+								a.list__item(href='listing.html')=item.item
 
 
 

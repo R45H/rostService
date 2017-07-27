@@ -1,0 +1,22 @@
+{
+  "models_big":[
+    {
+      "img": "img/models/gaz1.jpg",
+      "title": "Газель NEXT (Фургон-бокс)",
+      "link": "podcateg-gaz-next.html"
+
+    },
+    {
+      "img": "img/models/gaz2.jpg",
+      "title": "ГАЗ-3302      (Фургон-бокс)",
+      "link": "podcateg-gaz-next.html"
+
+    },
+    {
+      "img": "img/models/gaz3.jpg",
+      "title": "ГАЗ-3302      (Фургон)",
+      "link": "podcateg-gaz-next.html"
+
+    }
+    ]
+}

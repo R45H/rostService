@@ -13,16 +13,17 @@ include ../mixins/catalog-tab
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
-			+title("поиск по каталогу")
+			section.main__space_bot
+				+title("поиск по каталогу")
 
-			.row
-				.col-md-8.offset-md-2
-					form.search-top.content__search(action="search-top" name="search-top-form")
-						.search-top__input-wrap
-							input.search-top__input(type="text" placeholder="Например: Амортизатор")
-							button.search-top__btn(type="submit")
+				.row
+					.col-md-8.offset-md-2
+						form.search-top.content__search(action="search-top" name="search-top-form")
+							.search-top__input-wrap
+								input.search-top__input(type="text" placeholder="Например: Амортизатор")
+								button.search-top__btn(type="submit")
 
-			section.content__popular
+			section.main__center
 				+title("Популярные категории")
 
 				.row
@@ -32,7 +33,7 @@ include ../mixins/catalog-tab
 				a.btn.btn_more(href="") Все категории
 					.btn__plus.plus
 
-			section.content__catalog
+			section.content__catalog.main__space_bot
 				+title("Каталог автозапчастей")
 				.catalog-tabs
 					-var n = 0;
@@ -46,14 +47,14 @@ include ../mixins/catalog-tab
 							+catalog_tab(flag,i)
 
 					-}
-			section.content__popular
+			section
 				+title("популярные запчасти")
 
 				.row
 					each val in popular_spares
 						.col-12.col-sm-6.col-lg-4.main__space_bot
 							+card(val)
-			section.content__top-models
+			section
 				+title("Топ Моделей авто")
 
 				.row

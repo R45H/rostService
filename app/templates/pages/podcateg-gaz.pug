@@ -1,6 +1,7 @@
 include ../mixins/search
 include ../mixins/list
 include ../mixins/card
+include ../mixins/car
 include ../mixins/title
 include ../mixins/profit
 include ../mixins/mark
@@ -10,13 +11,12 @@ include ../mixins/mark
 		a.breadcrumb__link(href="/") Главная
 		a.breadcrumb__link(href="/catalog.html") Авто запчасти
 		a.breadcrumb__link(href="/catalog-categ.html") Тормозные системы
-		.breadcrumb__last-item Тормозные колодки
-
+		.breadcrumb__last-item Тормозные колодки для ГАЗ
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
-			section.main__space_bot
-				+title("Тормозные колодки")
+			section
+				+title("Тормозные колодки для ГАЗ")
 				.content__main-img
 					img(src="img/braking/braking1.jpg")
 				.text
@@ -26,19 +26,17 @@ include ../mixins/mark
 					each val in profit_podcat
 						.col-sm-6.col-lg-4
 							+profit(val)(class="profit_thin")
+			section.main__space_bot
+				+title("Модельный ряд - ГАЗ")(descr="Выберите модель Вашего авто")
 
-			section.main__center.main__space_bot
-				+title("топ марки  авто")
 				.row
-					-for (i = 0; i < 2; i++){
-						each val in mark
-							.col-mark
-								+mark(val)
-					-}
-				a.btn.btn_more(href="autos.html") Показать все
-					.btn__plus.plus
-
-			section.main__center
+					each val in models_big
+						.col-12.col-sm-6.col-lg-4.main__space_bot
+							+car(val)
+					each val in models_small
+						.col-12.col-sm-6.col-lg-3.main__space_bot
+							+car(val)
+			section.main__center.main__space_bot
 				+title("топ Производители")
 
 				.row.align-items-center
@@ -59,9 +57,7 @@ include ../mixins/mark
 							img.logo__img(src="img/logos/Sachs.png")
 				a.btn.btn_more(href="producers.html") Показать всех
 					.btn__plus.plus
-
-			section.content__popular
-
+			section
 				+title("популярные запчасти")
 				.row
 					each val in popular_spares
@@ -163,7 +159,4 @@ include ../mixins/mark
 				each val in pay
 					.pay__item
 						img.pay__img(src="img/" + val.item)
-
-
-
 

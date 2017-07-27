@@ -1,6 +1,7 @@
 include ../mixins/search
 include ../mixins/list
 include ../mixins/card
+include ../mixins/car
 include ../mixins/title
 include ../mixins/profit
 include ../mixins/mark
@@ -10,15 +11,14 @@ include ../mixins/mark
 		a.breadcrumb__link(href="/") Главная
 		a.breadcrumb__link(href="/catalog.html") Авто запчасти
 		a.breadcrumb__link(href="/catalog-categ.html") Тормозные системы
-		.breadcrumb__last-item Тормозные колодки
-
+		.breadcrumb__last-item Тормозные колодки для ГАЗ - Газель NEXT
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
-			section.main__space_bot
-				+title("Тормозные колодки")
+			section
+				+title("Тормозные колодки для ГАЗ - Газель NEXT")
 				.content__main-img
-					img(src="img/braking/braking1.jpg")
+					img(src="img/gaz-next.png")
 				.text
 					p Bestselling запасных частей с прокладками колонны. У вас есть выбор из большого авто запчастей отправляющиеся в тормозных накладок и других дешевых сделок на нашем диапазоне Kfzteile.
 
@@ -26,19 +26,14 @@ include ../mixins/mark
 					each val in profit_podcat
 						.col-sm-6.col-lg-4
 							+profit(val)(class="profit_thin")
-
-			section.main__center.main__space_bot
-				+title("топ марки  авто")
+			section
+				+title("Модели газель next")
 				.row
-					-for (i = 0; i < 2; i++){
-						each val in mark
-							.col-mark
-								+mark(val)
-					-}
-				a.btn.btn_more(href="autos.html") Показать все
-					.btn__plus.plus
-
-			section.main__center
+					each val in gaz_models
+						.col-12.col-sm-6.col-lg-3.list.list_models.list_mb
+							each item in val.col
+								a.list__item(href='')=item.item
+			section.main__center.main__space_bot
 				+title("топ Производители")
 
 				.row.align-items-center
@@ -59,8 +54,7 @@ include ../mixins/mark
 							img.logo__img(src="img/logos/Sachs.png")
 				a.btn.btn_more(href="producers.html") Показать всех
 					.btn__plus.plus
-
-			section.content__popular
+			section
 
 				+title("популярные запчасти")
 				.row
@@ -163,7 +157,4 @@ include ../mixins/mark
 				each val in pay
 					.pay__item
 						img.pay__img(src="img/" + val.item)
-
-
-
 

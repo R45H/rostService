@@ -3,16 +3,19 @@
 		{
 			"img": "img/marks/volkswagen.jpg",
 			"title": "Volkswagen",
+			"link":"podcateg-gaz.html",
 			"cnt": 33
 		},
 		{
 			"img": "img/marks/mers.jpg",
 			"title": "mercedes-benz",
+			"link":"podcateg-gaz.html",
 			"cnt": 33
 		},
 		{
 			"img": "img/marks/bmw.jpg",
 			"title": "bmw",
+			"link":"podcateg-gaz.html",
 			"cnt": 24
 		},
 		{
