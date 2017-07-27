@@ -1,17 +1,12 @@
 @font-face {
-	font-family: 'RobotoBlack';
-	src: url('../fonts/Roboto_Black.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
 	font-family: 'AgitPM';
-	src: url('../fonts/AGITPM__.TTF');
+	src: url('../fonts/agitpm/agitpm__.woff2?v=4.7.0') format('woff2'),
+		url('../fonts/agitpm/agitpm__.woff?v=4.7.0') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,400i,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,400i,700,900&subset=cyrillic');
 
 @font-face {
 	font-family: 'FontAwesome';
