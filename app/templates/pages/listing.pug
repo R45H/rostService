@@ -9,7 +9,6 @@ include ../mixins/catalog-tab
 	.breadcrumb
 		a.breadcrumb__link(href="/") Главная
 		.breadcrumb__last-item Авто запчасти
-
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
@@ -39,6 +38,7 @@ include ../mixins/catalog-tab
 				- }
 
 			// Место для грёбаной пагинации
+			p А тут должна быть пагинация. Кастомизуем уже на рабочей версии
 
 		aside.content__side.side.col-md-4.col-lg-3.flex-md-first.no-gutter-left
 								+search(class="search_side")
@@ -60,7 +60,8 @@ include ../mixins/catalog-tab
 											+card(val)
 										.col-md-12.col-sm-6.col-12.main__space_bot
 											+card(val)
-								.side__banner(style="background-image: url(img/side_banner.jpg)")
+								.side__banner-wrap
+									img.side__banner(src="img/side_banner.jpg")
 									a.btn.btn_white.side__banner-btn(href="") Подробнее
 								.subtitle Способы оплаты
 								.side__pay.pay
