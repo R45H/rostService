@@ -79,7 +79,7 @@
 		&:before{
 			content: '\f05a';
 			color: $red;
-			font-family:'FontAwesome';
+			font-family: $font-fa;
 
 		}
 	}
@@ -90,15 +90,6 @@
 		@include screen-md() {
 			border:1px solid $light-gray;
 			border-top:none;
-		}
-	}
-
-	&__btn {
-		width: 100%;
-		text-transform: uppercase;
-		padding: 15px 55px;
-		&:after {
-			top: 30%;
 		}
 	}
 	&__list {

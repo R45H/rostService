@@ -76,10 +76,11 @@
 
 		&:after{
 			content:'\f178';
-			font-family: FontAwesome;
+			font-family: $font-fa;
 			color: inherit;
 			position: absolute;
-			top: 26%;
+			top: 50%;
+			transform: translateY(-50%);
 			right: 20px;
 			transition: color .3s ease;
 		}
@@ -147,5 +148,10 @@
 			margin-top: -13px;
 			right: 15px;
 		}
+	}
+
+	&_big {
+		text-transform: uppercase;
+		padding: 15px 55px;
 	}
 }
