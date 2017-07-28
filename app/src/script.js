@@ -15,4 +15,5 @@ $(document).ready(function () {
     @@include('blocks/spares-slider/spares-slider.js')
     @@include('blocks/filters/filters.js')
     @@include('blocks/sort/sort.js')
+    @@include('blocks/popup/popup.js')
 });

@@ -25,4 +25,12 @@
 			padding: 0 10px;
 		}
 	}
+
+	&_hidden {
+		padding-right: 17px;
+
+		@include screen-lg(min) {
+			padding-right: 17px;
+		}
+	}
 }

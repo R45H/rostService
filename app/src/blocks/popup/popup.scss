@@ -1,15 +1,220 @@
-.popup{
-	display:inline-block;
-	position: absolute;
-	z-index: 5;
-	top:20%;
-	left:40%;
-	&__head{
-		background: $light-gray;
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	align-items: flex-start;
+	justify-content: center;
+	overflow-y: auto;
+	overflow-x: hidden;
+	display: none;
+	padding: 5% 0 30px;
+
+	@include screen-xs() {
+		padding: 0;
+		overflow-y: hidden;
 	}
-	&__body{
-		padding: 30px 25px 30px 25px;
-		background: #fff;
+
+	&__wrap {
+		width: 400px;
+		max-width: 100%;
+		text-align: center;
+		position: relative;
+		border-right: 1px solid $light-gray;
+		padding-top: 16px;
+		top: -100px;
+		opacity: 0;
+		transition: $duration ease top, $duration linear opacity;
+
+		@include screen-xs() {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 100%;
+			padding-top: 0;
+			border-right: none;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 16px;
+			right: -1px;
+			top: 0;
+			height: 16px;
+			background: $ultra-light-gray;
+			border-top: 1px solid $light-gray;
+			border-right: 1px solid $light-gray;
+
+			@include screen-xs() {
+				display: none;
+			}
+		}
+
+		&_visible {
+			transition: $duration * 2 ease top, $duration linear opacity;
+			top: 0;
+			opacity: 1;
+		}
 	}
-	//display:none;
+
+	&__head {
+		position: relative;
+		z-index: 1;
+		background: $ultra-light-gray;
+		padding: 0 120px 0 104px;
+
+		@include screen-xs() {
+			padding: 0 50px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: -8px;
+			bottom: -8px;
+			width: 16px;
+			background: $ultra-light-gray;
+			transform: skewY(-45deg);
+			border-left: 1px solid $light-gray;
+			border-top: 1px solid $light-gray;
+
+			@include screen-xs() {
+				display: none;
+			}
+		}
+	}
+
+	&__title {
+		margin-top: 14px;
+
+		@include screen-xs() {
+			margin-top: 30px;
+		}
+
+		.title {
+			// =====
+
+			&__bg {
+				min-width: 70%;
+
+				@include screen-xs() {
+					min-width: 60%;
+				}
+			}
+		}
+	}
+
+	&__close {
+		width: 30px;
+		height: 30px;
+		background: $red;
+		position: absolute;
+		top: -16px;
+		right: -1px;
+		cursor: pointer;
+		transition: $duration ease;
+		z-index: 1;
+
+		@include screen-xs() {
+			top: 0;
+			right: 0;
+			width: 40px;
+			height: 40px;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 18px;
+			height: 2px;
+			top: 50%;
+			left: 50%;
+			margin-top: -1px;
+			margin-left: -9px;
+			background: white;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
+		&:hover {
+			background: $dark-red;
+		}
+
+		&:active {
+
+			&::before,
+			&::after {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__body {
+		padding: 30px 25px;
+		background: white;
+		border-left: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
+		position: relative;
+
+		@include screen-xs() {
+			height: 100%;
+			border: none;
+			overflow-y: auto;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: $dark-red;
+
+			@include screen-xs() {
+				display: none;
+			}
+		}
+	}
+
+	&__btn {
+		width: 50%;
+
+		@include screen-xs() {
+			width: 100%;
+			max-width: 270px;
+		}
+	}
+
+	&__fog {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: black;
+		z-index: 40;
+		opacity: .2;
+	}
+
+	&_visible {
+		display: flex;
+	}
+
+	.input-cust__num {
+
+		@include screen-xs() {
+			display: none;
+		}
+	}
 }

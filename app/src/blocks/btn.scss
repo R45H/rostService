@@ -13,7 +13,8 @@
 	outline: none;
 	position: relative;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: $red;
 		color: #fff;
 		cursor: pointer;
@@ -29,7 +30,8 @@
 		top: 50%;
 		transform: translateY(-50%);
 
-		&:hover {
+		&:hover,
+		&:focus {
 
 			&::after {
 				transform: none;
@@ -45,7 +47,8 @@
 		border-bottom: 2px solid $dark-red;
 		color: #fff;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: $dark-red;
 			border: 2px solid $dark-red;
 		}
@@ -57,7 +60,8 @@
 		color: #fff;
 		background: transparent;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: #fff;
 			border: 2px solid #fff;
 			color: $dark-gray;
@@ -74,7 +78,7 @@
 		padding-left: 55px;
 		padding-right: 55px;
 
-		&:after{
+		&:after {
 			content:'\f178';
 			font-family: $font-fa;
 			color: inherit;
@@ -95,7 +99,8 @@
 		color: $gray;
 		user-select: none;
 
-		&:hover{
+		&:hover,
+		&:focus {
 			color: $red;
 			border: 1px solid $red;
 			background: #fff;
@@ -120,7 +125,8 @@
 			left: 18px;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background: white;
 			color: $red;
 			border-color: $red;

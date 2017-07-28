@@ -31,24 +31,6 @@ header.header
 						i.fa.fa-angle-down(aria-hidden="true")
 
 			.col-xl-2.col-auto.hidden-md-down
-				a.btn.btn_fill(href="") Вход / Регистрация
+				a.btn.btn_fill(href="#" data-popup="#popup") Вход / Регистрация
 			.btn.btn_fill.menu-toggle
 				span.menu-toggle__bar
-	.popup
-		.popup__head
-			+title("вход")
-			.popup__close
-		.popup__body
-			form.enter
-				.input-cust
-					.input-cust__num
-						span
-					input.input-cust__value(type="text", placeholder='Логин')
-					.input-cust__arrow
-
-				.input-cust
-					.input-cust__num
-						span
-					input.input-cust__value(type="text", placeholder='Пароль')
-					.input-cust__arrow
-				button.btn.btn_fill.btn_arrow(type="submit") войти

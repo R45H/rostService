@@ -1,0 +1,19 @@
+#popup.popup
+	.popup__wrap
+		.popup__head
+			+title("вход")(class="popup__title")
+			.popup__close
+		.popup__body
+			form
+				.input-cust
+					.input-cust__num
+						span
+					input.input-cust__value(type="text", placeholder='Логин')
+					.input-cust__arrow
+
+				.input-cust
+					.input-cust__num
+						span
+					input.input-cust__value(type="password", placeholder='Пароль')
+					.input-cust__arrow
+				button.btn.btn_fill.btn_arrow.btn_big.popup__btn(type="submit") войти

@@ -14,6 +14,11 @@ body {
 	font-family: $font-main;
 	color: $gray;
 	height:100%;
+
+	&.noscroll {
+		overflow: hidden;
+		padding-right: 17px;
+	}
 }
 
 .wrapper {
