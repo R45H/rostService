@@ -2,51 +2,13 @@
     var tabs = $('.catalog-tab__link');
     var tab_content = $('.catalog-tab__content');
     var aim;
-
-    var makeTwoTab = function () {
-        //make two tab link in row instead of four
-        var catalog_tab = '<div class="catalog-tab">';
-        var catalog_tab_head = '<div class="catalog-tab__head">';
-        var catalog_tab_body = '<div class="catalog-tab__body">';
-        $('.catalog-tab').each(function () {
-            $(this).after(catalog_tab).next().append(catalog_tab_head).append(catalog_tab_body);
-        });
-
-        var i = 1;
-        tabs.each(function () {
-            if ((i != 1) && (i % 2 == 0)) {
-                aim = $($(this).attr('href'));
-                $(this).closest('.catalog-tab')
-                    .next().find('.catalog-tab__head').append($(this))
-                    .parent().find('.catalog-tab__body').append(aim);
-            }
-            i++;
-        });
-    }
-    var makeFourTab = function () {
-        //make four tab link in row instead of four
-
-
-        var i = 1;
-        tabs.each(function () {
-            if ((i != 1) && (i % 2 == 0)) {
-                aim = $($(this).attr('href'));
-                $(this).closest('.catalog-tab')
-                    .prev().find('.catalog-tab__head').append($(this))
-                    .parent().find('.catalog-tab__body').append(aim);
-            }
-            i++;
-        });
-        $('.catalog-tab').each(function () {
-            $(this).next().remove();
-        });
-    }
-    if ($(window).width() < 992 - 17) {
+    
+    if (window.innerWidth < 992) {
         makeTwoTab();
     }
-    $(window).resize(function () {
 
-        if ($(window).width() < 992 - 17) {
+    $(window).on('resize', function () {
+        if (window.innerWidth < 992) {
             if ($('.catalog-tab.active .catalog-tab__head .catalog-tab__link').length != 2) {
                 makeTwoTab();
             }
@@ -57,8 +19,8 @@
             }
         }
     });
-    // TODO разобраться с резким первым открытием таба
-    $('.catalog-tab__link').click(function () {
+
+    $('.catalog-tab__link').on('click', function () {
         aim_tab = $(this);
         var parent = aim_tab.closest('.catalog-tab');
         aim = $(aim_tab.attr('href'));
@@ -95,8 +57,43 @@
         }
         return false;
 
-//end click
+    //end click
     });
 
+	function makeTwoTab() {
+		//make two tab link in row instead of four
+		var catalog_tab = '<div class="catalog-tab">';
+		var catalog_tab_head = '<div class="catalog-tab__head">';
+		var catalog_tab_body = '<div class="catalog-tab__body">';
+		$('.catalog-tab').each(function () {
+			$(this).after(catalog_tab).next().append(catalog_tab_head).append(catalog_tab_body);
+		});
 
+		var i = 1;
+		tabs.each(function () {
+			if ((i != 1) && (i % 2 == 0)) {
+				aim = $($(this).attr('href'));
+				$(this).closest('.catalog-tab')
+					.next().find('.catalog-tab__head').append($(this))
+					.parent().find('.catalog-tab__body').append(aim);
+			}
+			i++;
+		});
+	}
+	function makeFourTab() {
+		//make four tab link in row instead of four
+		var i = 1;
+		tabs.each(function () {
+			if ((i != 1) && (i % 2 == 0)) {
+				aim = $($(this).attr('href'));
+				$(this).closest('.catalog-tab')
+					.prev().find('.catalog-tab__head').append($(this))
+					.parent().find('.catalog-tab__body').append(aim);
+			}
+			i++;
+		});
+		$('.catalog-tab').each(function () {
+			$(this).next().remove();
+		});
+	}
 }());

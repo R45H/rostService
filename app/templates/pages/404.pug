@@ -1,0 +1,14 @@
+include ../mixins/title
+
+.container
+	.breadcrumb
+		a.breadcrumb__link(href="/") Главная
+		.breadcrumb__last-item Авто запчасти
+
+	section.main__center
+		+title("Неверный адрес")
+
+		.page
+			.page__digit 404
+			.page__text page not found
+		.main__not-found Страница не найдена!

@@ -1,23 +1,10 @@
 extends layouts/default
-include mixins/title
-
 
 append vars
 	-
 		page = {
-		title: '404'
+			title: '404'
 		}
 
 block content
-	.container
-		.breadcrumb
-			a.breadcrumb__link(href="/") Главная
-			.breadcrumb__last-item Авто запчасти
-
-		section.main__center
-			+title("НЕВЕРНЫЙ АДРЕС")
-
-			.page
-				.page__digit 404
-				.page__text page not found
-			.main__not-found Страница не найдена!
+	include pages/404
