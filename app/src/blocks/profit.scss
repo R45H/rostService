@@ -1,14 +1,13 @@
 .profit {
 	padding: 20px;
 	border: $light-gray solid 1px;
-	border-bottom: $red 2px solid;
 	position: relative;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 
-	&:before{
+	&::before{
 		content: '';
 		position: absolute;
 		width:15px;
@@ -18,6 +17,16 @@
 		top: -8px;
 		left: -8px;
 		background: #fff;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: $red;
+		height: 2px;
 	}
 
 	&__title {
