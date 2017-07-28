@@ -31,23 +31,23 @@ mixin search()
 				img(src="img/search-auto.png")
 			.search__title ПОИСК АВТОЗАПЧАСТЕЙ
 		form.search__selectors
-			.search__selector-vis
-				.search__selector-num
+			.search__selector-vis.input-cust
+				.input-cust__num
 					span 1
-				input.search__selector(type="text", placeholder='Выберите марку авто')
-				.search__selector-arrow
+				input.search__selector.input-cust__value(type="text", placeholder='Выберите марку авто')
+				.input-cust__arrow
 
-			.search__selector-vis
-				.search__selector-num
+			.search__selector-vis.input-cust
+				.input-cust__num
 					span 2
-				input.search__selector(type="text", placeholder='Выберите модель авто')
-				.search__selector-arrow
+				input.search__selector.input-cust__value(type="text", placeholder='Выберите модель авто')
+				.input-cust__arrow
 
-			.search__selector-vis
-				.search__selector-num
+			.search__selector-vis.input-cust
+				.input-cust__num
 					span 3
-				input.search__selector(type="text", placeholder='Тип автозапчастей')
-				.search__selector-arrow
+				input.search__selector.input-cust__value(type="text", placeholder='Тип автозапчастей')
+				.input-cust__arrow
 
 			.search__subtitle подбор запчастей по номеру TC (VIN)
 			a.search__advice(href='')  Как определить номет ТС (VIN)
