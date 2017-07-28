@@ -57,7 +57,7 @@
             }
         }
     });
-//TODO разобраться с резким первым открытием таба
+    // TODO разобраться с резким первым открытием таба
     $('.catalog-tab__link').click(function () {
         aim_tab = $(this);
         var parent = aim_tab.closest('.catalog-tab');

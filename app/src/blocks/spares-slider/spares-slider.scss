@@ -4,6 +4,7 @@
 	&__wrap {
 		margin: 0 -15px;
 	}
+
 	&__item {
 		padding: 0 15px;
 	}
@@ -16,45 +17,75 @@
 		@include screen-sm() {
 			top: 30px;
 		}
-		@include screen-xs(){
-		top: 35px;
-		right: 10px;
-	}
-}
 
-&__prev, &__next {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	transition: all .3s ease;
-
-	&.slick-disabled {
-		filter: grayscale(100%);
-		opacity: 0.5;
-		&:hover {
-			cursor: default;
+		@include screen-xs() {
+			top: 35px;
+			right: 10px;
 		}
 	}
 
-	&:hover {
-		cursor: pointer;
+	&__prev,
+	&__next {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		transition: all .3s ease;
+
+		&.slick-disabled {
+			filter: grayscale(100%);
+			opacity: 0.5;
+
+			&:hover {
+				cursor: default;
+			}
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
-}
 
-&__prev {
-	right: 0;
-	background: url("../img/arrow-left.png") center/contain no-repeat;
-}
+	&__prev {
+		right: 0;
+		background: url("../img/arrow-left.png") center/contain no-repeat;
+	}
 
-&__next {
-	next: 0;
-	background: url("../img/arrow-right.png") center/contain no-repeat;
+	&__next {
+		left: 0;
+		background: url("../img/arrow-right.png") center/contain no-repeat;
+	}
 
-}
+	&__dots {
+		padding: 0;
+		margin: 20px 0 0;
+		list-style: none;
+		transform: skewX(-20deg);
+		text-align: center;
 
-.slick-dots {
-	position: static;
-	margin-top: 20px;
-}
+		li {
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			margin-right: 10px;
+			border: 2px solid $gray;
+			transition: all .3s ease;
+			cursor: pointer;
 
+			&:last-child {
+				margin: 0;
+			}
+
+			&:hover {
+				background: $gray;
+			}
+
+			&.slick-active {
+				background: $gray;
+			}
+		}
+
+		button {
+			display: none;
+		}
+	}
 }

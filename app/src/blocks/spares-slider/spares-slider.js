@@ -17,7 +17,8 @@ $('.spares-slider__wrap').slick({
             settings: {
                 slidesToShow: 2,
                 dots: true,
-                arrows: false
+	             dotsClass: 'spares-slider__dots',
+	             arrows: false
             }
         },
         {
@@ -33,6 +34,7 @@ $('.spares-slider__wrap').slick({
             settings: {
                 slidesToShow: 1,
                 dots: true,
+	             dotsClass: 'spares-slider__dots',
                 arrows: false
             }
         }
