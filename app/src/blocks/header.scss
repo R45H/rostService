@@ -7,6 +7,7 @@
 	background: #fff;
 	z-index: 15;
 	box-shadow: 0 0 10px -3px $dark-gray;
+	transform: translate3d(0, 0, 0);
 
 	@include screen-lg(min){
 		height: 95px;
