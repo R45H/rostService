@@ -2,6 +2,7 @@
 @@include('../libs/slick-1.6.0/slick/slick.js')
 @@include('../libs/magnific-popup/dist/jquery.magnific-popup.js')
 @@include('../libs/jquery.cookie/jquery.cookie.js')
+@@include('../libs/PerfectScrollbar/js/perfect-scrollbar.jquery.min.js')
 
 /* jQuery UI */
 @@include('../libs/jquery-ui/ui/version.js')

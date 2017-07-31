@@ -13,9 +13,8 @@ include ../mixins/catalog-tab
 .container
 	.content
 		section.content__main.col-lg-9.col-md-8
+			+title("поиск по каталогу")
 			section.main__space_bot
-				+title("поиск по каталогу")
-
 				.row
 					.col-md-8.offset-md-2
 						form.search-top.content__search(action="search-top" name="search-top-form")

@@ -4,6 +4,7 @@
 // var m_open_search_list = function () {
 //     $('.search__list').slideDown().addClass('search__list_open');
 // };
+$(".search__list").perfectScrollbar();
 
 $('.search__selector').click(function () {
     $(".search__selector-vis").removeClass('active');
@@ -23,10 +24,9 @@ $('.search__selector').click(function () {
                 $('.search__list').slideUp();
             }else {
                 $('.search__list').removeClass('search__list_open');
+                $(".search__selector-vis").removeClass('active');
             }
-            return false;
         }
-        return false;
     });
     return false;
 });
