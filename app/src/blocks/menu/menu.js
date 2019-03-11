@@ -17,7 +17,6 @@ $(".menu-toggle").click(function () {
             $('.side-menu').removeClass('open');
             $('body').removeClass("shadow");
         }
-
     });
 
     return false;

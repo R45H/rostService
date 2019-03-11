@@ -1,3 +1,5 @@
+include ../mixins/svg/svg-logo-webc
+
 // FOOTER
 footer.footer
 	.footer__head
@@ -17,7 +19,7 @@ footer.footer
 
 	.footer__main
 		.container
-			.row
+			.row.mb-20
 				.col-md-4
 					.footer__head-mobile
 						.footer__title.subtitle Рубрики
@@ -78,6 +80,12 @@ footer.footer
 								label.checkbox.footer__checkbox Я согласен на новостную подписку
 									input(type="checkbox").checkbox__hid
 									span.checkbox__vis
+
+							p.footer__webc
+								span.footer__webc-text Разработка сайта
+								a.footer__webc-link(href='https://webcenter.pro/' target='_blank')
+									+svg-logo-webc(class= 'footer__webc-img')
+
 				.col-md-3.flex-md-first
 					.footer__head-mobile
 						a.logo.logo_gray.footer__logo(href="/")
@@ -94,3 +102,6 @@ footer.footer
 					p © Copyright by rostservice 2005 - 2017.
 						br
 						| Все права защищены
+
+			.row
+				.col-12
